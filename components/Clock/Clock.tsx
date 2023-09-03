@@ -1,21 +1,23 @@
-"use client"
+"use client";
 
 import moment from "moment";
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 export default function Clock() {
-  const format = "h:mm A"
-  const [time, setTime] = useState(moment().format(format))
+  const format = "h:mm A";
+  const [time, setTime] = useState(moment().format(format));
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(moment().format(format))
+      setTime(moment().format(format));
     }, 1000);
 
     return () => clearInterval(interval);
-}, [format]);
+  }, [format]);
 
-  return <div className="bg-white p-7 text-center">
-    <time className="text-5xl font-bold text-mosqueGreen">{time}</time>
-  </div>
+  return (
+    <div className="bg-white p-7 text-center">
+      <time className="text-5xl font-bold text-mosqueGreen">{time}</time>
+    </div>
+  );
 }
