@@ -1,4 +1,5 @@
 import Clock from "@/components/Clock/Clock";
+import Date from "@/components/Date/Date";
 
 export default function Home() {
   return (
@@ -6,6 +7,9 @@ export default function Home() {
       <div className="p-4">
         <Clock />
       </div>
+      <div className="p-4">
+        <Date />
+      </div>
     </main>
-  )
+  );
 }
