@@ -28,7 +28,7 @@ export default function PrayerTimes() {
           >
             <th className="text-left text-2xl md:text-right">{prayer}</th>
             <td className="text-2xl">6:25</td>
-            <td className="font-bold text-2xl">6:55</td>
+            <td className="font-bold text-2xl">12:55</td>
             <td className="text-2xl hidden md:table-cell">6:55</td>
           </tr>
         ))}
