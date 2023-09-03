@@ -13,8 +13,10 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
+    "axios": "^1.5.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "moment-hijri": "^2.1.2",
     "next": "13.4.19",
@@ -25,6 +27,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.197",
     "@types/moment-hijri": "^2.1.0"
   }
 }

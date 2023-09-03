@@ -1,4 +1,40 @@
-export default function PrayerTimes() {
+import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
+
+export default function PrayerTimes({
+  today,
+  tomorrow,
+}: {
+  today: DailyPrayerTime
+  tomorrow: DailyPrayerTime
+}) {
+  const PrayerTimesArray = [
+    {
+      label: "Fajr",
+      data: today.fajr,
+      tomorrow: tomorrow.fajr,
+    },
+    {
+      label: "Zuhr",
+      data: today.zuhr,
+      tomorrow: tomorrow.zuhr,
+    },
+    {
+      label: "Asr",
+      data: today.asr,
+      tomorrow: tomorrow.asr,
+    },
+    {
+      label: "Maghrib",
+      data: today.maghrib,
+      tomorrow: tomorrow.maghrib,
+    },
+    {
+      label: "Isha",
+      data: today.isha,
+      tomorrow: tomorrow.isha,
+    },
+  ]
+
   return (
     <table className="text-white mx-auto table-auto border-collapse border-none w-full">
       <thead>
@@ -14,9 +50,9 @@ export default function PrayerTimes() {
         </tr>
       </thead>
       <tbody>
-        {["Fajr", "Zuhr", "Asr", "Maghrib", "Isha"].map((prayer) => (
+        {PrayerTimesArray.map((prayer) => (
           <tr
-            key={prayer}
+            key={prayer.label}
             className="
               text-center
               [&>*]:p-4
@@ -26,13 +62,17 @@ export default function PrayerTimes() {
               border border-mosqueGreen-dark border-l-0 border-r-0
               last-of-type:border-b-0"
           >
-            <th className="text-left text-2xl md:text-right">{prayer}</th>
-            <td className="text-2xl">6:25</td>
-            <td className="font-bold text-2xl">12:55</td>
-            <td className="text-2xl hidden md:table-cell">6:55</td>
+            <th className="text-left text-2xl md:text-right">{prayer.label}</th>
+            <td className="text-2xl">{prayer.data.start}</td>
+            <td className="font-bold text-2xl">
+              {prayer.data.congregation_start}
+            </td>
+            <td className="text-2xl hidden md:table-cell">
+              {prayer.tomorrow.congregation_start}
+            </td>
           </tr>
         ))}
       </tbody>
     </table>
-  );
+  )
 }
