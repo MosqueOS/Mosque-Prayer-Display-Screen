@@ -13,30 +13,25 @@ export default async function Home() {
   const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
 
   return (
-    <main className="md:grid md:grid-cols-8 md:p-5">
-      <div className="md:col-span-3">
-        <div className="p-4 md:p-6">
-          <Clock />
+    <main className="md:p-5">
+      <div className="md:grid md:grid-cols-8">
+        <div className="md:col-span-3">
+          <div className="p-4 md:p-6">
+            <Clock />
+          </div>
+          <div className="p-4 md:p-6">
+            <Date />
+          </div>
         </div>
-        <div className="p-4 md:p-6">
-          <Date />
-        </div>
-        <div className="p-4 md:p-6 hidden md:block">
-          <PrayerTimeTiles
-            sunrise={today.sunrise_start}
-            zawaal={"N/A"}
-            jummah={"N/A"}
-          />
+        <div className="p-4 md:p-6 md:col-span-5">
+          <PrayerTimes today={today} tomorrow={tomorrow} />
         </div>
       </div>
-      <div className="p-4 md:p-6 md:col-span-5">
-        <PrayerTimes today={today} tomorrow={tomorrow} />
-      </div>
-      <div className="p-4 md:p-6 md:hidden">
+      <div className="p-4 md:p-6">
         <PrayerTimeTiles
           sunrise={today.sunrise_start}
-          zawaal={"N/A"}
-          jummah={"N/A"}
+          zawaal={"12:00"}
+          jummah={["13:00", "13:30", "14:00"]}
         />
       </div>
     </main>
