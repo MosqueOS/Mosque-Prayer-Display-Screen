@@ -1,6 +1,6 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
-import { Metadata, MosqueData } from "@/types/MosqueDataType"
+import { MosqueMetadata, MosqueData } from "@/types/MosqueDataType"
 import axios from "axios"
 import { find } from "lodash"
 import moment from "moment"
@@ -42,7 +42,7 @@ export async function getJummahTimes(): Promise<JummahTimes> {
   return jummah_times
 }
 
-export async function getMetaData(): Promise<Metadata> {
+export async function getMetaData(): Promise<MosqueMetadata> {
   const { metadata } = await getMosqueData()
 
   return metadata

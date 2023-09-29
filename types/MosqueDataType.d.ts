@@ -2,9 +2,9 @@ import { DailyPrayerTime } from "./DailyPrayerTimeType"
 import { JummahTimes } from "./JummahTimesType"
 
 export interface MosqueData {
-  metadata: { [key: string]: string }
+  metadata: MosqueMetadata
   jummah_times: JummahTimes
   prayer_times: DailyPrayerTime[]
 }
 
-export type Metadata = { [key: string]: string }
+export type MosqueMetadata = { [key: string]: string }
