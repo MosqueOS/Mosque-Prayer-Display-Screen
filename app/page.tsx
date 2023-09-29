@@ -3,14 +3,17 @@ import Date from "@/components/Date/Date"
 import PrayerTimeTiles from "@/components/PrayerTimeTiles/PrayerTimeTiles"
 import PrayerTimes from "@/components/PrayerTimes/PrayerTimes"
 import {
+  getJummahTimes,
   getPrayerTimesForToday,
   getPrayerTimesForTomorrow,
 } from "@/services/ApiService"
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
+import { JummahTimes } from "@/types/JummahTimesType"
 
 export default async function Home() {
   const today: DailyPrayerTime = await getPrayerTimesForToday()
   const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
+  const jummahTimes: JummahTimes = await getJummahTimes()
 
   return (
     <main className="md:p-5">
@@ -30,8 +33,7 @@ export default async function Home() {
       <div className="p-4 md:p-6">
         <PrayerTimeTiles
           sunrise={today.sunrise_start}
-          zawaal={"12:00"}
-          jummah={["13:00", "13:30", "14:00"]}
+          jummahTimes={jummahTimes}
         />
       </div>
     </main>

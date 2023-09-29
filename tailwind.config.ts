@@ -1,10 +1,17 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  safelist: [
+    "lg:grid-cols-5",
+    "lg:grid-cols-4",
+    "lg:grid-cols-3",
+    "lg:grid-cols-2",
+    "lg:grid-cols-1",
   ],
   theme: {
     extend: {
@@ -22,5 +29,5 @@ const config: Config = {
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
