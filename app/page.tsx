@@ -4,16 +4,19 @@ import PrayerTimeTiles from "@/components/PrayerTimeTiles/PrayerTimeTiles"
 import PrayerTimes from "@/components/PrayerTimes/PrayerTimes"
 import {
   getJummahTimes,
+  getMetaData,
   getPrayerTimesForToday,
   getPrayerTimesForTomorrow,
 } from "@/services/ApiService"
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
+import { Metadata } from "@/types/MosqueDataType"
 
 export default async function Home() {
   const today: DailyPrayerTime = await getPrayerTimesForToday()
   const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
   const jummahTimes: JummahTimes = await getJummahTimes()
+  const metadata: Metadata = await getMetaData()
 
   return (
     <main className="md:p-5">
