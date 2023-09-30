@@ -4,17 +4,14 @@ import { MosqueMetadata, MosqueData } from "@/types/MosqueDataType"
 import axios from "axios"
 import { find } from "lodash"
 import moment from "moment"
-import { cache } from "react"
-
-export const revalidate = process.env.CACHE_TIMEOUT ?? 3600 // revalidate the data at most every hour by default
 
 const endpoint = process.env.MOSQUE_API_ENDPOINT ?? ""
 
-export const getMosqueData = cache(async (): Promise<MosqueData> => {
+export async function getMosqueData(): Promise<MosqueData> {
   const response = await axios.get(endpoint)
 
   return response.data
-})
+}
 
 export async function getPrayerTimesForToday(): Promise<DailyPrayerTime> {
   const { prayer_times } = await getMosqueData()

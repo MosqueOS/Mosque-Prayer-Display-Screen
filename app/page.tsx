@@ -14,6 +14,8 @@ import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
 import { MosqueMetadata } from "@/types/MosqueDataType"
 
+export const dynamic = "force-dynamic"
+
 export default async function Home() {
   const today: DailyPrayerTime = await getPrayerTimesForToday()
   const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
