@@ -6,12 +6,11 @@ import { find } from "lodash"
 import moment from "moment"
 
 const endpoint = process.env.MOSQUE_API_ENDPOINT ?? ""
-let mosqueDataCache: MosqueData
 
 export async function getMosqueData(): Promise<MosqueData> {
-  mosqueDataCache = mosqueDataCache ?? (await axios.get(endpoint)).data
+  const response = await axios.get(endpoint)
 
-  return mosqueDataCache
+  return response.data
 }
 
 export async function getPrayerTimesForToday(): Promise<DailyPrayerTime> {
