@@ -14,7 +14,9 @@ import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
 import { MosqueMetadata } from "@/types/MosqueDataType"
 
-export const revalidate = 300
+// Opt out of caching for all data requests in the route segment
+//export const dynamic = 'force-dynamic'
+//export const revalidate = 300
 
 export default async function Home() {
   const today: DailyPrayerTime = await getPrayerTimesForToday()
@@ -26,13 +28,6 @@ export default async function Home() {
     <main className="md:p-5">
       <div className="md:grid md:grid-cols-8">
         <div className="md:col-span-3">
-          {/*  <div className="p-4 md:mt-2 md:p-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-            <img
-              className="px-3 max-w-full lg:max-w-lg max-h-16 mx-auto"
-              src={metadata.logo_url}
-              alt=""
-            />
-          </div> */}
           <div className="p-4 md:p-6">
             <Clock />
           </div>

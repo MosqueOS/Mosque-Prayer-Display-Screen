@@ -1,16 +1,15 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
 import { MosqueMetadata, MosqueData } from "@/types/MosqueDataType"
-import axios from "axios"
 import { find } from "lodash"
 import moment from "moment"
 
 const endpoint = process.env.MOSQUE_API_ENDPOINT ?? ""
 
 export async function getMosqueData(): Promise<MosqueData> {
-  const response = await axios.get(endpoint)
+  const response = await fetch(endpoint, { next: { revalidate: 30 } })
 
-  return response.data
+  return response.json()
 }
 
 export async function getPrayerTimesForToday(): Promise<DailyPrayerTime> {
