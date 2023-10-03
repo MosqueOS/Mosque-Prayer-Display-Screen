@@ -9,7 +9,7 @@ import {
   getMetaData,
   getPrayerTimesForToday,
   getPrayerTimesForTomorrow,
-} from "@/services/ApiService"
+} from "@/services/MosqueDataService"
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
 import { MosqueMetadata } from "@/types/MosqueDataType"
