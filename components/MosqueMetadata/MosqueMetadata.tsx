@@ -1,6 +1,10 @@
-import { MosqueMetadata } from "@/types/MosqueDataType"
+import { MosqueMetadataType } from "@/types/MosqueDataType"
 
-export default function Metadata({ metadata }: { metadata: MosqueMetadata }) {
+export default function MosqueMetadata({
+  metadata,
+}: {
+  metadata: MosqueMetadataType
+}) {
   return (
     <div className="md:flex text-white text-center md:text-left">
       <div className="mr-4 flex-shrink-0 self-center">
