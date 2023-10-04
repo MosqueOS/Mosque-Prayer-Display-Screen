@@ -1,12 +1,19 @@
 import "./globals.css"
-import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: "MosqueScreen v2",
-  description: "MosqueScreen version 2",
+export async function generateMetadata() {
+  return {
+    title: {
+      template: "% | MosqueScreen Project by MosqueOS",
+      default: "MosqueScreen Project by MosqueOS",
+    },
+    description: {
+      template: "% | MosqueScreen Project by MosqueOS",
+      default: "MosqueScreen Project by MosqueOS",
+    },
+  }
 }
 
 export default function RootLayout({
@@ -16,6 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta http-equiv="refresh" content="300" />
+      </head>
       <body
         className={`${inter.className} max-w-full bg-mosqueGreen min-h-screen`}
       >

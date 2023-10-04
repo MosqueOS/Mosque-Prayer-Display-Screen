@@ -7,4 +7,4 @@ export interface MosqueData {
   prayer_times: DailyPrayerTime[]
 }
 
-export type MosqueMetadata = { [key: string]: string }
+export type MosqueMetadataType = { [key: string]: string }
