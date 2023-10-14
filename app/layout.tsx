@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta http-equiv="refresh" content="300" />
+        <meta httpEquiv="refresh" content="300" />
       </head>
       <body
         className={`${inter.className} max-w-full bg-mosqueGreen min-h-screen`}
