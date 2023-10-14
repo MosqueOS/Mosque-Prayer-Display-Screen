@@ -4,6 +4,7 @@ import MosqueMetadata from "@/components/MosqueMetadata/MosqueMetadata"
 import Notice from "@/components/Notice/Notice"
 import PrayerTimeTiles from "@/components/PrayerTimeTiles/PrayerTimeTiles"
 import PrayerTimes from "@/components/PrayerTimes/PrayerTimes"
+import ServiceWorker from "@/components/ServiceWorker/ServiceWorker"
 import {
   getJummahTimes,
   getMetaData,
@@ -14,10 +15,6 @@ import type { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import type { JummahTimes } from "@/types/JummahTimesType"
 import type { MosqueMetadataType } from "@/types/MosqueDataType"
 import type { Metadata } from "next"
-
-// Opt out of caching for all data requests in the route segment
-//export const dynamic = 'force-dynamic'
-//export const revalidate = 300
 
 export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
@@ -61,6 +58,7 @@ export default async function Home() {
           jummahTimes={jummahTimes}
         />
       </div>
+      <ServiceWorker />
     </main>
   )
 }
