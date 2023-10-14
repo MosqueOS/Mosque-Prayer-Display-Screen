@@ -1,3 +1,4 @@
+import moment from "moment"
 import "./globals.css"
 import { Inter } from "next/font/google"
 
@@ -25,6 +26,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta httpEquiv="refresh" content="300" />
+        <meta httpEquiv="cache-control" content="public" />
+        <meta
+          httpEquiv="expires"
+          content={`${moment().format("ddd, DD MMM YYYY")} 23:59:59 GMT`}
+        />
       </head>
       <body
         className={`${inter.className} max-w-full bg-mosqueGreen min-h-screen`}
