@@ -1,0 +1,27 @@
+{
+  "name": "MosqueScreen",
+  "short_name": "MosqueScreen",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0C5A4B",
+  "background_color": "#0C5A4B",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "horizontal"
+}
