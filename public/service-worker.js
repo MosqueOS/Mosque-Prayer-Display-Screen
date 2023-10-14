@@ -1,5 +1,6 @@
 const installEvent = () => {
   self.addEventListener("install", () => {
+    self.skipWaiting()
     console.log("service worker installed")
   })
 }
@@ -8,6 +9,7 @@ installEvent()
 const activateEvent = () => {
   self.addEventListener("activate", () => {
     console.log("service worker activated")
+    clients.claim().then(() => console.log("New service worker activated"))
   })
 }
 activateEvent()
