@@ -32,6 +32,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
+        <meta name="theme-color" content="#0C5A4B" />
       </head>
       <body
         className={`${inter.className} max-w-full bg-mosqueGreen min-h-screen`}
