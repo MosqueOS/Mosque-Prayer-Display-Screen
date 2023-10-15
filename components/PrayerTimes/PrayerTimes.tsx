@@ -61,7 +61,7 @@ export default function PrayerTimes({
           <th className="sr-only">Prayer time</th>
           <th className="md:text-5xl">Begins</th>
           <th className="md:text-5xl">Jama&apos;ah</th>
-          <th className="hidden md:table-cell md:text-5xl">Tomorrow</th>
+          <th className="md:text-5xl">Tomorrow</th>
         </tr>
       </thead>
       <tbody>
@@ -79,10 +79,10 @@ export default function PrayerTimes({
               border border-mosqueGreen-dark border-l-0 border-r-0
               last-of-type:border-b-0"
           >
-            <th className="text-left text-2xl md:text-5xl md:text-right">
+            <th className="text-left text-xl md:text-5xl md:text-right">
               {prayer.label}
             </th>
-            <td className="text-2xl md:text-6xl">
+            <td className="text-xl md:text-6xl">
               {moment(prayer.data.start, ["HH:mm"]).format("h:mm")}
               {prayer.data?.start_secondary ? (
                 <div className="block mt-1 md:mt-2">
@@ -92,7 +92,7 @@ export default function PrayerTimes({
                 </div>
               ) : null}
             </td>
-            <td className={`font-bold text-2xl md:text-6xl`}>
+            <td className={`font-bold text-xl md:text-6xl`}>
               <span
                 className={
                   nextPrayerTime.today === true &&
@@ -106,7 +106,7 @@ export default function PrayerTimes({
                 )}
               </span>
             </td>
-            <td className={`text-2xl hidden md:table-cell md:text-6xl`}>
+            <td className={`text-xl md:text-6xl`}>
               <span
                 className={
                   nextPrayerTime.today === false &&
