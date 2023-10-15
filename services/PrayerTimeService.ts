@@ -26,3 +26,31 @@ export function isBlackout(prayerTimes: DailyPrayerTime) {
 
   return setBlackoutMode
 }
+
+export function getNextPrayer(today: DailyPrayerTime) {
+  const currentTime = moment()
+
+  const todaysTimes = [
+    today.fajr.congregation_start,
+    today.zuhr.congregation_start,
+    today.asr.congregation_start,
+    today.maghrib.congregation_start,
+    today.isha.congregation_start,
+  ]
+
+  let nextPrayertime = {
+    today: false,
+    prayerIndex: 0,
+  }
+
+  todaysTimes.forEach((time, index) => {
+    if (currentTime < moment(time, ["HH:mm"]) && !nextPrayertime.today) {
+      nextPrayertime = {
+        today: true,
+        prayerIndex: index,
+      }
+    }
+  })
+
+  return nextPrayertime
+}

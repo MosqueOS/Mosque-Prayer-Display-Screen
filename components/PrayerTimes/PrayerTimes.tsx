@@ -1,3 +1,7 @@
+"use client"
+
+import { useEffect, useState } from "react"
+import { getNextPrayer } from "@/services/PrayerTimeService"
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import moment from "moment"
 
@@ -36,6 +40,16 @@ export default function PrayerTimes({
     },
   ]
 
+  const [nextPrayerTime, setNextPrayerTime] = useState(getNextPrayer(today))
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNextPrayerTime(getNextPrayer(today))
+    }, 60 * 1000)
+
+    return () => clearInterval(interval)
+  }, [today])
+
   return (
     <table className="text-white mx-auto table-auto border-collapse border-none w-full">
       <thead>
@@ -51,7 +65,7 @@ export default function PrayerTimes({
         </tr>
       </thead>
       <tbody>
-        {PrayerTimesArray.map((prayer) => (
+        {PrayerTimesArray.map((prayer, index) => (
           <tr
             key={prayer.label}
             className="
@@ -78,13 +92,33 @@ export default function PrayerTimes({
                 </div>
               ) : null}
             </td>
-            <td className="font-bold text-2xl md:text-6xl ">
-              {moment(prayer.data.congregation_start, ["HH:mm"]).format("h:mm")}
+            <td className={`font-bold text-2xl md:text-6xl`}>
+              <span
+                className={
+                  nextPrayerTime.today === true &&
+                  nextPrayerTime.prayerIndex === index
+                    ? "underline decoration-mosqueGreen-highlight underline-offset-8"
+                    : ""
+                }
+              >
+                {moment(prayer.data.congregation_start, ["HH:mm"]).format(
+                  "h:mm",
+                )}
+              </span>
             </td>
-            <td className="text-2xl hidden md:table-cell md:text-6xl">
-              {moment(prayer.tomorrow.congregation_start, ["HH:mm"]).format(
-                "h:mm",
-              )}
+            <td className={`text-2xl hidden md:table-cell md:text-6xl`}>
+              <span
+                className={
+                  nextPrayerTime.today === false &&
+                  nextPrayerTime.prayerIndex === index
+                    ? "underline decoration-mosqueGreen-highlight underline-offset-8"
+                    : ""
+                }
+              >
+                {moment(prayer.tomorrow.congregation_start, ["HH:mm"]).format(
+                  "h:mm",
+                )}
+              </span>
             </td>
           </tr>
         ))}
