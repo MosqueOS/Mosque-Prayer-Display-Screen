@@ -1,0 +1,5505 @@
+{
+  "metadata": {
+    "name": "East London Mosque",
+    "logo_url": "https://raw.githubusercontent.com/DilwoarH/Mosque-Screen/master/src/_components/logo/assets/ELM-logo-notext-white.gif",
+    "address": "82–92 Whitechapel Road, London E1 1JQ",
+    "website": "eastlondonmosque.org.uk"
+  },
+  "jummah_times": [
+    { "label": "Jummah 1", "time": "13:00" },
+    { "label": "Jummah 2", "time": "13:45" },
+    { "label": "Jummah 3", "time": "14:30" }
+  ],
+  "prayer_times": [
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "1",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:09", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:46",
+        "start_secondary": "14:16",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:05", "congregation_start": "16:12" },
+      "isha": { "start": "17:42", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "2",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:09", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:47",
+        "start_secondary": "14:17",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:06", "congregation_start": "16:13" },
+      "isha": { "start": "17:43", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "3",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:10", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:48",
+        "start_secondary": "14:18",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:07", "congregation_start": "16:14" },
+      "isha": { "start": "17:44", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "4",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:10", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:49",
+        "start_secondary": "14:19",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:08", "congregation_start": "16:15" },
+      "isha": { "start": "17:45", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "5",
+      "sunrise_start": "08:02",
+      "fajr": { "start": "06:25", "congregation_start": "06:55" },
+      "zuhr": { "start": "12:11", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:50",
+        "start_secondary": "14:20",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:09", "congregation_start": "16:16" },
+      "isha": { "start": "17:46", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "6",
+      "sunrise_start": "08:02",
+      "fajr": { "start": "06:25", "congregation_start": "06:55" },
+      "zuhr": { "start": "12:11", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:51",
+        "start_secondary": "14:21",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:10", "congregation_start": "16:17" },
+      "isha": { "start": "17:47", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "7",
+      "sunrise_start": "08:02",
+      "fajr": { "start": "06:25", "congregation_start": "06:55" },
+      "zuhr": { "start": "12:12", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:52",
+        "start_secondary": "14:23",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:12", "congregation_start": "16:19" },
+      "isha": { "start": "17:49", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "8",
+      "sunrise_start": "08:01",
+      "fajr": { "start": "06:24", "congregation_start": "06:54" },
+      "zuhr": { "start": "12:12", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:53",
+        "start_secondary": "14:24",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:13", "congregation_start": "16:20" },
+      "isha": { "start": "17:50", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "9",
+      "sunrise_start": "08:01",
+      "fajr": { "start": "06:24", "congregation_start": "06:54" },
+      "zuhr": { "start": "12:12", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:54",
+        "start_secondary": "14:25",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:14", "congregation_start": "16:21" },
+      "isha": { "start": "17:51", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "10",
+      "sunrise_start": "08:00",
+      "fajr": { "start": "06:23", "congregation_start": "06:53" },
+      "zuhr": { "start": "12:13", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:55",
+        "start_secondary": "14:27",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:16", "congregation_start": "16:23" },
+      "isha": { "start": "17:53", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "11",
+      "sunrise_start": "08:00",
+      "fajr": { "start": "06:23", "congregation_start": "06:53" },
+      "zuhr": { "start": "12:13", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:56",
+        "start_secondary": "14:28",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:17", "congregation_start": "16:24" },
+      "isha": { "start": "17:54", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "12",
+      "sunrise_start": "07:59",
+      "fajr": { "start": "06:22", "congregation_start": "06:52" },
+      "zuhr": { "start": "12:14", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:58",
+        "start_secondary": "14:29",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:19", "congregation_start": "16:26" },
+      "isha": { "start": "17:56", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "13",
+      "sunrise_start": "07:58",
+      "fajr": { "start": "06:21", "congregation_start": "06:51" },
+      "zuhr": { "start": "12:14", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:59",
+        "start_secondary": "14:31",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:20", "congregation_start": "16:27" },
+      "isha": { "start": "17:57", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "14",
+      "sunrise_start": "07:58",
+      "fajr": { "start": "06:21", "congregation_start": "06:51" },
+      "zuhr": { "start": "12:14", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:00",
+        "start_secondary": "14:32",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:21", "congregation_start": "16:28" },
+      "isha": { "start": "17:58", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "15",
+      "sunrise_start": "07:57",
+      "fajr": { "start": "06:20", "congregation_start": "06:50" },
+      "zuhr": { "start": "12:15", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:01",
+        "start_secondary": "14:34",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:23", "congregation_start": "16:30" },
+      "isha": { "start": "18:00", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "16",
+      "sunrise_start": "07:56",
+      "fajr": { "start": "06:19", "congregation_start": "06:49" },
+      "zuhr": { "start": "12:15", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:03",
+        "start_secondary": "14:35",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:25", "congregation_start": "16:32" },
+      "isha": { "start": "18:02", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "17",
+      "sunrise_start": "07:55",
+      "fajr": { "start": "06:18", "congregation_start": "06:48" },
+      "zuhr": { "start": "12:15", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:04",
+        "start_secondary": "14:37",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:26", "congregation_start": "16:33" },
+      "isha": { "start": "18:03", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "18",
+      "sunrise_start": "07:54",
+      "fajr": { "start": "06:17", "congregation_start": "06:47" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:05",
+        "start_secondary": "14:38",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:28", "congregation_start": "16:35" },
+      "isha": { "start": "18:05", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "19",
+      "sunrise_start": "07:53",
+      "fajr": { "start": "06:16", "congregation_start": "06:46" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:07",
+        "start_secondary": "14:40",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:29", "congregation_start": "16:36" },
+      "isha": { "start": "18:06", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "20",
+      "sunrise_start": "07:52",
+      "fajr": { "start": "06:15", "congregation_start": "06:45" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:08",
+        "start_secondary": "14:41",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:31", "congregation_start": "16:38" },
+      "isha": { "start": "18:08", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "21",
+      "sunrise_start": "07:51",
+      "fajr": { "start": "06:14", "congregation_start": "06:44" },
+      "zuhr": { "start": "12:17", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:09",
+        "start_secondary": "14:43",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:33", "congregation_start": "16:40" },
+      "isha": { "start": "18:10", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "22",
+      "sunrise_start": "07:50",
+      "fajr": { "start": "06:13", "congregation_start": "06:43" },
+      "zuhr": { "start": "12:17", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:11",
+        "start_secondary": "14:44",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:34", "congregation_start": "16:41" },
+      "isha": { "start": "18:11", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "23",
+      "sunrise_start": "07:49",
+      "fajr": { "start": "06:12", "congregation_start": "06:42" },
+      "zuhr": { "start": "12:17", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:12",
+        "start_secondary": "14:46",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:36", "congregation_start": "16:43" },
+      "isha": { "start": "18:13", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "24",
+      "sunrise_start": "07:48",
+      "fajr": { "start": "06:11", "congregation_start": "06:41" },
+      "zuhr": { "start": "12:17", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:13",
+        "start_secondary": "14:48",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:38", "congregation_start": "16:45" },
+      "isha": { "start": "18:15", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "25",
+      "sunrise_start": "07:46",
+      "fajr": { "start": "06:09", "congregation_start": "06:39" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:15",
+        "start_secondary": "14:49",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:40", "congregation_start": "16:47" },
+      "isha": { "start": "18:17", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "26",
+      "sunrise_start": "07:45",
+      "fajr": { "start": "06:08", "congregation_start": "06:38" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:16",
+        "start_secondary": "14:51",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:41", "congregation_start": "16:48" },
+      "isha": { "start": "18:18", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "27",
+      "sunrise_start": "07:44",
+      "fajr": { "start": "06:07", "congregation_start": "06:37" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:18",
+        "start_secondary": "14:53",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:43", "congregation_start": "16:50" },
+      "isha": { "start": "18:20", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "28",
+      "sunrise_start": "07:42",
+      "fajr": { "start": "06:05", "congregation_start": "06:35" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:19",
+        "start_secondary": "14:54",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:45", "congregation_start": "16:52" },
+      "isha": { "start": "18:22", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "29",
+      "sunrise_start": "07:41",
+      "fajr": { "start": "06:04", "congregation_start": "06:34" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:21",
+        "start_secondary": "14:56",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:47", "congregation_start": "16:54" },
+      "isha": { "start": "18:24", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "30",
+      "sunrise_start": "07:40",
+      "fajr": { "start": "06:03", "congregation_start": "06:33" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:22",
+        "start_secondary": "14:58",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:48", "congregation_start": "16:55" },
+      "isha": { "start": "18:25", "congregation_start": "19:30" }
+    },
+    {
+      "month": "1",
+      "month_label": "January",
+      "day_of_month": "31",
+      "sunrise_start": "07:38",
+      "fajr": { "start": "06:01", "congregation_start": "06:31" },
+      "zuhr": { "start": "12:19", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:23",
+        "start_secondary": "14:59",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:50", "congregation_start": "16:57" },
+      "isha": { "start": "18:27", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "1",
+      "sunrise_start": "07:37",
+      "fajr": { "start": "06:00", "congregation_start": "06:30" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:25",
+        "start_secondary": "15:01",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "16:52", "congregation_start": "16:59" },
+      "isha": { "start": "18:28", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "2",
+      "sunrise_start": "07:35",
+      "fajr": { "start": "05:58", "congregation_start": "06:28" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:26",
+        "start_secondary": "15:03",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "16:54", "congregation_start": "17:01" },
+      "isha": { "start": "18:29", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "3",
+      "sunrise_start": "07:34",
+      "fajr": { "start": "05:57", "congregation_start": "06:27" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:28",
+        "start_secondary": "15:04",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "16:56", "congregation_start": "17:03" },
+      "isha": { "start": "18:30", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "4",
+      "sunrise_start": "07:32",
+      "fajr": { "start": "05:55", "congregation_start": "06:25" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:29",
+        "start_secondary": "15:06",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "16:57", "congregation_start": "17:04" },
+      "isha": { "start": "18:31", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "5",
+      "sunrise_start": "07:30",
+      "fajr": { "start": "05:53", "congregation_start": "06:23" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:31",
+        "start_secondary": "15:08",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "16:59", "congregation_start": "17:06" },
+      "isha": { "start": "18:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "6",
+      "sunrise_start": "07:29",
+      "fajr": { "start": "05:52", "congregation_start": "06:22" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:32",
+        "start_secondary": "15:10",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "17:01", "congregation_start": "17:08" },
+      "isha": { "start": "18:34", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "7",
+      "sunrise_start": "07:27",
+      "fajr": { "start": "05:50", "congregation_start": "06:20" },
+      "zuhr": { "start": "12:20", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:34",
+        "start_secondary": "15:11",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "17:03", "congregation_start": "17:10" },
+      "isha": { "start": "18:35", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "8",
+      "sunrise_start": "07:25",
+      "fajr": { "start": "05:48", "congregation_start": "06:18" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:35",
+        "start_secondary": "15:13",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "17:05", "congregation_start": "17:12" },
+      "isha": { "start": "18:37", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "9",
+      "sunrise_start": "07:24",
+      "fajr": { "start": "05:47", "congregation_start": "06:17" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:36",
+        "start_secondary": "15:15",
+        "congregation_start": "15:30"
+      },
+      "maghrib": { "start": "17:07", "congregation_start": "17:14" },
+      "isha": { "start": "18:38", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "10",
+      "sunrise_start": "07:22",
+      "fajr": { "start": "05:45", "congregation_start": "06:15" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:38",
+        "start_secondary": "15:16",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:08", "congregation_start": "17:15" },
+      "isha": { "start": "18:39", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "11",
+      "sunrise_start": "07:20",
+      "fajr": { "start": "05:43", "congregation_start": "06:13" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:39",
+        "start_secondary": "15:18",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:10", "congregation_start": "17:17" },
+      "isha": { "start": "18:41", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "12",
+      "sunrise_start": "07:18",
+      "fajr": { "start": "05:41", "congregation_start": "06:11" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:41",
+        "start_secondary": "15:20",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:12", "congregation_start": "17:19" },
+      "isha": { "start": "18:43", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "13",
+      "sunrise_start": "07:16",
+      "fajr": { "start": "05:39", "congregation_start": "06:09" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:42",
+        "start_secondary": "15:22",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:14", "congregation_start": "17:21" },
+      "isha": { "start": "18:44", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "14",
+      "sunrise_start": "07:14",
+      "fajr": { "start": "05:37", "congregation_start": "06:07" },
+      "zuhr": { "start": "12:20", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:44",
+        "start_secondary": "15:23",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:16", "congregation_start": "17:23" },
+      "isha": { "start": "18:46", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "15",
+      "sunrise_start": "07:12",
+      "fajr": { "start": "05:35", "congregation_start": "06:05" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:45",
+        "start_secondary": "15:25",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:18", "congregation_start": "17:25" },
+      "isha": { "start": "18:48", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "16",
+      "sunrise_start": "07:11",
+      "fajr": { "start": "05:34", "congregation_start": "06:04" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:46",
+        "start_secondary": "15:27",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:19", "congregation_start": "17:26" },
+      "isha": { "start": "18:49", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "17",
+      "sunrise_start": "07:09",
+      "fajr": { "start": "05:32", "congregation_start": "06:02" },
+      "zuhr": { "start": "12:20", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:48",
+        "start_secondary": "15:28",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:21", "congregation_start": "17:28" },
+      "isha": { "start": "18:50", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "18",
+      "sunrise_start": "07:07",
+      "fajr": { "start": "05:30", "congregation_start": "06:00" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:49",
+        "start_secondary": "15:30",
+        "congregation_start": "15:45"
+      },
+      "maghrib": { "start": "17:23", "congregation_start": "17:30" },
+      "isha": { "start": "18:52", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "19",
+      "sunrise_start": "07:05",
+      "fajr": { "start": "05:28", "congregation_start": "05:58" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:51",
+        "start_secondary": "15:32",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:25", "congregation_start": "17:32" },
+      "isha": { "start": "18:54", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "20",
+      "sunrise_start": "07:03",
+      "fajr": { "start": "05:26", "congregation_start": "05:56" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:52",
+        "start_secondary": "15:33",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:27", "congregation_start": "17:34" },
+      "isha": { "start": "18:56", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "21",
+      "sunrise_start": "07:01",
+      "fajr": { "start": "05:24", "congregation_start": "05:54" },
+      "zuhr": { "start": "12:19", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:53",
+        "start_secondary": "15:35",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:28", "congregation_start": "17:35" },
+      "isha": { "start": "18:56", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "22",
+      "sunrise_start": "06:59",
+      "fajr": { "start": "05:22", "congregation_start": "05:52" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:55",
+        "start_secondary": "15:37",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:30", "congregation_start": "17:37" },
+      "isha": { "start": "18:58", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "23",
+      "sunrise_start": "06:57",
+      "fajr": { "start": "05:20", "congregation_start": "05:50" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:56",
+        "start_secondary": "15:38",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:32", "congregation_start": "17:39" },
+      "isha": { "start": "19:00", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "24",
+      "sunrise_start": "06:55",
+      "fajr": { "start": "05:18", "congregation_start": "05:48" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:57",
+        "start_secondary": "15:40",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:34", "congregation_start": "17:41" },
+      "isha": { "start": "19:02", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "25",
+      "sunrise_start": "06:52",
+      "fajr": { "start": "05:15", "congregation_start": "05:45" },
+      "zuhr": { "start": "12:19", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:59",
+        "start_secondary": "15:41",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:36", "congregation_start": "17:43" },
+      "isha": { "start": "19:03", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "26",
+      "sunrise_start": "06:50",
+      "fajr": { "start": "05:13", "congregation_start": "05:43" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:00",
+        "start_secondary": "15:43",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:37", "congregation_start": "17:44" },
+      "isha": { "start": "19:04", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "27",
+      "sunrise_start": "06:48",
+      "fajr": { "start": "05:11", "congregation_start": "05:41" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:01",
+        "start_secondary": "15:45",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:39", "congregation_start": "17:46" },
+      "isha": { "start": "19:06", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "28",
+      "sunrise_start": "06:46",
+      "fajr": { "start": "05:09", "congregation_start": "05:39" },
+      "zuhr": { "start": "12:18", "congregation_start": "13:00" },
+      "asr": {
+        "start": "15:02",
+        "start_secondary": "15:46",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:41", "congregation_start": "17:48" },
+      "isha": { "start": "19:08", "congregation_start": "19:30" }
+    },
+    {
+      "month": "2",
+      "month_label": "February",
+      "day_of_month": "29",
+      "sunrise_start": "06:44",
+      "fajr": { "start": "05:07", "congregation_start": "05:37" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:04",
+        "start_secondary": "15:48",
+        "congregation_start": "16:00"
+      },
+      "maghrib": { "start": "17:43", "congregation_start": "17:50" },
+      "isha": { "start": "19:09", "congregation_start": "19:30" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "1",
+      "sunrise_start": "06:42",
+      "fajr": { "start": "05:05", "congregation_start": "05:35" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:05",
+        "start_secondary": "15:49",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:45", "congregation_start": "17:52" },
+      "isha": { "start": "19:11", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "2",
+      "sunrise_start": "06:40",
+      "fajr": { "start": "05:03", "congregation_start": "05:33" },
+      "zuhr": { "start": "12:18", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:06",
+        "start_secondary": "15:51",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:46", "congregation_start": "17:53" },
+      "isha": { "start": "19:12", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "3",
+      "sunrise_start": "06:38",
+      "fajr": { "start": "05:01", "congregation_start": "05:31" },
+      "zuhr": { "start": "12:17", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:07",
+        "start_secondary": "15:52",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:48", "congregation_start": "17:55" },
+      "isha": { "start": "19:13", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "4",
+      "sunrise_start": "06:35",
+      "fajr": { "start": "04:58", "congregation_start": "05:28" },
+      "zuhr": { "start": "12:17", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:09",
+        "start_secondary": "15:54",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:50", "congregation_start": "17:57" },
+      "isha": { "start": "19:15", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "5",
+      "sunrise_start": "06:33",
+      "fajr": { "start": "04:56", "congregation_start": "05:26" },
+      "zuhr": { "start": "12:17", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:10",
+        "start_secondary": "15:55",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:52", "congregation_start": "17:59" },
+      "isha": { "start": "19:16", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "6",
+      "sunrise_start": "06:31",
+      "fajr": { "start": "04:54", "congregation_start": "05:24" },
+      "zuhr": { "start": "12:17", "congregation_start": "13:00" },
+      "asr": {
+        "start": "15:11",
+        "start_secondary": "15:57",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:53", "congregation_start": "18:00" },
+      "isha": { "start": "19:17", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "7",
+      "sunrise_start": "06:29",
+      "fajr": { "start": "04:52", "congregation_start": "05:22" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:12",
+        "start_secondary": "15:58",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:55", "congregation_start": "18:02" },
+      "isha": { "start": "19:18", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "8",
+      "sunrise_start": "06:26",
+      "fajr": { "start": "04:49", "congregation_start": "05:19" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:13",
+        "start_secondary": "16:00",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:57", "congregation_start": "18:04" },
+      "isha": { "start": "19:20", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "9",
+      "sunrise_start": "06:24",
+      "fajr": { "start": "04:47", "congregation_start": "05:17" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:15",
+        "start_secondary": "16:01",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "17:59", "congregation_start": "18:06" },
+      "isha": { "start": "19:21", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "10",
+      "sunrise_start": "06:22",
+      "fajr": { "start": "04:45", "congregation_start": "05:15" },
+      "zuhr": { "start": "12:16", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:16",
+        "start_secondary": "16:03",
+        "congregation_start": "16:15"
+      },
+      "maghrib": { "start": "18:00", "congregation_start": "18:07" },
+      "isha": { "start": "19:22", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "11",
+      "sunrise_start": "06:20",
+      "fajr": { "start": "04:43", "congregation_start": "05:13" },
+      "zuhr": { "start": "12:15", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:17",
+        "start_secondary": "16:04",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:02", "congregation_start": "18:09" },
+      "isha": { "start": "19:24", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "12",
+      "sunrise_start": "06:18",
+      "fajr": { "start": "04:41", "congregation_start": "05:11" },
+      "zuhr": { "start": "12:15", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:18",
+        "start_secondary": "16:06",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:04", "congregation_start": "18:11" },
+      "isha": { "start": "19:26", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "13",
+      "sunrise_start": "06:15",
+      "fajr": { "start": "04:38", "congregation_start": "05:08" },
+      "zuhr": { "start": "12:15", "congregation_start": "13:00" },
+      "asr": {
+        "start": "15:19",
+        "start_secondary": "16:07",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:05", "congregation_start": "18:12" },
+      "isha": { "start": "19:26", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "14",
+      "sunrise_start": "06:13",
+      "fajr": { "start": "04:36", "congregation_start": "05:06" },
+      "zuhr": { "start": "12:15", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:20",
+        "start_secondary": "16:08",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:07", "congregation_start": "18:14" },
+      "isha": { "start": "19:28", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "15",
+      "sunrise_start": "06:11",
+      "fajr": { "start": "04:34", "congregation_start": "05:04" },
+      "zuhr": { "start": "12:14", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:21",
+        "start_secondary": "16:10",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:09", "congregation_start": "18:16" },
+      "isha": { "start": "19:30", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "16",
+      "sunrise_start": "06:08",
+      "fajr": { "start": "04:31", "congregation_start": "05:01" },
+      "zuhr": { "start": "12:14", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:22",
+        "start_secondary": "16:11",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:11", "congregation_start": "18:18" },
+      "isha": { "start": "19:32", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "17",
+      "sunrise_start": "06:06",
+      "fajr": { "start": "04:29", "congregation_start": "04:59" },
+      "zuhr": { "start": "12:14", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:23",
+        "start_secondary": "16:13",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:12", "congregation_start": "18:19" },
+      "isha": { "start": "19:32", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "18",
+      "sunrise_start": "06:04",
+      "fajr": { "start": "04:27", "congregation_start": "04:57" },
+      "zuhr": { "start": "12:13", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:24",
+        "start_secondary": "16:14",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:14", "congregation_start": "18:21" },
+      "isha": { "start": "19:34", "congregation_start": "19:45" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "19",
+      "sunrise_start": "06:02",
+      "fajr": { "start": "04:25", "congregation_start": "04:55" },
+      "zuhr": { "start": "12:13", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:25",
+        "start_secondary": "16:15",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:16", "congregation_start": "18:23" },
+      "isha": { "start": "19:36", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "20",
+      "sunrise_start": "05:59",
+      "fajr": { "start": "04:23", "congregation_start": "04:53" },
+      "zuhr": { "start": "12:13", "congregation_start": "13:00" },
+      "asr": {
+        "start": "15:26",
+        "start_secondary": "16:17",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:17", "congregation_start": "18:24" },
+      "isha": { "start": "19:37", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "21",
+      "sunrise_start": "05:57",
+      "fajr": { "start": "04:21", "congregation_start": "04:51" },
+      "zuhr": { "start": "12:13", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:27",
+        "start_secondary": "16:18",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:19", "congregation_start": "18:26" },
+      "isha": { "start": "19:38", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "22",
+      "sunrise_start": "05:55",
+      "fajr": { "start": "04:20", "congregation_start": "04:50" },
+      "zuhr": { "start": "12:12", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:28",
+        "start_secondary": "16:19",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:21", "congregation_start": "18:28" },
+      "isha": { "start": "19:40", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "23",
+      "sunrise_start": "05:53",
+      "fajr": { "start": "04:18", "congregation_start": "04:48" },
+      "zuhr": { "start": "12:12", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:29",
+        "start_secondary": "16:21",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:22", "congregation_start": "18:29" },
+      "isha": { "start": "19:41", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "24",
+      "sunrise_start": "05:50",
+      "fajr": { "start": "04:15", "congregation_start": "04:45" },
+      "zuhr": { "start": "12:12", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:30",
+        "start_secondary": "16:22",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:24", "congregation_start": "18:31" },
+      "isha": { "start": "19:43", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "25",
+      "sunrise_start": "05:48",
+      "fajr": { "start": "04:13", "congregation_start": "04:43" },
+      "zuhr": { "start": "12:11", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:31",
+        "start_secondary": "16:23",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:26", "congregation_start": "18:33" },
+      "isha": { "start": "19:44", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "26",
+      "sunrise_start": "05:46",
+      "fajr": { "start": "04:12", "congregation_start": "04:42" },
+      "zuhr": { "start": "12:11", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:32",
+        "start_secondary": "16:24",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:27", "congregation_start": "18:34" },
+      "isha": { "start": "19:45", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "27",
+      "sunrise_start": "05:43",
+      "fajr": { "start": "04:09", "congregation_start": "04:39" },
+      "zuhr": { "start": "12:11", "congregation_start": "13:00" },
+      "asr": {
+        "start": "15:33",
+        "start_secondary": "16:26",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:29", "congregation_start": "18:36" },
+      "isha": { "start": "19:47", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "28",
+      "sunrise_start": "05:41",
+      "fajr": { "start": "04:08", "congregation_start": "04:38" },
+      "zuhr": { "start": "12:10", "congregation_start": "12:45" },
+      "asr": {
+        "start": "15:34",
+        "start_secondary": "16:27",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:31", "congregation_start": "18:38" },
+      "isha": { "start": "19:49", "congregation_start": "20:00" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "29",
+      "sunrise_start": "06:39",
+      "fajr": { "start": "05:06", "congregation_start": "05:36" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:35",
+        "start_secondary": "17:28",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:32", "congregation_start": "19:39" },
+      "isha": { "start": "20:49", "congregation_start": "21:15" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "30",
+      "sunrise_start": "06:37",
+      "fajr": { "start": "05:04", "congregation_start": "05:34" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:36",
+        "start_secondary": "17:29",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:34", "congregation_start": "19:41" },
+      "isha": { "start": "20:51", "congregation_start": "21:15" }
+    },
+    {
+      "month": "3",
+      "month_label": "March",
+      "day_of_month": "31",
+      "sunrise_start": "06:34",
+      "fajr": { "start": "05:02", "congregation_start": "05:32" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:37",
+        "start_secondary": "17:31",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:37", "congregation_start": "19:43" },
+      "isha": { "start": "20:53", "congregation_start": "21:15" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "1",
+      "sunrise_start": "06:32",
+      "fajr": { "start": "05:00", "congregation_start": "05:30" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:38",
+        "start_secondary": "17:32",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:38", "congregation_start": "19:45" },
+      "isha": { "start": "20:55", "congregation_start": "21:15" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "2",
+      "sunrise_start": "06:30",
+      "fajr": { "start": "04:58", "congregation_start": "05:28" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:39",
+        "start_secondary": "17:33",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:39", "congregation_start": "19:46" },
+      "isha": { "start": "20:56", "congregation_start": "21:15" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "3",
+      "sunrise_start": "06:28",
+      "fajr": { "start": "04:56", "congregation_start": "05:26" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:40",
+        "start_secondary": "17:34",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:41", "congregation_start": "19:48" },
+      "isha": { "start": "20:57", "congregation_start": "21:15" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "4",
+      "sunrise_start": "06:25",
+      "fajr": { "start": "04:53", "congregation_start": "05:23" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:41",
+        "start_secondary": "17:36",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:43", "congregation_start": "19:50" },
+      "isha": { "start": "20:59", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "5",
+      "sunrise_start": "06:23",
+      "fajr": { "start": "04:51", "congregation_start": "05:21" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:41",
+        "start_secondary": "17:37",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:44", "congregation_start": "19:51" },
+      "isha": { "start": "21:00", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "6",
+      "sunrise_start": "06:21",
+      "fajr": { "start": "04:49", "congregation_start": "05:19" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:42",
+        "start_secondary": "17:38",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:46", "congregation_start": "19:53" },
+      "isha": { "start": "21:02", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "7",
+      "sunrise_start": "06:19",
+      "fajr": { "start": "04:47", "congregation_start": "05:17" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:43",
+        "start_secondary": "17:39",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:48", "congregation_start": "19:55" },
+      "isha": { "start": "21:04", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "8",
+      "sunrise_start": "06:16",
+      "fajr": { "start": "04:44", "congregation_start": "05:14" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:44",
+        "start_secondary": "17:40",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:49", "congregation_start": "19:56" },
+      "isha": { "start": "21:05", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "9",
+      "sunrise_start": "06:14",
+      "fajr": { "start": "04:42", "congregation_start": "05:12" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:45",
+        "start_secondary": "17:41",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:51", "congregation_start": "19:58" },
+      "isha": { "start": "21:06", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "10",
+      "sunrise_start": "06:12",
+      "fajr": { "start": "04:40", "congregation_start": "05:10" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:46",
+        "start_secondary": "17:43",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:53", "congregation_start": "20:00" },
+      "isha": { "start": "21:08", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "11",
+      "sunrise_start": "06:10",
+      "fajr": { "start": "04:38", "congregation_start": "05:08" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:46",
+        "start_secondary": "17:44",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:54", "congregation_start": "20:01" },
+      "isha": { "start": "21:09", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "12",
+      "sunrise_start": "06:08",
+      "fajr": { "start": "04:36", "congregation_start": "05:06" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:47",
+        "start_secondary": "17:45",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:56", "congregation_start": "20:03" },
+      "isha": { "start": "21:11", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "13",
+      "sunrise_start": "06:05",
+      "fajr": { "start": "04:33", "congregation_start": "05:03" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:48",
+        "start_secondary": "17:46",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:58", "congregation_start": "20:05" },
+      "isha": { "start": "21:13", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "14",
+      "sunrise_start": "06:03",
+      "fajr": { "start": "04:31", "congregation_start": "05:01" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:49",
+        "start_secondary": "17:47",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:59", "congregation_start": "20:06" },
+      "isha": { "start": "21:14", "congregation_start": "21:30" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "15",
+      "sunrise_start": "06:01",
+      "fajr": { "start": "04:29", "congregation_start": "04:59" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:49",
+        "start_secondary": "17:48",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:01", "congregation_start": "20:08" },
+      "isha": { "start": "21:16", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "16",
+      "sunrise_start": "05:59",
+      "fajr": { "start": "04:27", "congregation_start": "04:57" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:50",
+        "start_secondary": "17:49",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:03", "congregation_start": "20:10" },
+      "isha": { "start": "21:18", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "17",
+      "sunrise_start": "05:57",
+      "fajr": { "start": "04:25", "congregation_start": "04:55" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:51",
+        "start_secondary": "17:51",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:04", "congregation_start": "20:11" },
+      "isha": { "start": "21:18", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "18",
+      "sunrise_start": "05:55",
+      "fajr": { "start": "04:22", "congregation_start": "04:52" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:52",
+        "start_secondary": "17:52",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:06", "congregation_start": "20:13" },
+      "isha": { "start": "21:20", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "19",
+      "sunrise_start": "05:53",
+      "fajr": { "start": "04:20", "congregation_start": "04:50" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:52",
+        "start_secondary": "17:53",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:08", "congregation_start": "20:15" },
+      "isha": { "start": "21:22", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "20",
+      "sunrise_start": "05:51",
+      "fajr": { "start": "04:18", "congregation_start": "04:48" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:53",
+        "start_secondary": "17:54",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:09", "congregation_start": "20:16" },
+      "isha": { "start": "21:23", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "21",
+      "sunrise_start": "05:48",
+      "fajr": { "start": "04:14", "congregation_start": "04:44" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:54",
+        "start_secondary": "17:55",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:11", "congregation_start": "20:18" },
+      "isha": { "start": "21:25", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "22",
+      "sunrise_start": "05:46",
+      "fajr": { "start": "04:12", "congregation_start": "04:42" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:55",
+        "start_secondary": "17:56",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:13", "congregation_start": "20:20" },
+      "isha": { "start": "21:27", "congregation_start": "21:45" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "23",
+      "sunrise_start": "05:44",
+      "fajr": { "start": "04:10", "congregation_start": "04:40" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:55",
+        "start_secondary": "17:57",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:14", "congregation_start": "20:21" },
+      "isha": { "start": "21:27", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "24",
+      "sunrise_start": "05:42",
+      "fajr": { "start": "04:07", "congregation_start": "04:22" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:56",
+        "start_secondary": "17:58",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:16", "congregation_start": "20:31" },
+      "isha": { "start": "21:29", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "25",
+      "sunrise_start": "05:40",
+      "fajr": { "start": "04:05", "congregation_start": "04:20" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:57",
+        "start_secondary": "17:59",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:18", "congregation_start": "20:33" },
+      "isha": { "start": "21:31", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "26",
+      "sunrise_start": "05:38",
+      "fajr": { "start": "04:03", "congregation_start": "04:18" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:58",
+        "start_secondary": "18:00",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:19", "congregation_start": "20:34" },
+      "isha": { "start": "21:31", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "27",
+      "sunrise_start": "05:36",
+      "fajr": { "start": "04:00", "congregation_start": "04:15" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:58",
+        "start_secondary": "18:01",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:21", "congregation_start": "20:36" },
+      "isha": { "start": "21:33", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "28",
+      "sunrise_start": "05:34",
+      "fajr": { "start": "03:58", "congregation_start": "04:13" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:59",
+        "start_secondary": "18:02",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:23", "congregation_start": "20:38" },
+      "isha": { "start": "21:35", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "29",
+      "sunrise_start": "05:33",
+      "fajr": { "start": "03:57", "congregation_start": "04:12" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:00",
+        "start_secondary": "18:03",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:24", "congregation_start": "20:39" },
+      "isha": { "start": "21:35", "congregation_start": "22:00" }
+    },
+    {
+      "month": "4",
+      "month_label": "April",
+      "day_of_month": "30",
+      "sunrise_start": "05:31",
+      "fajr": { "start": "03:54", "congregation_start": "04:09" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:00",
+        "start_secondary": "18:04",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:26", "congregation_start": "20:41" },
+      "isha": { "start": "21:37", "congregation_start": "22:00" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "1",
+      "sunrise_start": "05:29",
+      "fajr": { "start": "03:51", "congregation_start": "04:06" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:01",
+        "start_secondary": "18:05",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:28", "congregation_start": "20:43" },
+      "isha": { "start": "21:39", "congregation_start": "22:00" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "2",
+      "sunrise_start": "05:27",
+      "fajr": { "start": "03:49", "congregation_start": "04:04" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:02",
+        "start_secondary": "18:06",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:29", "congregation_start": "20:44" },
+      "isha": { "start": "21:40", "congregation_start": "22:00" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "3",
+      "sunrise_start": "05:25",
+      "fajr": { "start": "03:46", "congregation_start": "04:01" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:02",
+        "start_secondary": "18:07",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:31", "congregation_start": "20:46" },
+      "isha": { "start": "21:42", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "4",
+      "sunrise_start": "05:23",
+      "fajr": { "start": "03:44", "congregation_start": "03:59" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:03",
+        "start_secondary": "18:08",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:32", "congregation_start": "20:47" },
+      "isha": { "start": "21:43", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "5",
+      "sunrise_start": "05:21",
+      "fajr": { "start": "03:41", "congregation_start": "03:56" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:04",
+        "start_secondary": "18:09",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:34", "congregation_start": "20:49" },
+      "isha": { "start": "21:45", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "6",
+      "sunrise_start": "05:20",
+      "fajr": { "start": "03:40", "congregation_start": "03:55" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:04",
+        "start_secondary": "18:10",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:36", "congregation_start": "20:51" },
+      "isha": { "start": "21:47", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "7",
+      "sunrise_start": "05:18",
+      "fajr": { "start": "03:37", "congregation_start": "03:52" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:05",
+        "start_secondary": "18:11",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:37", "congregation_start": "20:52" },
+      "isha": { "start": "21:48", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "8",
+      "sunrise_start": "05:16",
+      "fajr": { "start": "03:35", "congregation_start": "03:50" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:05",
+        "start_secondary": "18:12",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:39", "congregation_start": "20:54" },
+      "isha": { "start": "21:50", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "9",
+      "sunrise_start": "05:15",
+      "fajr": { "start": "03:33", "congregation_start": "03:48" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:06",
+        "start_secondary": "18:13",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:40", "congregation_start": "20:55" },
+      "isha": { "start": "21:51", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "10",
+      "sunrise_start": "05:13",
+      "fajr": { "start": "03:31", "congregation_start": "03:46" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:07",
+        "start_secondary": "18:14",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:42", "congregation_start": "20:57" },
+      "isha": { "start": "21:53", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "11",
+      "sunrise_start": "05:11",
+      "fajr": { "start": "03:28", "congregation_start": "03:43" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:07",
+        "start_secondary": "18:15",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:43", "congregation_start": "20:58" },
+      "isha": { "start": "21:54", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "12",
+      "sunrise_start": "05:10",
+      "fajr": { "start": "03:27", "congregation_start": "03:42" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:08",
+        "start_secondary": "18:16",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:45", "congregation_start": "21:00" },
+      "isha": { "start": "21:56", "congregation_start": "22:15" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "13",
+      "sunrise_start": "05:08",
+      "fajr": { "start": "03:24", "congregation_start": "03:39" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:08",
+        "start_secondary": "18:17",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:47", "congregation_start": "21:02" },
+      "isha": { "start": "21:57", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "14",
+      "sunrise_start": "05:07",
+      "fajr": { "start": "03:23", "congregation_start": "03:38" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:09",
+        "start_secondary": "18:18",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:48", "congregation_start": "21:03" },
+      "isha": { "start": "21:58", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "15",
+      "sunrise_start": "05:05",
+      "fajr": { "start": "03:20", "congregation_start": "03:35" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:10",
+        "start_secondary": "18:19",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:50", "congregation_start": "21:05" },
+      "isha": { "start": "22:00", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "16",
+      "sunrise_start": "05:04",
+      "fajr": { "start": "03:19", "congregation_start": "03:34" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:10",
+        "start_secondary": "18:19",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:51", "congregation_start": "21:06" },
+      "isha": { "start": "22:02", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "17",
+      "sunrise_start": "05:02",
+      "fajr": { "start": "03:16", "congregation_start": "03:31" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:11",
+        "start_secondary": "18:20",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:53", "congregation_start": "21:08" },
+      "isha": { "start": "22:04", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "18",
+      "sunrise_start": "05:01",
+      "fajr": { "start": "03:15", "congregation_start": "03:30" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:11",
+        "start_secondary": "18:21",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:54", "congregation_start": "21:09" },
+      "isha": { "start": "22:05", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "19",
+      "sunrise_start": "05:00",
+      "fajr": { "start": "03:13", "congregation_start": "03:28" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:12",
+        "start_secondary": "18:22",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:55", "congregation_start": "21:10" },
+      "isha": { "start": "22:07", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "20",
+      "sunrise_start": "04:58",
+      "fajr": { "start": "03:11", "congregation_start": "03:26" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:12",
+        "start_secondary": "18:23",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:57", "congregation_start": "21:12" },
+      "isha": { "start": "22:09", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "21",
+      "sunrise_start": "04:57",
+      "fajr": { "start": "03:09", "congregation_start": "03:24" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:13",
+        "start_secondary": "18:24",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:58", "congregation_start": "21:13" },
+      "isha": { "start": "22:10", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "22",
+      "sunrise_start": "04:56",
+      "fajr": { "start": "03:08", "congregation_start": "03:23" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:14",
+        "start_secondary": "18:24",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:00", "congregation_start": "21:15" },
+      "isha": { "start": "22:13", "congregation_start": "22:30" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "23",
+      "sunrise_start": "04:55",
+      "fajr": { "start": "03:06", "congregation_start": "03:21" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:14",
+        "start_secondary": "18:25",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:01", "congregation_start": "21:16" },
+      "isha": { "start": "22:14", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "24",
+      "sunrise_start": "04:53",
+      "fajr": { "start": "03:03", "congregation_start": "03:33" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:15",
+        "start_secondary": "18:26",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:02", "congregation_start": "21:09" },
+      "isha": { "start": "22:15", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "25",
+      "sunrise_start": "04:52",
+      "fajr": { "start": "03:01", "congregation_start": "03:31" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:15",
+        "start_secondary": "18:27",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:04", "congregation_start": "21:11" },
+      "isha": { "start": "22:18", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "26",
+      "sunrise_start": "04:51",
+      "fajr": { "start": "03:00", "congregation_start": "03:30" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:16",
+        "start_secondary": "18:27",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:05", "congregation_start": "21:12" },
+      "isha": { "start": "22:19", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "27",
+      "sunrise_start": "04:50",
+      "fajr": { "start": "02:58", "congregation_start": "03:28" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:16",
+        "start_secondary": "18:28",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:06", "congregation_start": "21:13" },
+      "isha": { "start": "22:20", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "28",
+      "sunrise_start": "04:49",
+      "fajr": { "start": "02:57", "congregation_start": "03:27" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:17",
+        "start_secondary": "18:29",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:07", "congregation_start": "21:14" },
+      "isha": { "start": "22:22", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "29",
+      "sunrise_start": "04:48",
+      "fajr": { "start": "02:55", "congregation_start": "03:25" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:17",
+        "start_secondary": "18:30",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:08", "congregation_start": "21:15" },
+      "isha": { "start": "22:23", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "30",
+      "sunrise_start": "04:47",
+      "fajr": { "start": "02:54", "congregation_start": "03:24" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:18",
+        "start_secondary": "18:30",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:10", "congregation_start": "21:17" },
+      "isha": { "start": "22:25", "congregation_start": "22:45" }
+    },
+    {
+      "month": "5",
+      "month_label": "May",
+      "day_of_month": "31",
+      "sunrise_start": "04:47",
+      "fajr": { "start": "02:53", "congregation_start": "03:23" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:18",
+        "start_secondary": "18:31",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:11", "congregation_start": "21:18" },
+      "isha": { "start": "22:27", "congregation_start": "22:45" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "1",
+      "sunrise_start": "04:46",
+      "fajr": { "start": "02:52", "congregation_start": "03:22" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:19",
+        "start_secondary": "18:32",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:12", "congregation_start": "21:19" },
+      "isha": { "start": "22:28", "congregation_start": "22:45" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "2",
+      "sunrise_start": "04:45",
+      "fajr": { "start": "02:50", "congregation_start": "03:20" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:19",
+        "start_secondary": "18:32",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:13", "congregation_start": "21:20" },
+      "isha": { "start": "22:30", "congregation_start": "22:45" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "3",
+      "sunrise_start": "04:44",
+      "fajr": { "start": "02:49", "congregation_start": "03:19" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:19",
+        "start_secondary": "18:33",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:14", "congregation_start": "21:21" },
+      "isha": { "start": "22:31", "congregation_start": "22:45" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "4",
+      "sunrise_start": "04:44",
+      "fajr": { "start": "02:48", "congregation_start": "03:18" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:20",
+        "start_secondary": "18:33",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:15", "congregation_start": "21:22" },
+      "isha": { "start": "22:32", "congregation_start": "22:45" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "5",
+      "sunrise_start": "04:43",
+      "fajr": { "start": "02:47", "congregation_start": "03:17" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:20",
+        "start_secondary": "18:34",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:16", "congregation_start": "21:23" },
+      "isha": { "start": "22:34", "congregation_start": "22:45" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "6",
+      "sunrise_start": "04:42",
+      "fajr": { "start": "02:45", "congregation_start": "03:15" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:21",
+        "start_secondary": "18:35",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:17", "congregation_start": "21:24" },
+      "isha": { "start": "22:35", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "7",
+      "sunrise_start": "04:42",
+      "fajr": { "start": "02:45", "congregation_start": "03:15" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:21",
+        "start_secondary": "18:35",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:17", "congregation_start": "21:24" },
+      "isha": { "start": "22:35", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "8",
+      "sunrise_start": "04:42",
+      "fajr": { "start": "02:44", "congregation_start": "03:14" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:22",
+        "start_secondary": "18:36",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:18", "congregation_start": "21:25" },
+      "isha": { "start": "22:36", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "9",
+      "sunrise_start": "04:41",
+      "fajr": { "start": "02:43", "congregation_start": "03:13" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:22",
+        "start_secondary": "18:36",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:19", "congregation_start": "21:26" },
+      "isha": { "start": "22:38", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "10",
+      "sunrise_start": "04:41",
+      "fajr": { "start": "02:42", "congregation_start": "03:12" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:22",
+        "start_secondary": "18:37",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:20", "congregation_start": "21:27" },
+      "isha": { "start": "22:39", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "11",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:41", "congregation_start": "03:11" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:23",
+        "start_secondary": "18:37",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:20", "congregation_start": "21:27" },
+      "isha": { "start": "22:40", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "12",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:40", "congregation_start": "03:10" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:23",
+        "start_secondary": "18:37",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:21", "congregation_start": "21:28" },
+      "isha": { "start": "22:41", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "13",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:23",
+        "start_secondary": "18:38",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:22", "congregation_start": "21:29" },
+      "isha": { "start": "22:43", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "14",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:38",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:22", "congregation_start": "21:29" },
+      "isha": { "start": "22:43", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "15",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:39",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:23", "congregation_start": "21:30" },
+      "isha": { "start": "22:44", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "16",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:39",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:23", "congregation_start": "21:30" },
+      "isha": { "start": "22:44", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "17",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:39",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:44", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "18",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:43", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "19",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:39", "congregation_start": "03:09" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:43", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "20",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:40", "congregation_start": "03:10" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:43", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "21",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:40", "congregation_start": "03:10" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:43", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "22",
+      "sunrise_start": "04:40",
+      "fajr": { "start": "02:40", "congregation_start": "03:10" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:42", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "23",
+      "sunrise_start": "04:41",
+      "fajr": { "start": "02:42", "congregation_start": "03:12" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:42", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "24",
+      "sunrise_start": "04:41",
+      "fajr": { "start": "02:42", "congregation_start": "03:12" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:41", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "25",
+      "sunrise_start": "04:42",
+      "fajr": { "start": "02:43", "congregation_start": "03:13" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:41", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "26",
+      "sunrise_start": "04:42",
+      "fajr": { "start": "02:44", "congregation_start": "03:14" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:41", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "27",
+      "sunrise_start": "04:42",
+      "fajr": { "start": "02:44", "congregation_start": "03:14" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:40", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "28",
+      "sunrise_start": "04:43",
+      "fajr": { "start": "02:46", "congregation_start": "03:16" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:25", "congregation_start": "21:32" },
+      "isha": { "start": "22:40", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "29",
+      "sunrise_start": "04:44",
+      "fajr": { "start": "02:47", "congregation_start": "03:17" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:38", "congregation_start": "22:50" }
+    },
+    {
+      "month": "6",
+      "month_label": "June",
+      "day_of_month": "30",
+      "sunrise_start": "04:44",
+      "fajr": { "start": "02:47", "congregation_start": "03:17" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:27",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:37", "congregation_start": "22:50" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "1",
+      "sunrise_start": "04:45",
+      "fajr": { "start": "02:49", "congregation_start": "03:19" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:27",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:24", "congregation_start": "21:31" },
+      "isha": { "start": "22:36", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "2",
+      "sunrise_start": "04:46",
+      "fajr": { "start": "02:51", "congregation_start": "03:21" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:27",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:23", "congregation_start": "21:30" },
+      "isha": { "start": "22:35", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "3",
+      "sunrise_start": "04:46",
+      "fajr": { "start": "02:51", "congregation_start": "03:21" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:27",
+        "start_secondary": "18:41",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:23", "congregation_start": "21:30" },
+      "isha": { "start": "22:35", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "4",
+      "sunrise_start": "04:47",
+      "fajr": { "start": "02:53", "congregation_start": "03:23" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:22", "congregation_start": "21:29" },
+      "isha": { "start": "22:33", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "5",
+      "sunrise_start": "04:48",
+      "fajr": { "start": "02:54", "congregation_start": "03:24" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:22", "congregation_start": "21:29" },
+      "isha": { "start": "22:33", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "6",
+      "sunrise_start": "04:49",
+      "fajr": { "start": "02:55", "congregation_start": "03:25" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:21", "congregation_start": "21:28" },
+      "isha": { "start": "22:32", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "7",
+      "sunrise_start": "04:50",
+      "fajr": { "start": "02:57", "congregation_start": "03:27" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:40",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:21", "congregation_start": "21:28" },
+      "isha": { "start": "22:31", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "8",
+      "sunrise_start": "04:51",
+      "fajr": { "start": "02:58", "congregation_start": "03:28" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:39",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:20", "congregation_start": "21:27" },
+      "isha": { "start": "22:30", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "9",
+      "sunrise_start": "04:52",
+      "fajr": { "start": "03:00", "congregation_start": "03:30" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:39",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:19", "congregation_start": "21:26" },
+      "isha": { "start": "22:29", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "10",
+      "sunrise_start": "04:53",
+      "fajr": { "start": "03:01", "congregation_start": "03:31" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:39",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:18", "congregation_start": "21:25" },
+      "isha": { "start": "22:27", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "11",
+      "sunrise_start": "04:54",
+      "fajr": { "start": "03:02", "congregation_start": "03:32" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:26",
+        "start_secondary": "18:38",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:18", "congregation_start": "21:25" },
+      "isha": { "start": "22:27", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "12",
+      "sunrise_start": "04:55",
+      "fajr": { "start": "03:04", "congregation_start": "03:34" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:38",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:17", "congregation_start": "21:24" },
+      "isha": { "start": "22:26", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "13",
+      "sunrise_start": "04:56",
+      "fajr": { "start": "03:05", "congregation_start": "03:35" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:38",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:16", "congregation_start": "21:23" },
+      "isha": { "start": "22:24", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "14",
+      "sunrise_start": "04:57",
+      "fajr": { "start": "03:07", "congregation_start": "03:37" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:37",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:15", "congregation_start": "21:22" },
+      "isha": { "start": "22:23", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "15",
+      "sunrise_start": "04:58",
+      "fajr": { "start": "03:08", "congregation_start": "03:38" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:25",
+        "start_secondary": "18:37",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:14", "congregation_start": "21:21" },
+      "isha": { "start": "22:22", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "16",
+      "sunrise_start": "05:00",
+      "fajr": { "start": "03:10", "congregation_start": "03:40" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:36",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:13", "congregation_start": "21:20" },
+      "isha": { "start": "22:20", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "17",
+      "sunrise_start": "05:01",
+      "fajr": { "start": "03:12", "congregation_start": "03:42" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:35",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:12", "congregation_start": "21:19" },
+      "isha": { "start": "22:19", "congregation_start": "22:45" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "18",
+      "sunrise_start": "05:02",
+      "fajr": { "start": "03:13", "congregation_start": "03:43" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:24",
+        "start_secondary": "18:35",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:11", "congregation_start": "21:18" },
+      "isha": { "start": "22:18", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "19",
+      "sunrise_start": "05:03",
+      "fajr": { "start": "03:15", "congregation_start": "03:45" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:23",
+        "start_secondary": "18:34",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:09", "congregation_start": "21:16" },
+      "isha": { "start": "22:15", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "20",
+      "sunrise_start": "05:05",
+      "fajr": { "start": "03:17", "congregation_start": "03:47" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:23",
+        "start_secondary": "18:34",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:08", "congregation_start": "21:15" },
+      "isha": { "start": "22:14", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "21",
+      "sunrise_start": "05:06",
+      "fajr": { "start": "03:18", "congregation_start": "03:48" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:22",
+        "start_secondary": "18:33",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:07", "congregation_start": "21:14" },
+      "isha": { "start": "22:13", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "22",
+      "sunrise_start": "05:07",
+      "fajr": { "start": "03:20", "congregation_start": "03:50" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:22",
+        "start_secondary": "18:32",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:06", "congregation_start": "21:13" },
+      "isha": { "start": "22:11", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "23",
+      "sunrise_start": "05:09",
+      "fajr": { "start": "03:22", "congregation_start": "03:52" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:22",
+        "start_secondary": "18:31",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:04", "congregation_start": "21:11" },
+      "isha": { "start": "22:09", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "24",
+      "sunrise_start": "05:10",
+      "fajr": { "start": "03:24", "congregation_start": "03:54" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:21",
+        "start_secondary": "18:31",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:03", "congregation_start": "21:10" },
+      "isha": { "start": "22:08", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "25",
+      "sunrise_start": "05:12",
+      "fajr": { "start": "03:26", "congregation_start": "03:56" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:21",
+        "start_secondary": "18:30",
+        "congregation_start": "19:00"
+      },
+      "maghrib": { "start": "21:02", "congregation_start": "21:09" },
+      "isha": { "start": "22:06", "congregation_start": "22:30" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "26",
+      "sunrise_start": "05:13",
+      "fajr": { "start": "03:28", "congregation_start": "03:58" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:20",
+        "start_secondary": "18:29",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "21:00", "congregation_start": "21:07" },
+      "isha": { "start": "22:04", "congregation_start": "22:15" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "27",
+      "sunrise_start": "05:14",
+      "fajr": { "start": "03:29", "congregation_start": "03:59" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:19",
+        "start_secondary": "18:28",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:59", "congregation_start": "21:06" },
+      "isha": { "start": "22:03", "congregation_start": "22:15" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "28",
+      "sunrise_start": "05:16",
+      "fajr": { "start": "03:32", "congregation_start": "04:02" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:19",
+        "start_secondary": "18:27",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:57", "congregation_start": "21:04" },
+      "isha": { "start": "22:00", "congregation_start": "22:15" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "29",
+      "sunrise_start": "05:17",
+      "fajr": { "start": "03:33", "congregation_start": "04:03" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:18",
+        "start_secondary": "18:26",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:56", "congregation_start": "21:03" },
+      "isha": { "start": "21:59", "congregation_start": "22:15" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "30",
+      "sunrise_start": "05:19",
+      "fajr": { "start": "03:36", "congregation_start": "04:06" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:18",
+        "start_secondary": "18:25",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:54", "congregation_start": "21:01" },
+      "isha": { "start": "21:57", "congregation_start": "22:15" }
+    },
+    {
+      "month": "7",
+      "month_label": "July",
+      "day_of_month": "31",
+      "sunrise_start": "05:20",
+      "fajr": { "start": "03:37", "congregation_start": "04:07" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:17",
+        "start_secondary": "18:24",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:52", "congregation_start": "20:59" },
+      "isha": { "start": "21:55", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "1",
+      "sunrise_start": "05:22",
+      "fajr": { "start": "03:40", "congregation_start": "04:10" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:16",
+        "start_secondary": "18:23",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:51", "congregation_start": "20:58" },
+      "isha": { "start": "21:55", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "2",
+      "sunrise_start": "05:23",
+      "fajr": { "start": "03:41", "congregation_start": "04:11" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:15",
+        "start_secondary": "18:22",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:49", "congregation_start": "20:56" },
+      "isha": { "start": "21:53", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "3",
+      "sunrise_start": "05:25",
+      "fajr": { "start": "03:44", "congregation_start": "04:14" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:15",
+        "start_secondary": "18:21",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:47", "congregation_start": "20:54" },
+      "isha": { "start": "21:51", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "4",
+      "sunrise_start": "05:26",
+      "fajr": { "start": "03:45", "congregation_start": "04:15" },
+      "zuhr": { "start": "13:12", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:14",
+        "start_secondary": "18:20",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:46", "congregation_start": "20:53" },
+      "isha": { "start": "21:50", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "5",
+      "sunrise_start": "05:28",
+      "fajr": { "start": "03:48", "congregation_start": "04:18" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:13",
+        "start_secondary": "18:19",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:44", "congregation_start": "20:51" },
+      "isha": { "start": "21:48", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "6",
+      "sunrise_start": "05:29",
+      "fajr": { "start": "03:49", "congregation_start": "04:19" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:12",
+        "start_secondary": "18:18",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:42", "congregation_start": "20:49" },
+      "isha": { "start": "21:47", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "7",
+      "sunrise_start": "05:31",
+      "fajr": { "start": "03:51", "congregation_start": "04:21" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:11",
+        "start_secondary": "18:17",
+        "congregation_start": "18:45"
+      },
+      "maghrib": { "start": "20:40", "congregation_start": "20:47" },
+      "isha": { "start": "21:45", "congregation_start": "22:15" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "8",
+      "sunrise_start": "05:33",
+      "fajr": { "start": "03:54", "congregation_start": "04:24" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:11",
+        "start_secondary": "18:16",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:39", "congregation_start": "20:46" },
+      "isha": { "start": "21:44", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "9",
+      "sunrise_start": "05:34",
+      "fajr": { "start": "03:55", "congregation_start": "04:25" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:10",
+        "start_secondary": "18:14",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:37", "congregation_start": "20:44" },
+      "isha": { "start": "21:42", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "10",
+      "sunrise_start": "05:36",
+      "fajr": { "start": "03:57", "congregation_start": "04:27" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:09",
+        "start_secondary": "18:13",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:35", "congregation_start": "20:42" },
+      "isha": { "start": "21:40", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "11",
+      "sunrise_start": "05:37",
+      "fajr": { "start": "03:59", "congregation_start": "04:29" },
+      "zuhr": { "start": "13:11", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:08",
+        "start_secondary": "18:12",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:33", "congregation_start": "20:40" },
+      "isha": { "start": "21:39", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "12",
+      "sunrise_start": "05:39",
+      "fajr": { "start": "04:01", "congregation_start": "04:31" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:07",
+        "start_secondary": "18:10",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:31", "congregation_start": "20:38" },
+      "isha": { "start": "21:37", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "13",
+      "sunrise_start": "05:40",
+      "fajr": { "start": "04:02", "congregation_start": "04:32" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:06",
+        "start_secondary": "18:09",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:29", "congregation_start": "20:36" },
+      "isha": { "start": "21:35", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "14",
+      "sunrise_start": "05:42",
+      "fajr": { "start": "04:05", "congregation_start": "04:35" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:45" },
+      "asr": {
+        "start": "17:05",
+        "start_secondary": "18:08",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:27", "congregation_start": "20:34" },
+      "isha": { "start": "21:33", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "15",
+      "sunrise_start": "05:44",
+      "fajr": { "start": "04:07", "congregation_start": "04:37" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:04",
+        "start_secondary": "18:06",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:25", "congregation_start": "20:32" },
+      "isha": { "start": "21:31", "congregation_start": "22:00" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "16",
+      "sunrise_start": "05:45",
+      "fajr": { "start": "04:08", "congregation_start": "04:38" },
+      "zuhr": { "start": "13:10", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:03",
+        "start_secondary": "18:05",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:23", "congregation_start": "20:30" },
+      "isha": { "start": "21:30", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "17",
+      "sunrise_start": "05:47",
+      "fajr": { "start": "04:11", "congregation_start": "04:41" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:02",
+        "start_secondary": "18:04",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:21", "congregation_start": "20:28" },
+      "isha": { "start": "21:28", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "18",
+      "sunrise_start": "05:48",
+      "fajr": { "start": "04:12", "congregation_start": "04:42" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "17:01",
+        "start_secondary": "18:02",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:19", "congregation_start": "20:26" },
+      "isha": { "start": "21:26", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "19",
+      "sunrise_start": "05:50",
+      "fajr": { "start": "04:14", "congregation_start": "04:44" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:59",
+        "start_secondary": "18:01",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:17", "congregation_start": "20:24" },
+      "isha": { "start": "21:24", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "20",
+      "sunrise_start": "05:52",
+      "fajr": { "start": "04:17", "congregation_start": "04:47" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:58",
+        "start_secondary": "17:59",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:15", "congregation_start": "20:22" },
+      "isha": { "start": "21:22", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "21",
+      "sunrise_start": "05:53",
+      "fajr": { "start": "04:18", "congregation_start": "04:48" },
+      "zuhr": { "start": "13:09", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:57",
+        "start_secondary": "17:58",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:13", "congregation_start": "20:20" },
+      "isha": { "start": "21:21", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "22",
+      "sunrise_start": "05:55",
+      "fajr": { "start": "04:20", "congregation_start": "04:50" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:56",
+        "start_secondary": "17:56",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:11", "congregation_start": "20:18" },
+      "isha": { "start": "21:19", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "23",
+      "sunrise_start": "05:56",
+      "fajr": { "start": "04:22", "congregation_start": "04:52" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:55",
+        "start_secondary": "17:55",
+        "congregation_start": "18:30"
+      },
+      "maghrib": { "start": "20:09", "congregation_start": "20:16" },
+      "isha": { "start": "21:17", "congregation_start": "21:45" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "24",
+      "sunrise_start": "05:58",
+      "fajr": { "start": "04:24", "congregation_start": "04:54" },
+      "zuhr": { "start": "13:08", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:53",
+        "start_secondary": "17:53",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:06", "congregation_start": "20:13" },
+      "isha": { "start": "21:14", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "25",
+      "sunrise_start": "06:00",
+      "fajr": { "start": "04:26", "congregation_start": "04:56" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:52",
+        "start_secondary": "17:51",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:04", "congregation_start": "20:11" },
+      "isha": { "start": "21:13", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "26",
+      "sunrise_start": "06:01",
+      "fajr": { "start": "04:28", "congregation_start": "04:58" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:51",
+        "start_secondary": "17:50",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:02", "congregation_start": "20:09" },
+      "isha": { "start": "21:11", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "27",
+      "sunrise_start": "06:03",
+      "fajr": { "start": "04:30", "congregation_start": "05:00" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:50",
+        "start_secondary": "17:48",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "20:00", "congregation_start": "20:07" },
+      "isha": { "start": "21:09", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "28",
+      "sunrise_start": "06:04",
+      "fajr": { "start": "04:31", "congregation_start": "05:01" },
+      "zuhr": { "start": "13:07", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:48",
+        "start_secondary": "17:46",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "19:58", "congregation_start": "20:05" },
+      "isha": { "start": "21:07", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "29",
+      "sunrise_start": "06:06",
+      "fajr": { "start": "04:34", "congregation_start": "05:04" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:47",
+        "start_secondary": "17:45",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "19:56", "congregation_start": "20:03" },
+      "isha": { "start": "21:06", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "30",
+      "sunrise_start": "06:07",
+      "fajr": { "start": "04:35", "congregation_start": "05:05" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:46",
+        "start_secondary": "17:43",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "19:53", "congregation_start": "20:00" },
+      "isha": { "start": "21:03", "congregation_start": "21:30" }
+    },
+    {
+      "month": "8",
+      "month_label": "August",
+      "day_of_month": "31",
+      "sunrise_start": "06:09",
+      "fajr": { "start": "04:37", "congregation_start": "05:07" },
+      "zuhr": { "start": "13:06", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:44",
+        "start_secondary": "17:41",
+        "congregation_start": "18:15"
+      },
+      "maghrib": { "start": "19:51", "congregation_start": "19:58" },
+      "isha": { "start": "21:01", "congregation_start": "21:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "1",
+      "sunrise_start": "06:11",
+      "fajr": { "start": "04:39", "congregation_start": "05:09" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:43",
+        "start_secondary": "17:40",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:49", "congregation_start": "19:56" },
+      "isha": { "start": "21:00", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "2",
+      "sunrise_start": "06:12",
+      "fajr": { "start": "04:40", "congregation_start": "05:10" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:42",
+        "start_secondary": "17:38",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:47", "congregation_start": "19:54" },
+      "isha": { "start": "20:58", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "3",
+      "sunrise_start": "06:14",
+      "fajr": { "start": "04:42", "congregation_start": "05:12" },
+      "zuhr": { "start": "13:05", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:40",
+        "start_secondary": "17:36",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:44", "congregation_start": "19:51" },
+      "isha": { "start": "20:55", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "4",
+      "sunrise_start": "06:15",
+      "fajr": { "start": "04:43", "congregation_start": "05:13" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:39",
+        "start_secondary": "17:34",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:42", "congregation_start": "19:49" },
+      "isha": { "start": "20:54", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "5",
+      "sunrise_start": "06:17",
+      "fajr": { "start": "04:45", "congregation_start": "05:15" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:37",
+        "start_secondary": "17:33",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:40", "congregation_start": "19:47" },
+      "isha": { "start": "20:52", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "6",
+      "sunrise_start": "06:19",
+      "fajr": { "start": "04:47", "congregation_start": "05:17" },
+      "zuhr": { "start": "13:04", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:36",
+        "start_secondary": "17:31",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:38", "congregation_start": "19:45" },
+      "isha": { "start": "20:50", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "7",
+      "sunrise_start": "06:20",
+      "fajr": { "start": "04:48", "congregation_start": "05:18" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:34",
+        "start_secondary": "17:29",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:35", "congregation_start": "19:42" },
+      "isha": { "start": "20:48", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "8",
+      "sunrise_start": "06:22",
+      "fajr": { "start": "04:50", "congregation_start": "05:20" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:33",
+        "start_secondary": "17:27",
+        "congregation_start": "18:00"
+      },
+      "maghrib": { "start": "19:33", "congregation_start": "19:40" },
+      "isha": { "start": "20:46", "congregation_start": "21:15" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "9",
+      "sunrise_start": "06:23",
+      "fajr": { "start": "04:51", "congregation_start": "05:21" },
+      "zuhr": { "start": "13:03", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:31",
+        "start_secondary": "17:25",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:31", "congregation_start": "19:38" },
+      "isha": { "start": "20:44", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "10",
+      "sunrise_start": "06:25",
+      "fajr": { "start": "04:53", "congregation_start": "05:23" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:30",
+        "start_secondary": "17:24",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:29", "congregation_start": "19:36" },
+      "isha": { "start": "20:42", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "11",
+      "sunrise_start": "06:27",
+      "fajr": { "start": "04:55", "congregation_start": "05:25" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:28",
+        "start_secondary": "17:22",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:26", "congregation_start": "19:33" },
+      "isha": { "start": "20:40", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "12",
+      "sunrise_start": "06:28",
+      "fajr": { "start": "04:56", "congregation_start": "05:26" },
+      "zuhr": { "start": "13:02", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:27",
+        "start_secondary": "17:20",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:24", "congregation_start": "19:31" },
+      "isha": { "start": "20:38", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "13",
+      "sunrise_start": "06:30",
+      "fajr": { "start": "04:58", "congregation_start": "05:28" },
+      "zuhr": { "start": "13:01", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:25",
+        "start_secondary": "17:18",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:22", "congregation_start": "19:29" },
+      "isha": { "start": "20:36", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "14",
+      "sunrise_start": "06:31",
+      "fajr": { "start": "04:59", "congregation_start": "05:29" },
+      "zuhr": { "start": "13:01", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:24",
+        "start_secondary": "17:16",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:19", "congregation_start": "19:26" },
+      "isha": { "start": "20:33", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "15",
+      "sunrise_start": "06:33",
+      "fajr": { "start": "05:01", "congregation_start": "05:31" },
+      "zuhr": { "start": "13:01", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:22",
+        "start_secondary": "17:14",
+        "congregation_start": "17:45"
+      },
+      "maghrib": { "start": "19:17", "congregation_start": "19:24" },
+      "isha": { "start": "20:32", "congregation_start": "21:00" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "16",
+      "sunrise_start": "06:35",
+      "fajr": { "start": "05:04", "congregation_start": "05:34" },
+      "zuhr": { "start": "13:00", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:20",
+        "start_secondary": "17:12",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:15", "congregation_start": "19:22" },
+      "isha": { "start": "20:30", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "17",
+      "sunrise_start": "06:36",
+      "fajr": { "start": "05:05", "congregation_start": "05:35" },
+      "zuhr": { "start": "13:00", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:19",
+        "start_secondary": "17:10",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:12", "congregation_start": "19:19" },
+      "isha": { "start": "20:27", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "18",
+      "sunrise_start": "06:38",
+      "fajr": { "start": "05:07", "congregation_start": "05:37" },
+      "zuhr": { "start": "12:59", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:17",
+        "start_secondary": "17:08",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:10", "congregation_start": "19:17" },
+      "isha": { "start": "20:25", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "19",
+      "sunrise_start": "06:39",
+      "fajr": { "start": "05:09", "congregation_start": "05:39" },
+      "zuhr": { "start": "12:59", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:15",
+        "start_secondary": "17:06",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:08", "congregation_start": "19:15" },
+      "isha": { "start": "20:23", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "20",
+      "sunrise_start": "06:41",
+      "fajr": { "start": "05:11", "congregation_start": "05:41" },
+      "zuhr": { "start": "12:59", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:14",
+        "start_secondary": "17:04",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:06", "congregation_start": "19:13" },
+      "isha": { "start": "20:21", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "21",
+      "sunrise_start": "06:43",
+      "fajr": { "start": "05:13", "congregation_start": "05:43" },
+      "zuhr": { "start": "12:58", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:12",
+        "start_secondary": "17:03",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:03", "congregation_start": "19:10" },
+      "isha": { "start": "20:19", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "22",
+      "sunrise_start": "06:44",
+      "fajr": { "start": "05:15", "congregation_start": "05:45" },
+      "zuhr": { "start": "12:58", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:11",
+        "start_secondary": "17:01",
+        "congregation_start": "17:30"
+      },
+      "maghrib": { "start": "19:01", "congregation_start": "19:08" },
+      "isha": { "start": "20:17", "congregation_start": "20:45" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "23",
+      "sunrise_start": "06:46",
+      "fajr": { "start": "05:17", "congregation_start": "05:47" },
+      "zuhr": { "start": "12:58", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:09",
+        "start_secondary": "16:59",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:59", "congregation_start": "19:06" },
+      "isha": { "start": "20:15", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "24",
+      "sunrise_start": "06:47",
+      "fajr": { "start": "05:18", "congregation_start": "05:48" },
+      "zuhr": { "start": "12:57", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:07",
+        "start_secondary": "16:57",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:56", "congregation_start": "19:03" },
+      "isha": { "start": "20:12", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "25",
+      "sunrise_start": "06:49",
+      "fajr": { "start": "05:21", "congregation_start": "05:51" },
+      "zuhr": { "start": "12:57", "congregation_start": "13:45" },
+      "asr": {
+        "start": "16:06",
+        "start_secondary": "16:55",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:54", "congregation_start": "19:01" },
+      "isha": { "start": "20:11", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "26",
+      "sunrise_start": "06:51",
+      "fajr": { "start": "05:23", "congregation_start": "05:53" },
+      "zuhr": { "start": "12:57", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:04",
+        "start_secondary": "16:53",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:52", "congregation_start": "18:59" },
+      "isha": { "start": "20:09", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "27",
+      "sunrise_start": "06:52",
+      "fajr": { "start": "05:24", "congregation_start": "05:54" },
+      "zuhr": { "start": "12:56", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:02",
+        "start_secondary": "16:51",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:49", "congregation_start": "18:56" },
+      "isha": { "start": "20:06", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "28",
+      "sunrise_start": "06:54",
+      "fajr": { "start": "05:27", "congregation_start": "05:57" },
+      "zuhr": { "start": "12:56", "congregation_start": "13:30" },
+      "asr": {
+        "start": "16:01",
+        "start_secondary": "16:49",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:47", "congregation_start": "18:54" },
+      "isha": { "start": "20:04", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "29",
+      "sunrise_start": "06:55",
+      "fajr": { "start": "05:28", "congregation_start": "05:58" },
+      "zuhr": { "start": "12:56", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:59",
+        "start_secondary": "16:47",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:45", "congregation_start": "18:52" },
+      "isha": { "start": "20:02", "congregation_start": "20:30" }
+    },
+    {
+      "month": "9",
+      "month_label": "September",
+      "day_of_month": "30",
+      "sunrise_start": "06:57",
+      "fajr": { "start": "05:30", "congregation_start": "06:00" },
+      "zuhr": { "start": "12:55", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:57",
+        "start_secondary": "16:45",
+        "congregation_start": "17:15"
+      },
+      "maghrib": { "start": "18:43", "congregation_start": "18:50" },
+      "isha": { "start": "20:00", "congregation_start": "20:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "1",
+      "sunrise_start": "06:59",
+      "fajr": { "start": "05:31", "congregation_start": "06:01" },
+      "zuhr": { "start": "12:55", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:55",
+        "start_secondary": "16:43",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:40", "congregation_start": "18:47" },
+      "isha": { "start": "19:58", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "2",
+      "sunrise_start": "07:00",
+      "fajr": { "start": "05:32", "congregation_start": "06:02" },
+      "zuhr": { "start": "12:55", "congregation_start": "13:45" },
+      "asr": {
+        "start": "15:54",
+        "start_secondary": "16:41",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:38", "congregation_start": "18:45" },
+      "isha": { "start": "19:56", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "3",
+      "sunrise_start": "07:02",
+      "fajr": { "start": "05:34", "congregation_start": "06:04" },
+      "zuhr": { "start": "12:54", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:52",
+        "start_secondary": "16:39",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:36", "congregation_start": "18:43" },
+      "isha": { "start": "19:55", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "4",
+      "sunrise_start": "07:04",
+      "fajr": { "start": "05:36", "congregation_start": "06:06" },
+      "zuhr": { "start": "12:54", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:50",
+        "start_secondary": "16:37",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:34", "congregation_start": "18:41" },
+      "isha": { "start": "19:53", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "5",
+      "sunrise_start": "07:05",
+      "fajr": { "start": "05:36", "congregation_start": "06:06" },
+      "zuhr": { "start": "12:54", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:49",
+        "start_secondary": "16:35",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:31", "congregation_start": "18:38" },
+      "isha": { "start": "19:50", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "6",
+      "sunrise_start": "07:07",
+      "fajr": { "start": "05:38", "congregation_start": "06:08" },
+      "zuhr": { "start": "12:53", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:47",
+        "start_secondary": "16:33",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:29", "congregation_start": "18:36" },
+      "isha": { "start": "19:48", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "7",
+      "sunrise_start": "07:09",
+      "fajr": { "start": "05:40", "congregation_start": "06:10" },
+      "zuhr": { "start": "12:53", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:45",
+        "start_secondary": "16:31",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:27", "congregation_start": "18:34" },
+      "isha": { "start": "19:48", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "8",
+      "sunrise_start": "07:10",
+      "fajr": { "start": "05:40", "congregation_start": "06:10" },
+      "zuhr": { "start": "12:53", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:44",
+        "start_secondary": "16:29",
+        "congregation_start": "17:00"
+      },
+      "maghrib": { "start": "18:25", "congregation_start": "18:32" },
+      "isha": { "start": "19:46", "congregation_start": "20:15" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "9",
+      "sunrise_start": "07:12",
+      "fajr": { "start": "05:42", "congregation_start": "06:12" },
+      "zuhr": { "start": "12:53", "congregation_start": "13:45" },
+      "asr": {
+        "start": "15:42",
+        "start_secondary": "16:27",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:22", "congregation_start": "18:29" },
+      "isha": { "start": "19:43", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "10",
+      "sunrise_start": "07:14",
+      "fajr": { "start": "05:44", "congregation_start": "06:14" },
+      "zuhr": { "start": "12:52", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:40",
+        "start_secondary": "16:25",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:20", "congregation_start": "18:27" },
+      "isha": { "start": "19:41", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "11",
+      "sunrise_start": "07:15",
+      "fajr": { "start": "05:44", "congregation_start": "06:14" },
+      "zuhr": { "start": "12:52", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:39",
+        "start_secondary": "16:23",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:18", "congregation_start": "18:25" },
+      "isha": { "start": "19:39", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "12",
+      "sunrise_start": "07:17",
+      "fajr": { "start": "05:46", "congregation_start": "06:16" },
+      "zuhr": { "start": "12:52", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:37",
+        "start_secondary": "16:21",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:16", "congregation_start": "18:23" },
+      "isha": { "start": "19:37", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "13",
+      "sunrise_start": "07:19",
+      "fajr": { "start": "05:48", "congregation_start": "06:18" },
+      "zuhr": { "start": "12:52", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:35",
+        "start_secondary": "16:19",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:14", "congregation_start": "18:21" },
+      "isha": { "start": "19:37", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "14",
+      "sunrise_start": "07:20",
+      "fajr": { "start": "05:48", "congregation_start": "06:18" },
+      "zuhr": { "start": "12:51", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:34",
+        "start_secondary": "16:17",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:12", "congregation_start": "18:19" },
+      "isha": { "start": "19:35", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "15",
+      "sunrise_start": "07:22",
+      "fajr": { "start": "05:50", "congregation_start": "06:20" },
+      "zuhr": { "start": "12:51", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:32",
+        "start_secondary": "16:15",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:09", "congregation_start": "18:16" },
+      "isha": { "start": "19:32", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "16",
+      "sunrise_start": "07:24",
+      "fajr": { "start": "05:52", "congregation_start": "06:22" },
+      "zuhr": { "start": "12:51", "congregation_start": "13:45" },
+      "asr": {
+        "start": "15:30",
+        "start_secondary": "16:13",
+        "congregation_start": "16:45"
+      },
+      "maghrib": { "start": "18:07", "congregation_start": "18:14" },
+      "isha": { "start": "19:30", "congregation_start": "20:00" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "17",
+      "sunrise_start": "07:26",
+      "fajr": { "start": "05:53", "congregation_start": "06:23" },
+      "zuhr": { "start": "12:51", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:29",
+        "start_secondary": "16:11",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:05", "congregation_start": "18:12" },
+      "isha": { "start": "19:28", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "18",
+      "sunrise_start": "07:27",
+      "fajr": { "start": "05:54", "congregation_start": "06:24" },
+      "zuhr": { "start": "12:51", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:27",
+        "start_secondary": "16:09",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:03", "congregation_start": "18:10" },
+      "isha": { "start": "19:26", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "19",
+      "sunrise_start": "07:29",
+      "fajr": { "start": "05:56", "congregation_start": "06:26" },
+      "zuhr": { "start": "12:50", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:25",
+        "start_secondary": "16:07",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "18:01", "congregation_start": "18:08" },
+      "isha": { "start": "19:24", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "20",
+      "sunrise_start": "07:31",
+      "fajr": { "start": "05:58", "congregation_start": "06:28" },
+      "zuhr": { "start": "12:50", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:24",
+        "start_secondary": "16:05",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "17:59", "congregation_start": "18:06" },
+      "isha": { "start": "19:22", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "21",
+      "sunrise_start": "07:32",
+      "fajr": { "start": "05:58", "congregation_start": "06:28" },
+      "zuhr": { "start": "12:50", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:22",
+        "start_secondary": "16:04",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "17:57", "congregation_start": "18:04" },
+      "isha": { "start": "19:22", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "22",
+      "sunrise_start": "07:34",
+      "fajr": { "start": "06:00", "congregation_start": "06:30" },
+      "zuhr": { "start": "12:50", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:21",
+        "start_secondary": "16:02",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "17:55", "congregation_start": "18:02" },
+      "isha": { "start": "19:20", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "23",
+      "sunrise_start": "07:36",
+      "fajr": { "start": "06:01", "congregation_start": "06:31" },
+      "zuhr": { "start": "12:50", "congregation_start": "13:45" },
+      "asr": {
+        "start": "15:19",
+        "start_secondary": "16:00",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "17:53", "congregation_start": "18:00" },
+      "isha": { "start": "19:18", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "24",
+      "sunrise_start": "07:38",
+      "fajr": { "start": "06:03", "congregation_start": "06:33" },
+      "zuhr": { "start": "12:50", "congregation_start": "13:30" },
+      "asr": {
+        "start": "15:17",
+        "start_secondary": "15:58",
+        "congregation_start": "16:30"
+      },
+      "maghrib": { "start": "17:51", "congregation_start": "17:58" },
+      "isha": { "start": "19:16", "congregation_start": "19:45" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "25",
+      "sunrise_start": "06:39",
+      "fajr": { "start": "05:04", "congregation_start": "05:34" },
+      "zuhr": { "start": "23:50", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:16",
+        "start_secondary": "14:56",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:49", "congregation_start": "16:56" },
+      "isha": { "start": "18:16", "congregation_start": "19:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "26",
+      "sunrise_start": "06:41",
+      "fajr": { "start": "05:05", "congregation_start": "05:35" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:14",
+        "start_secondary": "14:54",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:47", "congregation_start": "16:54" },
+      "isha": { "start": "18:14", "congregation_start": "19:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "27",
+      "sunrise_start": "06:43",
+      "fajr": { "start": "05:07", "congregation_start": "05:37" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:13",
+        "start_secondary": "14:53",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:45", "congregation_start": "16:52" },
+      "isha": { "start": "18:12", "congregation_start": "19:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "28",
+      "sunrise_start": "06:45",
+      "fajr": { "start": "05:09", "congregation_start": "05:39" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:11",
+        "start_secondary": "14:51",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:43", "congregation_start": "16:50" },
+      "isha": { "start": "18:10", "congregation_start": "19:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "29",
+      "sunrise_start": "06:46",
+      "fajr": { "start": "05:09", "congregation_start": "05:39" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:10",
+        "start_secondary": "14:49",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:41", "congregation_start": "16:48" },
+      "isha": { "start": "18:08", "congregation_start": "19:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "30",
+      "sunrise_start": "06:48",
+      "fajr": { "start": "05:11", "congregation_start": "05:41" },
+      "zuhr": { "start": "23:49", "congregation_start": "13:00" },
+      "asr": {
+        "start": "14:08",
+        "start_secondary": "14:47",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:39", "congregation_start": "16:46" },
+      "isha": { "start": "18:06", "congregation_start": "19:30" }
+    },
+    {
+      "month": "10",
+      "month_label": "October",
+      "day_of_month": "31",
+      "sunrise_start": "06:50",
+      "fajr": { "start": "05:13", "congregation_start": "05:43" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:07",
+        "start_secondary": "14:46",
+        "congregation_start": "15:15"
+      },
+      "maghrib": { "start": "16:38", "congregation_start": "16:45" },
+      "isha": { "start": "18:05", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "1",
+      "sunrise_start": "06:52",
+      "fajr": { "start": "05:15", "congregation_start": "05:45" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:06",
+        "start_secondary": "14:44",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:36", "congregation_start": "16:43" },
+      "isha": { "start": "18:04", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "2",
+      "sunrise_start": "06:53",
+      "fajr": { "start": "05:16", "congregation_start": "05:46" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:04",
+        "start_secondary": "14:42",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:34", "congregation_start": "16:41" },
+      "isha": { "start": "18:02", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "3",
+      "sunrise_start": "06:55",
+      "fajr": { "start": "05:18", "congregation_start": "05:48" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:03",
+        "start_secondary": "14:41",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:32", "congregation_start": "16:39" },
+      "isha": { "start": "18:01", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "4",
+      "sunrise_start": "06:57",
+      "fajr": { "start": "05:19", "congregation_start": "05:49" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:02",
+        "start_secondary": "14:39",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:30", "congregation_start": "16:37" },
+      "isha": { "start": "17:59", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "5",
+      "sunrise_start": "06:59",
+      "fajr": { "start": "05:21", "congregation_start": "05:51" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "14:00",
+        "start_secondary": "14:37",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:29", "congregation_start": "16:36" },
+      "isha": { "start": "17:59", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "6",
+      "sunrise_start": "07:00",
+      "fajr": { "start": "05:22", "congregation_start": "05:52" },
+      "zuhr": { "start": "23:49", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:59",
+        "start_secondary": "14:36",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:27", "congregation_start": "16:34" },
+      "isha": { "start": "17:57", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "7",
+      "sunrise_start": "07:02",
+      "fajr": { "start": "05:23", "congregation_start": "05:53" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:58",
+        "start_secondary": "14:34",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:25", "congregation_start": "16:32" },
+      "isha": { "start": "17:56", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "8",
+      "sunrise_start": "07:04",
+      "fajr": { "start": "05:25", "congregation_start": "05:55" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:56",
+        "start_secondary": "14:33",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:24", "congregation_start": "16:31" },
+      "isha": { "start": "17:55", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "9",
+      "sunrise_start": "07:06",
+      "fajr": { "start": "05:27", "congregation_start": "05:57" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:55",
+        "start_secondary": "14:31",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:22", "congregation_start": "16:29" },
+      "isha": { "start": "17:54", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "10",
+      "sunrise_start": "07:08",
+      "fajr": { "start": "05:28", "congregation_start": "05:58" },
+      "zuhr": { "start": "23:49", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:54",
+        "start_secondary": "14:30",
+        "congregation_start": "15:00"
+      },
+      "maghrib": { "start": "16:21", "congregation_start": "16:28" },
+      "isha": { "start": "17:53", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "11",
+      "sunrise_start": "07:09",
+      "fajr": { "start": "05:29", "congregation_start": "05:59" },
+      "zuhr": { "start": "23:50", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:53",
+        "start_secondary": "14:29",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:19", "congregation_start": "16:26" },
+      "isha": { "start": "17:51", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "12",
+      "sunrise_start": "07:11",
+      "fajr": { "start": "05:31", "congregation_start": "06:01" },
+      "zuhr": { "start": "23:50", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:52",
+        "start_secondary": "14:27",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:18", "congregation_start": "16:25" },
+      "isha": { "start": "17:50", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "13",
+      "sunrise_start": "07:13",
+      "fajr": { "start": "05:32", "congregation_start": "06:02" },
+      "zuhr": { "start": "23:50", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:51",
+        "start_secondary": "14:26",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:16", "congregation_start": "16:23" },
+      "isha": { "start": "17:49", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "14",
+      "sunrise_start": "07:14",
+      "fajr": { "start": "05:33", "congregation_start": "06:03" },
+      "zuhr": { "start": "23:50", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:50",
+        "start_secondary": "14:25",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:15", "congregation_start": "16:22" },
+      "isha": { "start": "17:48", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "15",
+      "sunrise_start": "07:16",
+      "fajr": { "start": "05:35", "congregation_start": "06:05" },
+      "zuhr": { "start": "23:50", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:49",
+        "start_secondary": "14:23",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:14", "congregation_start": "16:21" },
+      "isha": { "start": "17:47", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "16",
+      "sunrise_start": "07:18",
+      "fajr": { "start": "05:36", "congregation_start": "06:06" },
+      "zuhr": { "start": "23:50", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:48",
+        "start_secondary": "14:22",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:12", "congregation_start": "16:19" },
+      "isha": { "start": "17:45", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "17",
+      "sunrise_start": "07:20",
+      "fajr": { "start": "05:38", "congregation_start": "06:08" },
+      "zuhr": { "start": "23:51", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:46",
+        "start_secondary": "14:21",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:11", "congregation_start": "16:18" },
+      "isha": { "start": "17:45", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "18",
+      "sunrise_start": "07:21",
+      "fajr": { "start": "05:39", "congregation_start": "06:09" },
+      "zuhr": { "start": "23:51", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:46",
+        "start_secondary": "14:20",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:10", "congregation_start": "16:17" },
+      "isha": { "start": "17:44", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "19",
+      "sunrise_start": "07:23",
+      "fajr": { "start": "05:41", "congregation_start": "06:11" },
+      "zuhr": { "start": "23:51", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:45",
+        "start_secondary": "14:19",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:09", "congregation_start": "16:16" },
+      "isha": { "start": "17:43", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "20",
+      "sunrise_start": "07:25",
+      "fajr": { "start": "05:43", "congregation_start": "06:13" },
+      "zuhr": { "start": "23:51", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:44",
+        "start_secondary": "14:17",
+        "congregation_start": "14:45"
+      },
+      "maghrib": { "start": "16:07", "congregation_start": "16:14" },
+      "isha": { "start": "17:41", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "21",
+      "sunrise_start": "07:26",
+      "fajr": { "start": "05:44", "congregation_start": "06:14" },
+      "zuhr": { "start": "23:51", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:43",
+        "start_secondary": "14:16",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:06", "congregation_start": "16:13" },
+      "isha": { "start": "17:41", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "22",
+      "sunrise_start": "07:28",
+      "fajr": { "start": "05:46", "congregation_start": "06:16" },
+      "zuhr": { "start": "23:52", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:42",
+        "start_secondary": "14:15",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:05", "congregation_start": "16:12" },
+      "isha": { "start": "17:40", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "23",
+      "sunrise_start": "07:29",
+      "fajr": { "start": "05:47", "congregation_start": "06:17" },
+      "zuhr": { "start": "23:52", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:41",
+        "start_secondary": "14:14",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:04", "congregation_start": "16:11" },
+      "isha": { "start": "17:39", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "24",
+      "sunrise_start": "07:31",
+      "fajr": { "start": "05:49", "congregation_start": "06:19" },
+      "zuhr": { "start": "23:52", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:41",
+        "start_secondary": "14:14",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:03", "congregation_start": "16:10" },
+      "isha": { "start": "17:38", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "25",
+      "sunrise_start": "07:33",
+      "fajr": { "start": "05:51", "congregation_start": "06:21" },
+      "zuhr": { "start": "23:53", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:40",
+        "start_secondary": "14:13",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:02", "congregation_start": "16:09" },
+      "isha": { "start": "17:38", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "26",
+      "sunrise_start": "07:34",
+      "fajr": { "start": "05:52", "congregation_start": "06:22" },
+      "zuhr": { "start": "23:53", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:40",
+        "start_secondary": "14:12",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:01", "congregation_start": "16:08" },
+      "isha": { "start": "17:37", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "27",
+      "sunrise_start": "07:36",
+      "fajr": { "start": "05:54", "congregation_start": "06:24" },
+      "zuhr": { "start": "23:53", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:39",
+        "start_secondary": "14:11",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:01", "congregation_start": "16:08" },
+      "isha": { "start": "17:37", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "28",
+      "sunrise_start": "07:37",
+      "fajr": { "start": "05:55", "congregation_start": "06:25" },
+      "zuhr": { "start": "23:54", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:38",
+        "start_secondary": "14:10",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:00", "congregation_start": "16:07" },
+      "isha": { "start": "17:36", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "29",
+      "sunrise_start": "07:39",
+      "fajr": { "start": "05:57", "congregation_start": "06:27" },
+      "zuhr": { "start": "23:54", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:38",
+        "start_secondary": "14:10",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:59", "congregation_start": "16:06" },
+      "isha": { "start": "17:35", "congregation_start": "19:30" }
+    },
+    {
+      "month": "11",
+      "month_label": "November",
+      "day_of_month": "30",
+      "sunrise_start": "07:40",
+      "fajr": { "start": "05:58", "congregation_start": "06:28" },
+      "zuhr": { "start": "23:54", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:37",
+        "start_secondary": "14:09",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:58", "congregation_start": "16:05" },
+      "isha": { "start": "17:35", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "1",
+      "sunrise_start": "07:41",
+      "fajr": { "start": "05:59", "congregation_start": "06:29" },
+      "zuhr": { "start": "23:55", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:37",
+        "start_secondary": "14:09",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:58", "congregation_start": "16:05" },
+      "isha": { "start": "17:35", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "2",
+      "sunrise_start": "07:43",
+      "fajr": { "start": "06:01", "congregation_start": "06:31" },
+      "zuhr": { "start": "23:55", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:37",
+        "start_secondary": "14:08",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:57", "congregation_start": "16:04" },
+      "isha": { "start": "17:34", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "3",
+      "sunrise_start": "07:44",
+      "fajr": { "start": "06:02", "congregation_start": "06:32" },
+      "zuhr": { "start": "23:55", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:08",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:57", "congregation_start": "16:04" },
+      "isha": { "start": "17:34", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "4",
+      "sunrise_start": "07:45",
+      "fajr": { "start": "06:03", "congregation_start": "06:33" },
+      "zuhr": { "start": "23:56", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:07",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:56", "congregation_start": "16:03" },
+      "isha": { "start": "17:33", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "5",
+      "sunrise_start": "07:47",
+      "fajr": { "start": "06:05", "congregation_start": "06:35" },
+      "zuhr": { "start": "23:56", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:07",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:56", "congregation_start": "16:03" },
+      "isha": { "start": "17:33", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "6",
+      "sunrise_start": "07:48",
+      "fajr": { "start": "06:06", "congregation_start": "06:36" },
+      "zuhr": { "start": "23:57", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "7",
+      "sunrise_start": "07:49",
+      "fajr": { "start": "06:07", "congregation_start": "06:37" },
+      "zuhr": { "start": "23:57", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "8",
+      "sunrise_start": "07:50",
+      "fajr": { "start": "06:08", "congregation_start": "06:38" },
+      "zuhr": { "start": "23:58", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:35",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "9",
+      "sunrise_start": "07:51",
+      "fajr": { "start": "06:09", "congregation_start": "06:39" },
+      "zuhr": { "start": "23:58", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:35",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "10",
+      "sunrise_start": "07:52",
+      "fajr": { "start": "06:10", "congregation_start": "06:40" },
+      "zuhr": { "start": "23:58", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:35",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:54", "congregation_start": "16:01" },
+      "isha": { "start": "17:31", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "11",
+      "sunrise_start": "07:53",
+      "fajr": { "start": "06:11", "congregation_start": "06:41" },
+      "zuhr": { "start": "23:59", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:35",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:54", "congregation_start": "16:01" },
+      "isha": { "start": "17:31", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "12",
+      "sunrise_start": "07:54",
+      "fajr": { "start": "06:12", "congregation_start": "06:42" },
+      "zuhr": { "start": "23:59", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:54", "congregation_start": "16:01" },
+      "isha": { "start": "17:31", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "13",
+      "sunrise_start": "07:55",
+      "fajr": { "start": "06:13", "congregation_start": "06:43" },
+      "zuhr": { "start": "12:00", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:54", "congregation_start": "16:01" },
+      "isha": { "start": "17:31", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "14",
+      "sunrise_start": "07:56",
+      "fajr": { "start": "06:14", "congregation_start": "06:44" },
+      "zuhr": { "start": "12:00", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:54", "congregation_start": "16:01" },
+      "isha": { "start": "17:31", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "15",
+      "sunrise_start": "07:57",
+      "fajr": { "start": "06:15", "congregation_start": "06:45" },
+      "zuhr": { "start": "12:01", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "16",
+      "sunrise_start": "07:58",
+      "fajr": { "start": "06:17", "congregation_start": "06:47" },
+      "zuhr": { "start": "12:01", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:36",
+        "start_secondary": "14:06",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "17",
+      "sunrise_start": "07:59",
+      "fajr": { "start": "06:18", "congregation_start": "06:48" },
+      "zuhr": { "start": "12:02", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:37",
+        "start_secondary": "14:07",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "18",
+      "sunrise_start": "07:59",
+      "fajr": { "start": "06:18", "congregation_start": "06:48" },
+      "zuhr": { "start": "12:02", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:37",
+        "start_secondary": "14:07",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:55", "congregation_start": "16:02" },
+      "isha": { "start": "17:32", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "19",
+      "sunrise_start": "08:00",
+      "fajr": { "start": "06:19", "congregation_start": "06:49" },
+      "zuhr": { "start": "12:03", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:37",
+        "start_secondary": "14:07",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:56", "congregation_start": "16:03" },
+      "isha": { "start": "17:33", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "20",
+      "sunrise_start": "08:00",
+      "fajr": { "start": "06:20", "congregation_start": "06:50" },
+      "zuhr": { "start": "12:03", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:38",
+        "start_secondary": "14:08",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:56", "congregation_start": "16:03" },
+      "isha": { "start": "17:33", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "21",
+      "sunrise_start": "08:01",
+      "fajr": { "start": "06:21", "congregation_start": "06:51" },
+      "zuhr": { "start": "12:04", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:38",
+        "start_secondary": "14:08",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:57", "congregation_start": "16:04" },
+      "isha": { "start": "17:34", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "22",
+      "sunrise_start": "08:01",
+      "fajr": { "start": "06:21", "congregation_start": "06:51" },
+      "zuhr": { "start": "12:04", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:39",
+        "start_secondary": "14:09",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:57", "congregation_start": "16:04" },
+      "isha": { "start": "17:34", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "23",
+      "sunrise_start": "08:02",
+      "fajr": { "start": "06:22", "congregation_start": "06:52" },
+      "zuhr": { "start": "12:05", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:39",
+        "start_secondary": "14:09",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:58", "congregation_start": "16:05" },
+      "isha": { "start": "17:35", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "24",
+      "sunrise_start": "08:02",
+      "fajr": { "start": "06:22", "congregation_start": "06:52" },
+      "zuhr": { "start": "12:05", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:40",
+        "start_secondary": "14:10",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:58", "congregation_start": "16:05" },
+      "isha": { "start": "17:35", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "25",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:23", "congregation_start": "06:53" },
+      "zuhr": { "start": "12:06", "congregation_start": "13:00" },
+      "asr": {
+        "start": "13:41",
+        "start_secondary": "14:11",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "15:59", "congregation_start": "16:06" },
+      "isha": { "start": "17:36", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "26",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:25", "congregation_start": "06:55" },
+      "zuhr": { "start": "12:06", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:41",
+        "start_secondary": "14:11",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:00", "congregation_start": "16:07" },
+      "isha": { "start": "17:37", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "27",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:25", "congregation_start": "06:55" },
+      "zuhr": { "start": "12:07", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:42",
+        "start_secondary": "14:12",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:01", "congregation_start": "16:08" },
+      "isha": { "start": "17:38", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "28",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:25", "congregation_start": "06:55" },
+      "zuhr": { "start": "12:07", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:43",
+        "start_secondary": "14:13",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:02", "congregation_start": "16:09" },
+      "isha": { "start": "17:39", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "29",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:08", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:44",
+        "start_secondary": "14:14",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:02", "congregation_start": "16:09" },
+      "isha": { "start": "17:39", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "30",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:08", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:45",
+        "start_secondary": "14:15",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:03", "congregation_start": "16:10" },
+      "isha": { "start": "17:40", "congregation_start": "19:30" }
+    },
+    {
+      "month": "12",
+      "month_label": "December",
+      "day_of_month": "31",
+      "sunrise_start": "08:03",
+      "fajr": { "start": "06:26", "congregation_start": "06:56" },
+      "zuhr": { "start": "12:09", "congregation_start": "12:45" },
+      "asr": {
+        "start": "13:45",
+        "start_secondary": "14:16",
+        "congregation_start": "14:30"
+      },
+      "maghrib": { "start": "16:04", "congregation_start": "16:11" },
+      "isha": { "start": "17:41", "congregation_start": "19:30" }
+    }
+  ]
+}
