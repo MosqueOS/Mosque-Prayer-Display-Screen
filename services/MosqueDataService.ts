@@ -7,10 +7,13 @@ import { MosqueMetadataType, MosqueData } from "@/types/MosqueDataType"
 import { find } from "lodash"
 import moment from "moment"
 
-const endpoint = process.env.MOSQUE_API_ENDPOINT ?? ""
+const MOSQUE_API_ENDPOINT = process.env.MOSQUE_API_ENDPOINT ?? ""
+const DAY_FOR_UPCOMING = parseInt(process.env?.UPCOMING_PRAYER_DAY ?? "3")
 
 export async function getMosqueData(): Promise<MosqueData> {
-  const response = await fetch(endpoint, { next: { revalidate: 30 } })
+  const response = await fetch(MOSQUE_API_ENDPOINT, {
+    next: { revalidate: 30 },
+  })
 
   return response.json()
 }
@@ -42,7 +45,7 @@ export async function getPrayerTimesForTomorrow(): Promise<DailyPrayerTime> {
 }
 
 export async function getPrayerTimesForUpcomingDays(
-  days = 5,
+  days: number = DAY_FOR_UPCOMING,
 ): Promise<UpcomingPrayerTimes[]> {
   let data = []
 

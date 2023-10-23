@@ -39,7 +39,7 @@ export default async function Home() {
   const jummahTimes: JummahTimes = await getJummahTimes()
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
   const upcomingPrayerDays: UpcomingPrayerTimes[] =
-    await getPrayerTimesForUpcomingDays(5)
+    await getPrayerTimesForUpcomingDays()
 
   let slides = [
     <SunriseJummahTiles
