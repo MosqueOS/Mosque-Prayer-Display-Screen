@@ -1,6 +1,7 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { MosqueMetadataType } from "@/types/MosqueDataType"
 import moment from "moment"
+import { Fragment } from "react"
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ")
@@ -29,7 +30,7 @@ export default function Calendar({
   ]
 
   return (
-    <div className="mt-10 px-4 sm:px-6 lg:px-8">
+    <div className="py-10 px-4 sm:px-6 lg:px-8">
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
           <h1 className="text-2xl font-semibold leading-6 text-gray-900">
@@ -110,7 +111,9 @@ export default function Calendar({
                   ]
 
                   return (
-                    <>
+                    <Fragment
+                      key={`prayerTime_${prayerTime.day_of_month}_${prayerTime.month_label}_fragment`}
+                    >
                       {prayerTime.day_of_month === "1" ? (
                         <tr
                           className="border-t border-gray-200"
@@ -142,6 +145,7 @@ export default function Calendar({
                               : "",
                             "whitespace-nowrap pl-4 text-left text-sm font-medium",
                           )}
+                          key={`prayerTime_${prayerTime.day_of_month}_${prayerTime.month_label}_date`}
                         >
                           <a
                             href={`#${prayerTime.day_of_month}_${prayerTime.month_label}`}
@@ -163,7 +167,7 @@ export default function Calendar({
                           </td>
                         ))}
                       </tr>
-                    </>
+                    </Fragment>
                   )
                 })}
               </tbody>
