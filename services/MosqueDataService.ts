@@ -1,4 +1,7 @@
-import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
+import {
+  DailyPrayerTime,
+  UpcomingPrayerTimes,
+} from "@/types/DailyPrayerTimeType"
 import { JummahTimes } from "@/types/JummahTimesType"
 import { MosqueMetadataType, MosqueData } from "@/types/MosqueDataType"
 import { find } from "lodash"
@@ -12,26 +15,50 @@ export async function getMosqueData(): Promise<MosqueData> {
   return response.json()
 }
 
-export async function getPrayerTimesForToday(): Promise<DailyPrayerTime> {
+export async function getPrayerTimeForDayMonth(
+  day_of_month: string,
+  month: string,
+): Promise<DailyPrayerTime> {
   const { prayer_times } = await getMosqueData()
 
   return (
     find(prayer_times, {
-      day_of_month: moment().format("D"),
-      month_label: moment().format("MMMM"),
+      day_of_month,
+      month,
     }) ?? prayer_times[0]
   )
 }
 
-export async function getPrayerTimesForTomorrow(): Promise<DailyPrayerTime> {
-  const { prayer_times } = await getMosqueData()
+export async function getPrayerTimesForToday(): Promise<DailyPrayerTime> {
+  const date = moment()
 
-  return (
-    find(prayer_times, {
-      day_of_month: moment().add(1, "day").format("D"),
-      month_label: moment().add(1, "day").format("MMMM"),
-    }) ?? prayer_times[0]
-  )
+  return getPrayerTimeForDayMonth(date.format("D"), date.format("M"))
+}
+
+export async function getPrayerTimesForTomorrow(): Promise<DailyPrayerTime> {
+  const date = moment().add(1, "day")
+
+  return getPrayerTimeForDayMonth(date.format("D"), date.format("M"))
+}
+
+export async function getPrayerTimesForUpcomingDays(
+  days = 5,
+): Promise<UpcomingPrayerTimes[]> {
+  let data = []
+
+  for (let index = 1; index <= days; index++) {
+    let times: UpcomingPrayerTimes = {
+      ...(await getPrayerTimeForDayMonth(
+        moment().add(index, "day").format("D"),
+        moment().add(index, "day").format("M"),
+      )),
+      display_date: moment().add(index, "day").format("ddd D MMM"),
+    }
+
+    data.push(times)
+  }
+
+  return data
 }
 
 export async function getJummahTimes(): Promise<JummahTimes> {

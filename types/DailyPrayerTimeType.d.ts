@@ -10,6 +10,10 @@ export interface DailyPrayerTime {
   isha: PrayerTime
 }
 
+export interface UpcomingPrayerTimes extends DailyPrayerTime {
+  display_date: string
+}
+
 export interface PrayerTime {
   start: string
   start_secondary?: string

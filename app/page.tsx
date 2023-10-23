@@ -2,20 +2,27 @@ import Blackout from "@/components/Blackout/Blackout"
 import Clock from "@/components/Clock/Clock"
 import Date from "@/components/Date/Date"
 import MosqueMetadata from "@/components/MosqueMetadata/MosqueMetadata"
+import NextPrayerDaysTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
 import Notice from "@/components/Notice/Notice"
-import PrayerTimeTiles from "@/components/PrayerTimeTiles/PrayerTimeTiles"
+import SunriseJummahTiles from "@/components/SunriseJummahTiles/SunriseJummahTiles"
 import PrayerTimes from "@/components/PrayerTimes/PrayerTimes"
 import ServiceWorker from "@/components/ServiceWorker/ServiceWorker"
+import SlidingBanner from "@/components/SlidingBanner/SlidingBanner"
 import {
   getJummahTimes,
   getMetaData,
+  getPrayerTimesForUpcomingDays,
   getPrayerTimesForToday,
   getPrayerTimesForTomorrow,
 } from "@/services/MosqueDataService"
-import type { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
+import type {
+  DailyPrayerTime,
+  UpcomingPrayerTimes,
+} from "@/types/DailyPrayerTimeType"
 import type { JummahTimes } from "@/types/JummahTimesType"
 import type { MosqueMetadataType } from "@/types/MosqueDataType"
 import type { Metadata } from "next"
+import UpcomingPrayerDayTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
 
 export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
@@ -31,6 +38,20 @@ export default async function Home() {
   const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
   const jummahTimes: JummahTimes = await getJummahTimes()
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
+  const upcomingPrayerDays: UpcomingPrayerTimes[] =
+    await getPrayerTimesForUpcomingDays(5)
+
+  let slides = [
+    <SunriseJummahTiles
+      sunrise={today.sunrise_start}
+      jummahTimes={jummahTimes}
+      key={"sunrise_jummah_times"}
+    />,
+  ]
+
+  upcomingPrayerDays.forEach((times) => {
+    slides.push(<UpcomingPrayerDayTiles times={times} />)
+  })
 
   return (
     <>
@@ -55,10 +76,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="p-4 md:p-6">
-          <PrayerTimeTiles
-            sunrise={today.sunrise_start}
-            jummahTimes={jummahTimes}
-          />
+          <SlidingBanner slides={slides} />
         </div>
         <ServiceWorker />
       </main>
