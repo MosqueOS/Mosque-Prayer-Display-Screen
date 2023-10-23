@@ -64,6 +64,12 @@ export async function getPrayerTimesForUpcomingDays(
   return data
 }
 
+export async function getAllPrayerTimes(): Promise<DailyPrayerTime[]> {
+  const { prayer_times } = await getMosqueData()
+
+  return prayer_times
+}
+
 export async function getJummahTimes(): Promise<JummahTimes> {
   const { jummah_times } = await getMosqueData()
 
