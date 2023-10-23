@@ -34,11 +34,7 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#0C5A4B" />
       </head>
-      <body
-        className={`${inter.className} max-w-full bg-mosqueGreen min-h-screen`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   )
 }
