@@ -13,12 +13,27 @@ export default function Calendar({
   prayerTimes: DailyPrayerTime[]
   metadata: MosqueMetadataType
 }) {
+  const today = moment().format("D MMMM")
+  const headers = [
+    "Fajr Starts",
+    "Fajr Jama'ah",
+    "Sunrise",
+    "Zuhr Starts",
+    "Zuhr Jama'ah",
+    "Asr Starts",
+    "Asr Jama'ah",
+    "Maghrib Starts",
+    "Maghrib Jama'ah",
+    "Isha Starts",
+    "Isha Jama'ah",
+  ]
+
   return (
     <div className="mt-10 px-4 sm:px-6 lg:px-8">
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
-          <h1 className="text-base font-semibold leading-6 text-gray-900">
-            Prayer times for {metadata.name}
+          <h1 className="text-2xl font-semibold leading-6 text-gray-900">
+            {metadata.name} Prayer Times
           </h1>
           <p className="mt-2 text-sm text-gray-700">{metadata.address}</p>
         </div>
@@ -31,159 +46,41 @@ export default function Calendar({
                 <tr>
                   <th
                     scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 py-3.5 pl-4 pr-3 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter"
+                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter"
+                    key={`header_date`}
                   >
                     Date
                   </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Fajr starts
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Fajr jama&apos;ah
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter lg:table-cell"
-                  >
-                    Sunrise
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Zuhr starts
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Zuhr jama&apos;ah
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Asr starts
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Asr jama&apos;ah
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Maghrib starts
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Maghrib jama&apos;ah
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Isha starts
-                  </th>
-                  <th
-                    scope="col"
-                    className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
-                  >
-                    Isha jama&apos;ah
-                  </th>
+
+                  {headers.map((header, i) => (
+                    <th
+                      scope="col"
+                      className="sticky top-0 z-10 border-b border-gray-300 bg-white bg-opacity-75 px-3 py-3.5 text-center text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:table-cell"
+                      key={`header_${i}`}
+                    >
+                      {header}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                {prayerTimes.map((prayerTime, prayerTimeIdx) => (
-                  <tr key={prayerTimeIdx}>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {prayerTime.day_of_month} {prayerTime.month_label}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.fajr.start, ["HH:mm"]).format(
-                        "h:mm a",
-                      )}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.fajr.congregation_start, [
-                        "HH:mm",
-                      ]).format("h:mm a")}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.sunrise_start, ["HH:mm"]).format(
-                        "h:mm a",
-                      )}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.zuhr.start, ["HH:mm"]).format(
-                        "h:mm a",
-                      )}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.zuhr.congregation_start, [
-                        "HH:mm",
-                      ]).format("h:mm a")}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
+                {prayerTimes.map((prayerTime, prayerTimeIdx) => {
+                  const times = [
+                    moment(prayerTime.fajr.start, ["HH:mm"]).format("h:mm a"),
+                    moment(prayerTime.fajr.congregation_start, [
+                      "HH:mm",
+                    ]).format("h:mm a"),
+
+                    moment(prayerTime.sunrise_start, ["HH:mm"]).format(
+                      "h:mm a",
+                    ),
+
+                    moment(prayerTime.zuhr.start, ["HH:mm"]).format("h:mm a"),
+                    moment(prayerTime.zuhr.congregation_start, [
+                      "HH:mm",
+                    ]).format("h:mm a"),
+
+                    <>
                       <p>
                         {moment(prayerTime.asr.start, ["HH:mm"]).format(
                           "h:mm a",
@@ -194,69 +91,81 @@ export default function Calendar({
                           "HH:mm",
                         ]).format("h:mm a")}
                       </p>
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.asr.congregation_start, [
-                        "HH:mm",
-                      ]).format("h:mm a")}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.maghrib.start, ["HH:mm"]).format(
-                        "h:mm a",
-                      )}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.maghrib.congregation_start, [
-                        "HH:mm",
-                      ]).format("h:mm a")}{" "}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.isha.start, ["HH:mm"]).format(
-                        "h:mm a",
-                      )}
-                    </td>
-                    <td
-                      className={classNames(
-                        prayerTimeIdx !== prayerTimes.length - 1
-                          ? "border-b border-gray-200"
-                          : "",
-                        "whitespace-nowrap p-2 text-center text-sm font-medium text-gray-900",
-                      )}
-                    >
-                      {moment(prayerTime.isha.congregation_start, [
-                        "HH:mm",
-                      ]).format("h:mm a")}
-                    </td>
-                  </tr>
-                ))}
+                    </>,
+                    moment(prayerTime.asr.congregation_start, ["HH:mm"]).format(
+                      "h:mm a",
+                    ),
+
+                    moment(prayerTime.maghrib.start, ["HH:mm"]).format(
+                      "h:mm a",
+                    ),
+                    moment(prayerTime.maghrib.congregation_start, [
+                      "HH:mm",
+                    ]).format("h:mm a"),
+
+                    moment(prayerTime.isha.start, ["HH:mm"]).format("h:mm a"),
+                    moment(prayerTime.isha.congregation_start, [
+                      "HH:mm",
+                    ]).format("h:mm a"),
+                  ]
+
+                  return (
+                    <>
+                      {prayerTime.day_of_month === "1" ? (
+                        <tr
+                          className="border-t border-gray-200"
+                          key={`month_${prayerTime.month_label}`}
+                        >
+                          <th
+                            colSpan={12}
+                            scope="colgroup"
+                            className="bg-mosqueGreen py-2 pl-4 text-left text-sm font-semibold text-white"
+                          >
+                            {prayerTime.month_label}
+                          </th>
+                        </tr>
+                      ) : null}
+                      <tr
+                        key={`prayerTime_${prayerTime.day_of_month}_${prayerTime.month_label}`}
+                        className={`${
+                          `${prayerTime.day_of_month} ${prayerTime.month_label}` ===
+                          today
+                            ? `!bg-mosqueGreen-highlight text-white`
+                            : "text-gray-900"
+                        }`}
+                        id={`${prayerTime.day_of_month}_${prayerTime.month_label}`}
+                      >
+                        <td
+                          className={classNames(
+                            prayerTimeIdx !== prayerTimes.length - 1
+                              ? "border-b border-gray-200"
+                              : "",
+                            "whitespace-nowrap pl-4 text-left text-sm font-medium",
+                          )}
+                        >
+                          <a
+                            href={`#${prayerTime.day_of_month}_${prayerTime.month_label}`}
+                          >
+                            {prayerTime.day_of_month} {prayerTime.month_label}
+                          </a>
+                        </td>
+                        {times.map((columnData, i) => (
+                          <td
+                            className={classNames(
+                              prayerTimeIdx !== prayerTimes.length - 1
+                                ? "border-b border-gray-200"
+                                : "",
+                              "whitespace-nowrap p-2 text-center text-sm font-medium",
+                            )}
+                            key={`prayerTime_${prayerTime.day_of_month}_${prayerTime.month_label}_${i}`}
+                          >
+                            {columnData}
+                          </td>
+                        ))}
+                      </tr>
+                    </>
+                  )
+                })}
               </tbody>
             </table>
           </div>
