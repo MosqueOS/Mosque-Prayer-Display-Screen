@@ -3,17 +3,15 @@ import { Inter } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export async function generateMetadata() {
-  return {
-    title: {
-      template: "% | MosqueScreen Project by MosqueOS",
-      default: "MosqueScreen Project by MosqueOS",
-    },
-    description: {
-      template: "% | MosqueScreen Project by MosqueOS",
-      default: "MosqueScreen Project by MosqueOS",
-    },
-  }
+export const metadata = {
+  title: {
+    template: "% | MosqueScreen Project by MosqueOS",
+    default: "MosqueScreen Project by MosqueOS",
+  },
+  description: {
+    template: "% | MosqueScreen Project by MosqueOS",
+    default: "MosqueScreen Project by MosqueOS",
+  },
 }
 
 export default function RootLayout({
@@ -34,7 +32,11 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#0C5A4B" />
       </head>
-      <body className={`${inter.className}`}>{children}</body>
+      <body
+        className={`${inter.className} bg-mosqueGreen min-w-full min-h-screen`}
+      >
+        {children}
+      </body>
     </html>
   )
 }

@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
 
   return {
-    title: `Prayer times for ${mosqueMetadata.name} | MosqueScreen Project by MosqueOS`,
+    title: `${mosqueMetadata.name} Prayer Times | MosqueScreen Project by MosqueOS`,
     description: `${mosqueMetadata.address} | ${mosqueMetadata.name} | MosqueScreen Project by MosqueOS`,
   }
 }
@@ -54,7 +54,7 @@ export default async function Home() {
   })
 
   return (
-    <div className="bg-mosqueGreen min-w-full min-h-screen">
+    <>
       <main className="md:p-5">
         <div className="md:grid md:grid-cols-8">
           <div className="md:col-span-3">
@@ -81,6 +81,6 @@ export default async function Home() {
         <ServiceWorker />
       </main>
       <Blackout prayerTimeToday={today} />
-    </div>
+    </>
   )
 }
