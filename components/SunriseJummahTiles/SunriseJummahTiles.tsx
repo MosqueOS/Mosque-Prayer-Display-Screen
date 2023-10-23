@@ -1,7 +1,7 @@
 import { JummahTimes } from "@/types/JummahTimesType"
 import moment from "moment"
 
-export default function PrayerTimeTiles({
+export default function SunriseJummahTiles({
   sunrise,
   jummahTimes = [],
 }: {
