@@ -12,6 +12,7 @@ export interface DailyPrayerTime {
 
 export interface UpcomingPrayerTimes extends DailyPrayerTime {
   display_date: string
+  display_day_label: string
 }
 
 export interface PrayerTime {

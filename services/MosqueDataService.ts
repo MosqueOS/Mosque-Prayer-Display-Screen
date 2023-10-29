@@ -56,6 +56,7 @@ export async function getPrayerTimesForUpcomingDays(
         moment().add(index, "day").format("M"),
       )),
       display_date: moment().add(index, "day").format("ddd D MMM"),
+      display_day_label: moment().add(index, "day").format("ddd"),
     }
 
     data.push(times)
