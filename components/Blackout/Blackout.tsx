@@ -22,10 +22,8 @@ export default function Blackout({
 
   return (
     <div className="hidden md:block">
-      {blackout ? (
-        <div className="fixed inset-0 bg-black bg-opacity-100 transition-opacity">
-          <Clock darkMode={true} />
-        </div>
+      {true ? (
+        <div className="fixed inset-0 bg-black bg-opacity-80 transition-opacity"></div>
       ) : null}
     </div>
   )
