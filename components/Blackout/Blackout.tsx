@@ -22,7 +22,7 @@ export default function Blackout({
 
   return (
     <div className="hidden md:block">
-      {true ? (
+      {blackout ? (
         <div className="fixed inset-0 bg-black bg-opacity-80 transition-opacity"></div>
       ) : null}
     </div>
