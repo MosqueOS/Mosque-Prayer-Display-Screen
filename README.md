@@ -4,13 +4,15 @@
 
 In the Name of Allah the Merciful, the Compassionate.
 
-This project has been open sourced as a form of sadaqah jariyah - may Allah reward every single contribution, technical, non-technical and those who share with others.
+This project has been open-sourced as a form of sadaqah jariyah - may Allah reward every single contribution, technical, non-technical and those who share with others.
 
 ## Introduction
 
 This application allows mosques to run a prayer display screen for the worshipers and also an offline progressive web app that runs on any modern web browser.
 
-This version of the application superseeds the [original version](https://github.com/Mosque-Screens/Mosque-Screen) which was created in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
+This version of the application supersedes the [original version](https://github.com/Mosque-Screens/Mosque-Screen) which was created in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
+
+The commentary on why we built this version, can be found in the following blog: [https://medium.com/mosque/design-concept-direction-for-mosque-screens-51c4f9bb82](https://medium.com/mosque/design-concept-direction-for-mosque-screens-51c4f9bb82).
 
 The original contributors of this project can be found [here](https://github.com/Mosque-Screens/Mosque-Screen#contributors-wall-of-fame).
 
@@ -18,10 +20,10 @@ A special thanks should be given to the [UK Government Digital Service](https://
 
 ## Features
 
-To keep a track of features implemented and in the pipeline, please have a look at our project board:
+To keep track of features implemented and in the pipeline, please have a look at our project board:
 https://github.com/orgs/MosqueOS/projects/1/views/1
 
-If you would like to request a new feature, please raise an issue on this repo with a description of what you want.
+If you want to request a new feature, please raise an issue on this repo with a description of what you want.
 
 ## Demo
 
@@ -47,11 +49,11 @@ All of the code sits here:
 
 ## How to get set up as a Mosque
 
-### Prerequsites
+### Prerequisites
 
 - Google Account
 
-### Step 1: Make a copy of prayer times spreadsheet
+### Step 1: Make a copy of the prayer times spreadsheet
 
 Go to the following link and make a copy of the spreadsheet:
 [https://docs.google.com/spreadsheets/d/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg/copy](https://docs.google.com/spreadsheets/d/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg/copy).
@@ -66,13 +68,13 @@ This allows our API to access your spreadsheet and read your data.
 
 To generate the API endpoint, you need to extract the spreadsheet ID from your spreadsheet link.
 
-For example, if your spreadsheet url is:
+For example, if your spreadsheet URL is:
 
 ```
 https://docs.google.com/spreadsheets/d/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg/edit
 ```
 
-You ID would be:
+Your ID would be:
 
 ```
 1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg
@@ -84,7 +86,7 @@ You then add this ID to the following URL, like this:
 https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg
 ```
 
-You can use the following tool to automatically generate you an API endpoint:
+You can use the following tool to automatically generate an API endpoint:
 https://codepen.io/DilwoarH/full/mdvOexr
 
 Note: You don't need to use our API endpoint, you can generate your own endpoint but please make sure it has all the required properties.
