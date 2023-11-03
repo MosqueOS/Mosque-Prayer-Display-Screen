@@ -87,7 +87,7 @@ If you want to update your domain, you can do so by following the Vercel documen
 |KEY|VALUE|DEFAULT|DESCRIPTION|
 |-|-|-|-|
 |MOSQUE_API_ENDPOINT|https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg|REQUIRED - NO DEFAULT|Data from Mosque API|
-|BLACKOUT_PERIOD|13|13 minutes|How long your mosque screen dims / blacksout during congregation prayer|
+|BLACKOUT_PERIOD|13|13 minutes|How long your mosque screen dims / blacks out during congregation prayer|
 |UPCOMING_PRAYER_DAY|3|3 upcoming days shown in slider|How many upcoming days it shows in the sliding section|
 |SLIDE_TRANSITION_TIME|7|7 seconds|How long each slide shows for in the sliding section|
 
@@ -105,8 +105,38 @@ npm install
 npm run dev
 ```
 
+## Raspberry Pi Setup
+
+Raspberry Pi (RPI) is an easy way to get the screen running, the screen doesn't need too much power - a lightweight computer like an RPI is enough.
+
+You can buy one from the official suppliers: https://www.raspberrypi.com/products/
+
+We recommend you buy a case with a fan or some heat-cooling solution - the screen will run all day so it's good to have a good cooling solution.
+
+### RPI set up steps
+
+0. Install [Raspberry Pi OS](https://www.raspberrypi.com/software/) on the SD Card
+1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium) - **Do this step only if you do not have Chromium**
+2. Open Terminal
+3. `cd .config`
+4. `sudo mkdir -p lxsession/LXDE-pi`
+5. `sudo nano lxsession/LXDE-pi/autostart`
+6. Add the following line at the end of the file:
+
+```sh
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+point-rpi
+@chromium-browser --noerrdialogs --noerrors --disable-session-crashed-bubble --disable-features=InfiniteSessionRestore --disable-infobars --start-fullscreen --start-maximized --app=https://mosque-prayer-display-screen.vercel.app
+```
+
+(not to replace the `--app=https://mosque-prayer-display-screen.vercel.app` with your URL)
+
+7. `sudo reboot`
+8. Once it reboots, it should start with start-up to your screen automatically.
+
 ## Still need help?
 
-We don't provide any official free support, you can join our discord channel on:
+We don't provide any official free support, you can join our discord channel at:
 
 If you would like paid support, you can contact us here for pricing: [mosque.screens786@gmail.com](mailto:mosque.screens786@gmail.com).
