@@ -16,6 +16,14 @@ The original contributors of this project can be found [here](https://github.com
 
 A special thanks should be given to the [UK Government Digital Service](https://www.gov.uk/government/organisations/government-digital-service) who provided voluntary days which allowed the original project to come to life.
 
+## Demo
+
+You can see a working demo here:
+[https://mosque-prayer-display-screen.vercel.app/](https://mosque-prayer-display-screen.vercel.app/)
+
+All of the code sits here:
+[https://github.com/MosqueOS/Mosque-Prayer-Display-Screen](https://github.com/MosqueOS/Mosque-Prayer-Display-Screen)
+
 ## Screenshots
 
 ### Mosque views
