@@ -166,6 +166,6 @@ point-rpi
 
 ## Still need help?
 
-We don't provide any official free support, you can join our discord channel at:
+We don't provide any free support, you can join our discord channel to get help from the community using the following invite link: [https://discord.gg/CG7frj2](https://discord.gg/CG7frj2).
 
 If you would like paid support, you can contact us here for pricing: [mosque.screens786@gmail.com](mailto:mosque.screens786@gmail.com).
