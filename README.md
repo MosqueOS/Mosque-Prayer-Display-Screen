@@ -16,6 +16,20 @@ The original contributors of this project can be found [here](https://github.com
 
 A special thanks should be given to the [UK Government Digital Service](https://www.gov.uk/government/organisations/government-digital-service) who provided voluntary days which allowed the original project to come to life.
 
+## Screenshots
+
+### Mosque views
+
+<img src="./public/demo-mosque-view-1.png" />
+
+<img src="./public/demo-mosque-view-2.png" />
+
+
+### Mobile app
+
+<img src="./public/demo-mobile-view.png" width="500px" />
+
+
 ## How to get set up as a Mosque
 
 ### Prerequsites
