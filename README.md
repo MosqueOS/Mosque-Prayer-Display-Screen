@@ -161,7 +161,7 @@ point-rpi
 @chromium-browser --noerrdialogs --noerrors --disable-session-crashed-bubble --disable-features=InfiniteSessionRestore --disable-infobars --start-fullscreen --start-maximized --app=https://mosque-prayer-display-screen.vercel.app
 ```
 
-(not to replace the `--app=https://mosque-prayer-display-screen.vercel.app` with your URL)
+(make sure to replace the `--app=https://mosque-prayer-display-screen.vercel.app` with your URL)
 
 7. `sudo reboot`
 8. Once it reboots, it should start with start-up to your screen automatically.
