@@ -1,34 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mosque Prayer Display Screen App
 
-## Getting Started
+'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
 
-First, run the development server:
+In the Name of Allah the Merciful, the Compassionate.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+This project has been open sourced as a form of sadaqah jariyah - may Allah reward every single contribution, technical, non-technical and those who share with others.
+
+## Introduction
+
+This application allows mosques to run a prayer display screen for the worshipers and also an offline progressive web app that runs on any modern web browser.
+
+This version of the application superseeds the [original version](https://github.com/Mosque-Screens/Mosque-Screen) which was created in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
+
+The original contributors of this project can be found [here](https://github.com/Mosque-Screens/Mosque-Screen#contributors-wall-of-fame).
+
+A special thanks should be given to the [UK Government Digital Service](https://www.gov.uk/government/organisations/government-digital-service) who provided voluntary days which allowed the original project to come to life.
+
+## How to get set up as a Mosque
+
+### Prerequsites
+
+- Google Account
+
+### Step 1: Make a copy of prayer times spreadsheet
+
+Go to the following link and make a copy of the spreadsheet:
+[https://docs.google.com/spreadsheets/d/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg/copy](https://docs.google.com/spreadsheets/d/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg/copy).
+
+### Step 2: Share "viewer" access to the spreadsheet with our Google Account
+
+Click on the share button and add `mosque.screens786@gmail.com` as a viewer. We don't need any write access, so please do not give us this.
+
+This allows our API to access your spreadsheet and read your data.
+
+### Step 3: Generate API Endpoint
+
+To generate the API endpoint, you need to extract the spreadsheet ID from your spreadsheet link.
+
+For example, if your spreadsheet url is:
+
+```
+https://docs.google.com/spreadsheets/d/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg/edit
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You ID would be:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You then add this ID to the following URL, like this:
 
-## Learn More
+```
+https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg
+```
 
-To learn more about Next.js, take a look at the following resources:
+You can use the following tool to automatically generate you an API endpoint:
+https://codepen.io/DilwoarH/full/mdvOexr
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Note: You don't need to use our API endpoint, you can generate your own endpoint but please make sure it has all the required properties.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Step 4: Deploy your app
 
-## Deploy on Vercel
+We currently use Vercel (we found others not to work as well).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Click on the following button:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMosqueOS%2FMosque-Prayer-Display-Screen&env=MOSQUE_API_ENDPOINT&envDescription=The%20Mosque%20API%20Key%20can%20be%20generated%20by%20following%20the%20README%20documents&envLink=https%3A%2F%2Fgithub.com%2FMosqueOS%2FMosque-Prayer-Display-Screen&project-name=mosque-prayer-display-screen&repository-name=Mosque-Prayer-Display-Screen)
+
+### Step 5: Test your display
+
+Once your app has deployed, visit the URL and test your screen.
+Make sure it works on the TV you want to use for the mosque. Our app is designed for 1080p Full HD TV screens.
+
+### Optional things you might want to do
+
+#### Custom domain
+
+You can set up custom domains like: prayertime.mymosque.com
+
+If you want to update your domain, you can do so by following the Vercel documentation:
+[https://vercel.com/docs/projects/domains/add-a-domain](https://vercel.com/docs/projects/domains/add-a-domain)
+
+#### Environment variables
+
+|KEY|VALUE|DEFAULT|DESCRIPTION|
+|-|-|-|-|
+|MOSQUE_API_ENDPOINT|https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg|REQUIRED - NO DEFAULT|Data from Mosque API|
+|BLACKOUT_PERIOD|13|13 minutes|How long your mosque screen dims / blacksout during congregation prayer|
+|UPCOMING_PRAYER_DAY|3|3 upcoming days shown in slider|How many upcoming days it shows in the sliding section|
+|SLIDE_TRANSITION_TIME|7|7 seconds|How long each slide shows for in the sliding section|
+
+## Dev set up
+
+```sh
+cp .env.local.example .env.local
+```
+
+```sh
+npm install
+```
+
+```sh
+npm run dev
+```
+
+## Still need help?
+
+We don't provide any official free support, you can join our discord channel on:
+
+If you would like paid support, you can contact us here for pricing: [mosque.screens786@gmail.com](mailto:mosque.screens786@gmail.com).
