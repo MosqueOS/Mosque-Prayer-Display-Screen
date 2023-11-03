@@ -16,6 +16,13 @@ The original contributors of this project can be found [here](https://github.com
 
 A special thanks should be given to the [UK Government Digital Service](https://www.gov.uk/government/organisations/government-digital-service) who provided voluntary days which allowed the original project to come to life.
 
+## Features
+
+To keep a track of features implemented and in the pipeline, please have a look at our project board:
+https://github.com/orgs/MosqueOS/projects/1/views/1
+
+If you would like to request a new feature, please raise an issue on this repo with a description of what you want.
+
 ## Demo
 
 You can see a working demo here:
