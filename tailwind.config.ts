@@ -23,8 +23,8 @@ const config: Config = {
       colors: {
         mosqueThemeColor: {
           highlight: "#006994",
-          DEFAULT: "#3f3f3f",
-          dark: "#202020",
+          DEFAULT: "#202020",
+          dark: "#111111",
         },
       },
     },
