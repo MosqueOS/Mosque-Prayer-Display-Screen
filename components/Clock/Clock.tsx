@@ -23,7 +23,7 @@ export default function Clock({ darkMode = false }: { darkMode?: boolean }) {
     >
       <time
         className={`text-5xl md:text-8xl font-bold ${
-          !darkMode ? "text-mosqueGreen" : "text-gray-500"
+          !darkMode ? "text-mosqueThemeColor" : "text-gray-500"
         }`}
       >
         {time}

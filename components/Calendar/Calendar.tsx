@@ -122,7 +122,7 @@ export default function Calendar({
                           <th
                             colSpan={12}
                             scope="colgroup"
-                            className="bg-mosqueGreen py-2 pl-4 text-left text-sm font-semibold text-white"
+                            className="bg-mosqueThemeColor py-2 pl-4 text-left text-sm font-semibold text-white"
                           >
                             {prayerTime.month_label}
                           </th>
@@ -133,7 +133,7 @@ export default function Calendar({
                         className={`${
                           `${prayerTime.day_of_month} ${prayerTime.month_label}` ===
                           today
-                            ? `!bg-mosqueGreen-highlight text-white`
+                            ? `!bg-mosqueThemeColor-highlight text-white`
                             : "text-gray-900"
                         }`}
                         id={`${prayerTime.day_of_month}_${prayerTime.month_label}`}

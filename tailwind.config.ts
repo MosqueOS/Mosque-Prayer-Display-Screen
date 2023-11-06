@@ -21,10 +21,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        mosqueGreen: {
-          highlight: "#10b981",
-          DEFAULT: "#0F715D",
-          dark: "#0C5A4B",
+        mosqueThemeColor: {
+          highlight: "#006994",
+          DEFAULT: "#3f3f3f",
+          dark: "#202020",
         },
       },
     },
