@@ -5,10 +5,22 @@ import {
 import { JummahTimes } from "@/types/JummahTimesType"
 import { MosqueMetadataType, MosqueData } from "@/types/MosqueDataType"
 import { find } from "lodash"
-import moment from "moment"
+import moment from "moment-timezone"
 
 const MOSQUE_API_ENDPOINT = process.env.MOSQUE_API_ENDPOINT ?? ""
 const DAY_FOR_UPCOMING = parseInt(process.env?.UPCOMING_PRAYER_DAY ?? "3")
+const timeZone = process.env.TIMEZONE ?? ""
+
+// set prayer time calculations to mosque local timezone
+// needs to be IANA TZ identifier
+// this is just needed in server side components.
+// display device should already be in local timezone
+if ( timeZone && !!moment.tz.zone(timeZone)) {
+  moment.tz.setDefault(timeZone)
+} else {
+  console.warn("Invalid timezone identifier")
+}
+
 
 export async function getMosqueData(): Promise<MosqueData> {
   const response = await fetch(MOSQUE_API_ENDPOINT, {
