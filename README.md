@@ -115,12 +115,13 @@ If you want to update your domain, you can do so by following the Vercel documen
 
 #### Environment variables
 
-|KEY|VALUE|DEFAULT|DESCRIPTION|
-|-|-|-|-|
-|MOSQUE_API_ENDPOINT|https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg|REQUIRED - NO DEFAULT|Data from Mosque API|
-|BLACKOUT_PERIOD|13|13 minutes|How long your mosque screen dims / blacks out during congregation prayer|
-|UPCOMING_PRAYER_DAY|3|3 upcoming days shown in slider|How many upcoming days it shows in the sliding section|
-|SLIDE_TRANSITION_TIME|7|7 seconds|How long each slide shows for in the sliding section|
+| KEY                   | VALUE                                                                            | DEFAULT                         | DESCRIPTION                                                                                                                                                       |
+|-----------------------|----------------------------------------------------------------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MOSQUE_API_ENDPOINT   | https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg | REQUIRED - NO DEFAULT           | Data from Mosque API                                                                                                                                              |
+| BLACKOUT_PERIOD       | 13                                                                               | 13 minutes                      | How long your mosque screen dims / blacks out during congregation prayer                                                                                          |
+| UPCOMING_PRAYER_DAY   | 3                                                                                | 3 upcoming days shown in slider | How many upcoming days it shows in the sliding section                                                                                                            |
+| SLIDE_TRANSITION_TIME | 7                                                                                | 7 seconds                       | How long each slide shows for in the sliding section                                                                                                              |
+| TIMEZONE              | Australia/Melbourne                                                              | UTC                             | Timezone for local mosque. Used in server side date calculations. Required if your location is not UTC to avoid the incorrect date's prayer times being displayed |
 
 ## Dev set up
 
