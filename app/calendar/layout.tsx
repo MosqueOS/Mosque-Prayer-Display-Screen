@@ -32,7 +32,7 @@ export default function CalendarLayout({
         />
         <meta name="theme-color" content="#0C5A4B" />
       </head>
-      <body className={`${inter.className} min-w-full min-h-screen`}>
+      <body className={`${inter.className} bg-white min-w-full min-h-screen`}>
         {children}
       </body>
     </html>
