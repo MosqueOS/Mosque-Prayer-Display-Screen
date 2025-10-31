@@ -54,7 +54,7 @@ export default async function Home() {
   })
 
   return (
-    <>
+    <div className="bg-mosqueGreen min-h-screen min-w-full">
       <main className="md:p-5">
         <div className="md:grid md:grid-cols-8">
           <div className="md:col-span-3">
@@ -81,6 +81,6 @@ export default async function Home() {
         <ServiceWorker />
       </main>
       <Blackout prayerTimeToday={today} />
-    </>
+    </div>
   )
 }
