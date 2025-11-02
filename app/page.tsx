@@ -2,7 +2,6 @@ import Blackout from "@/components/Blackout/Blackout"
 import Clock from "@/components/Clock/Clock"
 import Date from "@/components/Date/Date"
 import MosqueMetadata from "@/components/MosqueMetadata/MosqueMetadata"
-import NextPrayerDaysTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
 import Notice from "@/components/Notice/Notice"
 import SunriseJummahTiles from "@/components/SunriseJummahTiles/SunriseJummahTiles"
 import PrayerTimes from "@/components/PrayerTimes/PrayerTimes"
@@ -23,6 +22,7 @@ import type { JummahTimes } from "@/types/JummahTimesType"
 import type { MosqueMetadataType } from "@/types/MosqueDataType"
 import type { Metadata } from "next"
 import UpcomingPrayerDayTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
+import "./prayer-times.css"
 
 export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
@@ -54,7 +54,7 @@ export default async function Home() {
   })
 
   return (
-    <>
+    <div className="bg-mosqueGreen min-h-screen min-w-full">
       <main className="md:p-5">
         <div className="md:grid md:grid-cols-8">
           <div className="md:col-span-3">
@@ -81,6 +81,6 @@ export default async function Home() {
         <ServiceWorker />
       </main>
       <Blackout prayerTimeToday={today} />
-    </>
+    </div>
   )
 }
