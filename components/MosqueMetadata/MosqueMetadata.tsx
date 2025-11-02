@@ -6,7 +6,7 @@ export default function MosqueMetadata({
   metadata: MosqueMetadataType
 }) {
   return (
-    <div className="md:flex text-white text-center md:text-left">
+    <div className="md:flex text-mosqueBrand-onPrimary text-center md:text-left">
       <div className="mr-4 flex-shrink-0 self-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

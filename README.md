@@ -121,6 +121,11 @@ If you want to update your domain, you can do so by following the Vercel documen
 |BLACKOUT_PERIOD|13|13 minutes|How long your mosque screen dims / blacks out during congregation prayer|
 |UPCOMING_PRAYER_DAY|3|3 upcoming days shown in slider|How many upcoming days it shows in the sliding section|
 |SLIDE_TRANSITION_TIME|7|7 seconds|How long each slide shows for in the sliding section|
+|THEME_COLOR_PRIMARY|#0F715D|#0F715D|The primary color to be used for the background of the screen|
+|THEME_COLOR_PRIMARY_ALT|#0C5A4B|#0C5A4B|The primary alternative color to be used for the containers/cards on the screen|
+|THEME_COLOR_ON_PRIMARY|#FFFFFF|#FFFFFF|The text color to be used when the background color is primary|
+|THEME_COLOR_ON_PRIMARY_ALT|#FFFFFF|#FFFFFF|The text color to be used when the background color is primary alternative|
+|THEME_COLOR_HIGHLIGHT|#10b981|#10b981|The color used to highlight upcoming prayer|
 
 ## Dev set up
 
