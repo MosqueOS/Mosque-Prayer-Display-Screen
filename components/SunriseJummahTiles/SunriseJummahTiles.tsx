@@ -14,7 +14,7 @@ export default function SunriseJummahTiles({
         jummahTimes.length + 1
       } text-center gap-0 md:gap-3`}
     >
-      <div className="bg-mosqueGreen-dark text-white p-4 lg:p-6 lg:col-auto">
+      <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
         <dt className="text-sm lg:text-2xl font-medium">Sunrise</dt>
         <dd className="mt-1 text-xl lg:text-5xl font-bold tracking-tight">
           {moment(sunrise, ["HH:mm"]).format("h:mm")}
@@ -23,7 +23,7 @@ export default function SunriseJummahTiles({
 
       {jummahTimes.map((jummahTime, index) => (
         <div
-          className="bg-mosqueGreen-dark text-white p-4 lg:p-6 lg:col-auto"
+          className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto"
           key={index}
         >
           <dt className="text-sm lg:text-2xl font-medium">
