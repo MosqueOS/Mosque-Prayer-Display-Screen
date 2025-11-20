@@ -3,7 +3,7 @@ import { MosqueMetadataType } from "@/types/MosqueDataType"
 import { Metadata } from "next"
 import AdminPage from '@/components/Admin/AdminPage'
 import SessionProviderWrapper from '@/app/admin/SessionProviderWrapper'
-import { getSession } from "@/app/auth"
+import { getSession, isAdminInterfaceEnabled } from '@/app/auth'
 import { redirect } from 'next/navigation'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -27,6 +27,23 @@ export default async function AdminServerPage() {
 }
 
 async function AdminPageWrapper() {
+  const isAdminEnabled = isAdminInterfaceEnabled()
+
+  if (!isAdminEnabled) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-mosqueBrand-primary px-6">
+        <div className="text-center text-mosqueBrand-onPrimary">
+          <div className="text-4xl mb-3">⚠️</div>
+          <h1 className="text-2xl font-semibold mb-2">Admin Interface Disabled</h1>
+          <p className="text-sm opacity-80 max-w-sm mx-auto">
+            Please contact the system administrator.
+          </p>
+        </div>
+      </div>
+
+    )
+  }
+
   const session = await getSession()
 
   if (!session)  {

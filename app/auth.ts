@@ -66,4 +66,11 @@ const authOptions: AuthOptions = {
  */
 const getSession = () => getServerSession(authOptions)
 
-export { authOptions, getSession }
+const isAdminInterfaceEnabled = () => (
+  GOOGLE_CLIENT_ID != null
+  && GOOGLE_CLIENT_SECRET != null
+  && AUTH_USERNAME != null
+  && AUTH_PASSWORD != null
+)
+
+export { authOptions, getSession, isAdminInterfaceEnabled }
