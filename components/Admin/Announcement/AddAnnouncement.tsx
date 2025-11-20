@@ -19,8 +19,12 @@ export default function AddAnnouncement({
     setIsLoading(true)
     fetch(`/api/data/announcements?no_cache=${Date.now()}`).
       then((response) => response.json()).
-      then(({ announcement }) => {
-        setCurrentAnnouncement(announcement)
+      then(({ announcement, error }) => {
+        if (error) {
+          setError(error)
+        } else {
+          setCurrentAnnouncement(announcement)
+        }
       }).
       catch((error) => {
         setError(`Error fetching announcement: ${error}`)

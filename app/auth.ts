@@ -2,18 +2,20 @@ import NextAuth, { AuthOptions, getServerSession } from "next-auth"
 import GoogleProvider from 'next-auth/providers/google'
 import CredentialsProvider from "next-auth/providers/credentials"
 
-const GOOGLE_CLIENT_ID = process.env.AUTH_GOOGLE_CLIENT_ID
-const GOOGLE_CLIENT_SECRET = process.env.AUTH_GOOGLE_CLIENT_SECRET
+const AUTH_GOOGLE_CLIENT_ID = process.env.AUTH_GOOGLE_CLIENT_ID
+const AUTH_GOOGLE_CLIENT_SECRET = process.env.AUTH_GOOGLE_CLIENT_SECRET
 const AUTH_USERNAME = process.env.AUTH_USERNAME
 const AUTH_PASSWORD = process.env.AUTH_PASSWORD
+const ADMIN_GOOGLE_SA_PRIVATE_KEY = process.env.ADMIN_GOOGLE_SA_PRIVATE_KEY
+const ADMIN_GOOGLE_SA_EMAIL = process.env.ADMIN_GOOGLE_SA_EMAIL
 
 const providers = []
 
-if (GOOGLE_CLIENT_ID && GOOGLE_CLIENT_SECRET) {
+if (AUTH_GOOGLE_CLIENT_ID && AUTH_GOOGLE_CLIENT_SECRET) {
   providers.push(
     GoogleProvider({
-      clientId: GOOGLE_CLIENT_ID!,
-      clientSecret: GOOGLE_CLIENT_SECRET!,
+      clientId: AUTH_GOOGLE_CLIENT_ID!,
+      clientSecret: AUTH_GOOGLE_CLIENT_SECRET!,
       authorization: {
         params: {
           access_type: "offline",
@@ -66,11 +68,13 @@ const authOptions: AuthOptions = {
  */
 const getSession = () => getServerSession(authOptions)
 
+/**
+ * If the user has not set the username/password or the google service account creds we should not show the admin interface.
+ * Otherwise we'll see errors for authentication
+ */
 const isAdminInterfaceEnabled = () => (
-  GOOGLE_CLIENT_ID != null
-  && GOOGLE_CLIENT_SECRET != null
-  && AUTH_USERNAME != null
-  && AUTH_PASSWORD != null
+  (ADMIN_GOOGLE_SA_EMAIL != null && ADMIN_GOOGLE_SA_PRIVATE_KEY != null)
+  || (AUTH_USERNAME != null  && AUTH_PASSWORD != null)
 )
 
 export { authOptions, getSession, isAdminInterfaceEnabled }
