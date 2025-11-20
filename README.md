@@ -150,7 +150,7 @@ GOOGLE_AUTH_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE K
 GOOGLE_AUTH_EMAIL=XXXX@XXXX-XXXX.iam.gserviceaccount.com
 ```
 
-You'll also need to set a username and password for authenticaion, these will also be stored in env vars
+You'll also need to set a username and password for authentication, these will also be stored in env vars
 
 ```
 AUTH_USERNAME=myuser 
@@ -159,7 +159,7 @@ AUTH_PASSWORD=secret
 
 ### Step 4. Share "editor" access to the spreadsheet with your new service account
 
-Click on the share button on the google sheet and enter your service account.
+Click on the share button on the Google sheet and enter your service account.
 
 You can now deploy the app and see if you can launch the admin page.
 
