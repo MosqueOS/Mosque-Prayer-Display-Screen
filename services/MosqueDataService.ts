@@ -100,7 +100,7 @@ export async function getAnnouncement(): Promise<AnnouncementData|null> {
 
   announcement.is_visible = (
     now.isSame(announcement?.date, 'day')
-    && now.isAfter(`${announcement?.date} ${announcement?.start_time}`, 'minutes')
+    && now.isSameOrAfter(`${announcement?.date} ${announcement?.start_time}`, 'minutes')
     && now.isBefore(`${announcement?.date} ${announcement?.end_time}`, 'minutes')
   )
 
