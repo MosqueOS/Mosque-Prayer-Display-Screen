@@ -33,7 +33,7 @@ export default function Announcement () {
 
           <div
             id="text-announcement"
-            className={`w-full h-[50vh] max-w-xl md:max-w-full lg:max-w-[70vw]
+            className={`w-full h-[50vh] max-w-xl md:max-w-full lg:max-w-6xl
           bg-mosqueBrand-onPrimary text-black rounded-2xl lg:rounded-4xl
           flex flex-col items-center justify-start p-4
         `}
@@ -42,8 +42,8 @@ export default function Announcement () {
               <div
                 id="car-reg-view"
                 className="flex items-center justify-center bg-yellow-400 text-black border-2 border-black rounded-2xl lg:rounded-4xl
-              p-4 px-8 font-bold tracking-wider mb-6 uppercase text-center
-              aspect-[10/3] w-full mx-10 max-h-[30vh] max-w-xl md:max-w-xl lg:max-w-3xl"
+              p-4 px-2 mx-4 font-bold tracking-wider mb-6 uppercase text-center
+              aspect-[10/3] w-full max-h-[30vh] max-w-xl md:max-w-xl lg:max-w-4xl"
               >
                 <div className="text-5xl md:text-8xl lg:text-[10rem]">
                   {nextAnnouncement.car_reg_number}

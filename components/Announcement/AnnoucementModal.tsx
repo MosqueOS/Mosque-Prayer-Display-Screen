@@ -18,7 +18,7 @@ export default function AnnouncementModal({
       role="dialog"
     >
       <div
-        className={`w-full max-w-5xl mx-4 rounded-2xl bg-white shadow-xl`}
+        className={`w-full max-w-6xl mx-4 rounded-2xl bg-white shadow-xl`}
         onClick={(e) => e.stopPropagation()} // prevent close when clicking inside
       >
         <div className="px-2 py-4 text-sm text-slate-700">
