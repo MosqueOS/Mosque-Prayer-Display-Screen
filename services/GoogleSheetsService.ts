@@ -102,7 +102,7 @@ async function sheetsUpdateMetadataValueByKey(key: string, value: string): Promi
  * The object will use the column headers as json keys.
  * @param values
  */
-function valuesToJson(values: any = []): Record<string, any>[] {
+function valuesToJson(values: any[][] = []): Record<string, any>[] {
   if (!values || values.length === 0) return [];
 
   const headers = values[0];
@@ -130,14 +130,14 @@ function prayerTimeValuesToPrayerTimesJsonSchema(values: any[][] | null = []): D
   const rows = values.slice(1);
 
   return rows.map((row) => {
-    const obj: DailyPrayerTime = {};
+    //@ts-ignore
+    const obj = any;
 
     headers.forEach((header, i) => {
       const value = row[i] ?? "";
 
       // Normal top-level keys (month, day_of_month, sunrise_start, etc.)
       if (!header.includes("_")) {
-        //@ts-ignore
         obj[header] = value;
         return;
       }
@@ -167,6 +167,6 @@ function prayerTimeValuesToPrayerTimesJsonSchema(values: any[][] | null = []): D
       obj[prayer][key] = value;
     });
 
-    return obj;
+    return obj as DailyPrayerTime;
   });
 }
