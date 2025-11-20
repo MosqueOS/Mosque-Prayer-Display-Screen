@@ -23,6 +23,7 @@ import type { MosqueMetadataType } from "@/types/MosqueDataType"
 import type { Metadata } from "next"
 import UpcomingPrayerDayTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
 import "./prayer-times.css"
+import Announcement from "@/components/Announcement/Announcement"
 
 export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
@@ -50,7 +51,7 @@ export default async function Home() {
   ]
 
   upcomingPrayerDays.forEach((times) => {
-    slides.push(<UpcomingPrayerDayTiles times={times} />)
+    slides.push(<UpcomingPrayerDayTiles times={times} key={times.display_date} />)
   })
 
   return (
@@ -80,6 +81,7 @@ export default async function Home() {
         </div>
         <ServiceWorker />
       </main>
+      <Announcement />
       <Blackout prayerTimeToday={today} />
     </div>
   )

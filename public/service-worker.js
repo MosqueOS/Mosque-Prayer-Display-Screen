@@ -27,6 +27,11 @@ const cacheClone = async (e) => {
 
 const fetchEvent = () => {
   self.addEventListener("fetch", (e) => {
+    // Only handle GET requests
+    if (e.request.method !== "GET") {
+      return;
+    }
+
     e.respondWith(
       cacheClone(e)
         .catch(() => caches.match(e.request))
