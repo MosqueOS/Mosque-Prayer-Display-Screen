@@ -157,7 +157,11 @@ AUTH_USERNAME=myuser
 AUTH_PASSWORD=secret
 ```
 
-###        
+### Step 4. Share "editor" access to the spreadsheet with your new service account
+
+Click on the share button on the google sheet and enter your service account.
+
+You can now deploy the app and see if you can launch the admin page.
 
 ## Optional things you might want to do
 
