@@ -31,7 +31,7 @@ export async function getUserSheetsClient () {
       version: 'v4',
       auth: googleAuthJwt,
     })
-  } catch (err) {
+  } catch (err: any) {
     throw new Error(`Google Service Account error: ${err.message}`)
   }
 }
@@ -76,9 +76,9 @@ async function sheetsGetMetadataValueByKey (key: string): Promise<string | null>
     })
 
     return data?.data?.values?.[0]?.[0] ?? null
-  } catch (error) {
+  } catch (error: any) {
     console.error(error)
-    throw new Error(`Google Sheets API request failed: ${error.message}`)
+    throw new Error(`Google Sheets API request failed: ${error?.message}`)
   }
 }
 
@@ -113,9 +113,9 @@ async function sheetsUpdateMetadataValueByKey (
       },
     })
 
-  } catch (error) {
+  } catch (error: any) {
     console.error(error)
-    throw new Error(`Google Sheets API request failed: ${error.message}`)
+    throw new Error(`Google Sheets API request failed: ${error?.message}`)
   }
 
 }
