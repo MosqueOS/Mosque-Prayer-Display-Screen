@@ -157,7 +157,7 @@ AUTH_USERNAME=myuser
 AUTH_PASSWORD=secret
 ```
 
-###       
+###        
 
 ## Optional things you might want to do
 
@@ -170,23 +170,23 @@ If you want to update your domain, you can do so by following the Vercel documen
 
 #### Environment variables
 
-| KEY                        | VALUE                                                                            | DEFAULT                         | DESCRIPTION                                                                     |
-|----------------------------|----------------------------------------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------|
-| MOSQUE_API_ENDPOINT        | https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg | REQUIRED - NO DEFAULT           | Data from Mosque API                                                            |
-| BLACKOUT_PERIOD            | 13                                                                               | 13 minutes                      | How long your mosque screen dims / blacks out during congregation prayer        |
-| UPCOMING_PRAYER_DAY        | 3                                                                                | 3 upcoming days shown in slider | How many upcoming days it shows in the sliding section                          |
-| SLIDE_TRANSITION_TIME      | 7                                                                                | 7 seconds                       | How long each slide shows for in the sliding section                            |
-| THEME_COLOR_PRIMARY        | #0F715D                                                                          | #0F715D                         | The primary color to be used for the background of the screen                   |
-| THEME_COLOR_PRIMARY_ALT    | #0C5A4B                                                                          | #0C5A4B                         | The primary alternative color to be used for the containers/cards on the screen |
-| THEME_COLOR_ON_PRIMARY     | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary                  |
-| THEME_COLOR_ON_PRIMARY_ALT | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary alternative      |
-| THEME_COLOR_HIGHLIGHT      | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
-| THEME_COLOR_HIGHLIGHT      | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
-| GOOGLE_AUTH_PRIVATE_KEY    | "-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"               |                                 | Required as part of Admin interface to interact with your google sheets         |
-| GOOGLE_AUTH_EMAIL          | XXXX@XXXX-XXXX.iam.gserviceaccount.com                                           |                                 | Required as part of Admin interface to interact with your google sheets         |
-| AUTH_USERNAME              | myuser                                                                           | myuser                          | Required as part of Admin interface to login to admin page                      |
-| AUTH_PASSWORD              | secret                                                                           | secret                          | Required as part of Admin interface to login to admin page                      |
-| AUTH_SECRET                |                                                                                  |                                 | Required as part of Admin interface to encrypt auth JWT token                   |
+| KEY                         | VALUE                                                                            | DEFAULT                         | DESCRIPTION                                                                     |
+|-----------------------------|----------------------------------------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------|
+| MOSQUE_API_ENDPOINT         | https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg | REQUIRED - NO DEFAULT           | Data from Mosque API                                                            |
+| BLACKOUT_PERIOD             | 13                                                                               | 13 minutes                      | How long your mosque screen dims / blacks out during congregation prayer        |
+| UPCOMING_PRAYER_DAY         | 3                                                                                | 3 upcoming days shown in slider | How many upcoming days it shows in the sliding section                          |
+| SLIDE_TRANSITION_TIME       | 7                                                                                | 7 seconds                       | How long each slide shows for in the sliding section                            |
+| THEME_COLOR_PRIMARY         | #0F715D                                                                          | #0F715D                         | The primary color to be used for the background of the screen                   |
+| THEME_COLOR_PRIMARY_ALT     | #0C5A4B                                                                          | #0C5A4B                         | The primary alternative color to be used for the containers/cards on the screen |
+| THEME_COLOR_ON_PRIMARY      | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary                  |
+| THEME_COLOR_ON_PRIMARY_ALT  | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary alternative      |
+| THEME_COLOR_HIGHLIGHT       | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
+| THEME_COLOR_HIGHLIGHT       | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
+| ADMIN_GOOGLE_SA_PRIVATE_KEY | "-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"               |                                 | Required as part of Admin interface to interact with your google sheets         |
+| ADMIN_GOOGLE_SA_EMAIL       | XXXX@XXXX-XXXX.iam.gserviceaccount.com                                           |                                 | Required as part of Admin interface to interact with your google sheets         |
+| AUTH_USERNAME               | myuser                                                                           | myuser                          | Required as part of Admin interface to login to admin page                      |
+| AUTH_PASSWORD               | secret                                                                           | secret                          | Required as part of Admin interface to login to admin page                      |
+| AUTH_SECRET                 |                                                                                  |                                 | Required as part of Admin interface to encrypt auth JWT token                   |
 
 ## Dev set up
 
