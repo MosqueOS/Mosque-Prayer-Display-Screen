@@ -2,7 +2,7 @@
 
 import type { AnnouncementData } from '@/types/AnnouncementType'
 import { useEffect, useState } from 'react'
-import AnnouncementModal from '@/components/Announcement/AnnoucementModal'
+import AnnouncementModal from '@/components/Announcement/AnnouncementModal'
 
 export default function Announcement () {
   const [nextAnnouncement, setNextAnnouncement] = useState<AnnouncementData | null>(

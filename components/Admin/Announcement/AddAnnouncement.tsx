@@ -7,9 +7,7 @@ import { Modal } from '@/components/ui/Modal'
 import { AnnouncementForm } from '@/components/Admin/Announcement/AnnoucementForm'
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner'
 
-export default function AddAnnouncement({
-}: {
-}) {
+export default function AddAnnouncement() {
   const [isAddAnnouncementModalOpen, setIsAddAnnouncementModalOpen] = useState<boolean>(false)
   const [currentAnnouncement, setCurrentAnnouncement] = useState<AnnouncementData | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(false)

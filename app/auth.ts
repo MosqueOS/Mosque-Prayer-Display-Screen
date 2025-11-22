@@ -8,6 +8,7 @@ const AUTH_USERNAME = process.env.AUTH_USERNAME
 const AUTH_PASSWORD = process.env.AUTH_PASSWORD
 const ADMIN_GOOGLE_SA_PRIVATE_KEY = process.env.ADMIN_GOOGLE_SA_PRIVATE_KEY
 const ADMIN_GOOGLE_SA_EMAIL = process.env.ADMIN_GOOGLE_SA_EMAIL
+const AUTH_SECRET = process.env.AUTH_SECRET
 
 const providers = []
 
@@ -37,7 +38,7 @@ if (AUTH_USERNAME && AUTH_PASSWORD) {
         password: { label: "Password", type: "password", placeholder: "********" }
       },
       async authorize(credentials, req) {
-        if (credentials?.username == AUTH_USERNAME && credentials?.password == AUTH_PASSWORD) {
+        if (credentials?.username === AUTH_USERNAME && credentials?.password === AUTH_PASSWORD) {
           return {username: AUTH_USERNAME, id: AUTH_USERNAME}
         }
 
@@ -49,6 +50,7 @@ if (AUTH_USERNAME && AUTH_PASSWORD) {
 }
 
 const authOptions: AuthOptions = {
+  secret: AUTH_SECRET,
   providers: providers,
   callbacks: {
     async redirect({ url, baseUrl }) {

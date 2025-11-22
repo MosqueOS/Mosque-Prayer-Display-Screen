@@ -53,11 +53,15 @@ export function AnnouncementForm ({
 
     setIsLoading(true)
     createAnnouncement(annoucenment).
-      then(() => console.log('Announcement added successfully')).
+      then(() => {
+        console.log('Announcement added successfully')
+        onComplete(annoucenment)
+      }).
       catch((error) => setError(`Error creating announcement: ${error}`)).
-      finally(() => setIsLoading(false))
+      finally(() => {
+        setIsLoading(false)
+      })
 
-    onComplete && onComplete(annoucenment)
   }
 
   return (

@@ -64,7 +64,7 @@ async function sheetsGetMetadataValueByKey (key: string): Promise<string | null>
 
     if (targetIndex === -1) {
       throw new Error(
-        `Could not find 'announcement' row in sheet ${SHEET_NAME_METADATA}`)
+        `Could not find '${key}' row in sheet ${SHEET_NAME_METADATA}`)
     }
 
     // The value is in column B = column index 1
@@ -97,7 +97,7 @@ async function sheetsUpdateMetadataValueByKey (
 
     if (targetIndex === -1) {
       throw new Error(
-        `Could not find 'announcement' row in sheet ${SHEET_NAME_METADATA}`)
+        `Could not find '${key}' row in sheet ${SHEET_NAME_METADATA}`)
     }
 
     // The value is in column B = column index 1
@@ -154,16 +154,33 @@ function prayerTimeValuesToPrayerTimesJsonSchema (values: any[][] | null = []): 
 
   return rows.map((row) => {
     //@ts-ignore
-    const obj = any
+    const obj: any = { }
 
     headers.forEach((header, i) => {
       const value = row[i] ?? ''
 
       // Normal top-level keys (month, day_of_month, sunrise_start, etc.)
-      if (!header.includes('_')) {
+      if (header === 'month' ||
+        header === 'month_label' ||
+        header === 'day_of_month' ||
+        header === 'sunrise_start') {
         obj[header] = value
         return
       }
+
+
+      // fajr_start
+      // fajr_congregation_start
+      // sunrise_start
+      // zuhr_start
+      // zuhr_congregation_start
+      // asr_first_start
+      // asr_second_start
+      // asr_congregation_start
+      // maghrib_start
+      // maghrib_congregation_start
+      // isha_start
+      // isha_congregation_start
 
       // Split header by underscores
       const parts = header.split('_')

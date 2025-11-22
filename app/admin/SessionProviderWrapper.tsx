@@ -7,6 +7,6 @@ import { SessionProvider } from "next-auth/react"
  * @param children
  * @constructor
  */
-export default function SessionProviderWrapper({ children } : {children: any}) {
+export default function SessionProviderWrapper({ children } : {children: React.ReactNode}) {
   return <SessionProvider>{children}</SessionProvider>
 }

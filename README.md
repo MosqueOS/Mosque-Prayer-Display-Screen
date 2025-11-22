@@ -140,14 +140,14 @@ that you'll receive after creating the service account.
 
 In your deployment environment vars set
 
-- `GOOGLE_AUTH_PRIVATE_KEY` as the private key in your environment vars
-- `GOOGLE_AUTH_EMAIL` as the newly created service account email
+- `ADMIN_GOOGLE_SA_PRIVATE_KEY` as the private key in your environment vars
+- `ADMIN_GOOGLE_SA_EMAIL` as the newly created service account email
 
 ```
 e.g.
 
-GOOGLE_AUTH_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"
-GOOGLE_AUTH_EMAIL=XXXX@XXXX-XXXX.iam.gserviceaccount.com
+ADMIN_GOOGLE_SA_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"
+ADMIN_GOOGLE_SA_EMAIL=XXXX@XXXX-XXXX.iam.gserviceaccount.com
 ```
 
 You'll also need to set a username and password for authentication, these will also be stored in env vars
@@ -184,7 +184,6 @@ If you want to update your domain, you can do so by following the Vercel documen
 | THEME_COLOR_PRIMARY_ALT     | #0C5A4B                                                                          | #0C5A4B                         | The primary alternative color to be used for the containers/cards on the screen |
 | THEME_COLOR_ON_PRIMARY      | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary                  |
 | THEME_COLOR_ON_PRIMARY_ALT  | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary alternative      |
-| THEME_COLOR_HIGHLIGHT       | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
 | THEME_COLOR_HIGHLIGHT       | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
 | ADMIN_GOOGLE_SA_PRIVATE_KEY | "-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"               |                                 | Required as part of Admin interface to interact with your google sheets         |
 | ADMIN_GOOGLE_SA_EMAIL       | XXXX@XXXX-XXXX.iam.gserviceaccount.com                                           |                                 | Required as part of Admin interface to interact with your google sheets         |
