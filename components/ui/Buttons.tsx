@@ -1,11 +1,12 @@
 import React from "react";
 
 
-export function PrimaryButton({
+export function PrimaryButton ({
   //@ts-ignore
   onClick,
+  children,
   ...props
-}) {
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
 
   return (
     <button
@@ -19,6 +20,7 @@ export function PrimaryButton({
       onClick={onClick}
       {...props}
     >
+      {children}
     </button>
   )
 }

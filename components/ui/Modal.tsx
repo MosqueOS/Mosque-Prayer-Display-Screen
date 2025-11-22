@@ -26,6 +26,12 @@ export function Modal({
   showCloseButton = true,
   size = "md",
 }: ModalProps) {
+  const [mounted, setMounted] = React.useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, [])
+
   // Close on ESC
   useEffect(() => {
     if (!isOpen) return;
@@ -39,6 +45,7 @@ export function Modal({
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
+  if (!mounted) return null;
 
   const content = (
     <div
@@ -81,11 +88,6 @@ export function Modal({
       </div>
     </div>
   );
-
-  // Use portal so it can be used anywhere in the tree
-  if (typeof document === "undefined") {
-    return content;
-  }
 
   return createPortal(content, document.body);
 }

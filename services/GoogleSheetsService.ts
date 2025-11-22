@@ -50,7 +50,7 @@ export async function sheetsUpdateAnnouncement (announcement: AnnouncementData):
     JSON.stringify(announcement))
 }
 
-async function sheetsGetMetadataValueByKey (key: string): Promise<string | null> {
+async function sheetsGetMetadataValueByKey (key: string): Promise<string> {
   try {
     const sheets = await getUserSheetsClient()
     const metadataValueRange = await sheets.spreadsheets.values.get({

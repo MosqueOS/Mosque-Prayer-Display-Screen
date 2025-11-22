@@ -30,15 +30,14 @@ export function AnnouncementForm ({
     // Date YYYY-MM-DD
     setDate(now.toISOString().split('T')[0])
 
-    // Start time = now + 2 minutes
     const start = new Date(now.getTime())
     setStartTime(start.toISOString().slice(11, 16)) // HH:MM
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const annoucenment: AnnouncementData = {
+    const announcement: AnnouncementData = {
       date,
       start_time: startTime,
       end_time: moment(`${date} ${startTime}`).
@@ -48,19 +47,19 @@ export function AnnouncementForm ({
       car_reg_number: type === 'Car' ? carReg : null,
     }
 
-    console.log('Submitting:', annoucenment)
+    console.log('Submitting:', announcement)
     // Perform your API POST or upload here...
 
     setIsLoading(true)
-    createAnnouncement(annoucenment).
-      then(() => {
-        console.log('Announcement added successfully')
-        onComplete(annoucenment)
-      }).
-      catch((error) => setError(`Error creating announcement: ${error}`)).
-      finally(() => {
+    try {
+      await createAnnouncement(announcement)
+      console.log('Announcement added successfully')
+      onComplete(announcement)
+    } catch(error) {
+      setError(`Error creating announcement: ${error}`)
+    } finally {
         setIsLoading(false)
-      })
+    }
 
   }
 
