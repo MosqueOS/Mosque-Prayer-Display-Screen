@@ -25,13 +25,11 @@ export function AnnouncementForm ({
   // Set default date = today
   // Default start_time = 2 min from now
   useEffect(() => {
-    const now = new Date()
+    const now = moment()
 
     // Date YYYY-MM-DD
-    setDate(now.toISOString().split('T')[0])
-
-    const start = new Date(now.getTime())
-    setStartTime(start.toISOString().slice(11, 16)) // HH:MM
+    setDate(now.format('YYYY-MM-DD'))
+    setStartTime(now.format('HH:mm'))
   }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
