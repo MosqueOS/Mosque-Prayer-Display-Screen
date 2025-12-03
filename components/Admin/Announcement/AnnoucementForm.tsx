@@ -116,6 +116,7 @@ export function AnnouncementForm ({
           value={duration}
           onChange={(e) => setDuration(Number(e.target.value))}
           disabled={isLoading}
+          required
         />
       </div>
 
@@ -144,6 +145,7 @@ export function AnnouncementForm ({
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           disabled={isLoading}
+          required
         />
       </div>
 
