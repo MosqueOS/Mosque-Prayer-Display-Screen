@@ -6,14 +6,11 @@ import SessionProviderWrapper from '@/app/admin/SessionProviderWrapper'
 import { getSession, isAdminInterfaceEnabled } from '@/app/auth'
 import { redirect } from 'next/navigation'
 
-export async function generateMetadata(): Promise<Metadata> {
-  const mosqueMetadata: MosqueMetadataType = await getMetaData()
 
-  return {
-    title: `${mosqueMetadata.name} Admin | MosqueScreen Project by MosqueOS`,
-    description: `${mosqueMetadata.address} | ${mosqueMetadata.name} | MosqueScreen Project by MosqueOS`,
-  }
-}
+export const metadata = {
+  title: "Admin",
+  description: "Admin interface for MosqueScreen Project by MosqueOS",
+};
 
 export default async function AdminServerPage() {
 

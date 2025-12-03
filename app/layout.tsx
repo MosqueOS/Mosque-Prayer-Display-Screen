@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: {
-    template: "% | MosqueScreen Project by MosqueOS",
+    template: "%s | MosqueScreen Project by MosqueOS",
     default: "MosqueScreen Project by MosqueOS",
   },
   description: {
-    template: "% | MosqueScreen Project by MosqueOS",
+    template: "%s | MosqueScreen Project by MosqueOS",
     default: "MosqueScreen Project by MosqueOS",
   },
 }
