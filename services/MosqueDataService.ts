@@ -90,7 +90,8 @@ export async function getMetaData(): Promise<MosqueMetadataType> {
 }
 
 export async function getAnnouncement(): Promise<AnnouncementData|null> {
-  const announcement = await sheetsGetAnnouncement()
+  const { configuration } = await getMosqueData()
+  const announcement = configuration?.announcement ?? null
 
   if (announcement?.date == null) {
     return null
