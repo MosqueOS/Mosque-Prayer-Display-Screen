@@ -1,11 +1,17 @@
 import {
   DailyPrayerTime,
   UpcomingPrayerTimes,
-} from "@/types/DailyPrayerTimeType"
-import { JummahTimes } from "@/types/JummahTimesType"
-import { MosqueMetadataType, MosqueData } from "@/types/MosqueDataType"
-import { find } from "lodash"
-import moment from "moment"
+} from '@/types/DailyPrayerTimeType'
+import { JummahTimes } from '@/types/JummahTimesType'
+import { MosqueData, MosqueMetadataType } from '@/types/MosqueDataType'
+import { AnnouncementData } from '@/types/AnnouncementType'
+import { find } from 'lodash'
+import moment from 'moment'
+import {
+  sheetsGetAnnouncement,
+  sheetsUpdateAnnouncement,
+} from '@/services/GoogleSheetsService'
+
 
 const MOSQUE_API_ENDPOINT = process.env.MOSQUE_API_ENDPOINT ?? ""
 const DAY_FOR_UPCOMING = parseInt(process.env?.UPCOMING_PRAYER_DAY ?? "3")
@@ -81,4 +87,27 @@ export async function getMetaData(): Promise<MosqueMetadataType> {
   const { metadata } = await getMosqueData()
 
   return metadata
+}
+
+export async function getAnnouncement(): Promise<AnnouncementData|null> {
+  const { configuration } = await getMosqueData()
+  const announcement = configuration?.announcement ?? null
+
+  if (announcement?.date == null) {
+    return null
+  }
+
+  const now = moment()
+
+  announcement.is_visible = (
+    now.isSame(announcement?.date, 'day')
+    && now.isSameOrAfter(`${announcement?.date} ${announcement?.start_time}`, 'minutes')
+    && now.isBefore(`${announcement?.date} ${announcement?.end_time}`, 'minutes')
+  )
+
+  return announcement
+}
+
+export async function createAnnouncement(announcement: AnnouncementData): Promise<void> {
+  await sheetsUpdateAnnouncement(announcement)
 }
