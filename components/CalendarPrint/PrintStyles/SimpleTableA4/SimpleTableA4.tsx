@@ -5,7 +5,6 @@ import {
   CalendarPrintComponentProps,
   CalendarPrintMonthlyPrayerTimes,
 } from '@/types/CalendarPrintType'
-import { DailyPrayerTime } from '@/types/DailyPrayerTimeType'
 import { MosqueMetadataType } from '@/types/MosqueDataType'
 import moment from 'moment-hijri'
 
@@ -49,7 +48,7 @@ function CalendarPage ({ year, monthly_prayer_times, metadata }: {
       <CalendarHeader
         metadata={metadata} year={year}
         month={monthly_prayer_times.month_label}
-        monthly_prayer_times={monthly_prayer_times}/>
+      />
       <CalendarTable monthly_prayer_times={monthly_prayer_times}/>
       <CalendarFooter metadata={metadata}/>
     </div>
@@ -168,14 +167,11 @@ function CalendarRow ({ prayer_time }: {
   )
 }
 
-function CalendarHeader ({ metadata, year, month, monthly_prayer_times }: {
+function CalendarHeader ({ metadata, year, month }: {
   metadata: MosqueMetadataType,
   year: string,
   month: string,
-  monthly_prayer_times: CalendarPrintMonthlyPrayerTimes
 }) {
-  const start = moment(`${year}-${month}-01`, 'YYYY-MM-DD').locale('en')
-
   return (
     <div className="flex flex-col justify-center items-center w-full gap-2">
       <div

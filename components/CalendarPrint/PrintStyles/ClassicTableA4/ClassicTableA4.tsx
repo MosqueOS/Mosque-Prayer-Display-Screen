@@ -27,19 +27,17 @@ function CalendarPage({ year, monthly_prayer_times, metadata }: { year: string, 
       <CalendarHeader
         metadata={metadata}
         year={year}
-        month={monthly_prayer_times.month_label}
         monthly_prayer_times={monthly_prayer_times}
       />
       <CalendarTable
         monthly_prayer_times={monthly_prayer_times}
-        year={year}
       />
       <CalendarFooter metadata={metadata} />
     </div>
   )
 }
 
-function CalendarTable({ monthly_prayer_times, year }: { monthly_prayer_times: CalendarPrintMonthlyPrayerTimes, year: string }) {
+function CalendarTable({ monthly_prayer_times}: { monthly_prayer_times: CalendarPrintMonthlyPrayerTimes }) {
   if (monthly_prayer_times.prayer_times?.length === 0) {
     return (
       <p>No prayer times</p>
@@ -108,7 +106,6 @@ function CalendarRow({ prayer_time }: { prayer_time: CalendarDailyPrayerTime }) 
 
   return (
     <tr
-      key={prayer_time.date}
       className={
         Number(prayer_time.day_of_month) % 2 === 0
           ? "bg-mosqueBrand-primary/20"
@@ -133,7 +130,7 @@ function CalendarRow({ prayer_time }: { prayer_time: CalendarDailyPrayerTime }) 
   );
 }
 
-function CalendarHeader({ metadata, year, month, monthly_prayer_times }: { metadata: MosqueMetadataType, year: string, month: string, monthly_prayer_times: CalendarPrintMonthlyPrayerTimes }) {
+function CalendarHeader({ metadata, year, monthly_prayer_times }: { metadata: MosqueMetadataType, year: string, monthly_prayer_times: CalendarPrintMonthlyPrayerTimes }) {
   if (monthly_prayer_times.prayer_times?.length === 0) {
     return (
       <p>No prayer times</p>

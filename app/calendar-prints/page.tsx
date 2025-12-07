@@ -1,11 +1,12 @@
-import { CalendarPrintComponentProps, CalendarPrintMonthlyPrayerTimes } from "@/types/CalendarPrintType"
+import { CalendarPrintComponentProps } from "@/types/CalendarPrintType"
 import { calendarPrintStyles } from "@/components/CalendarPrint/PrintStyles/CalendarPrintStyles"
 import CalendarStyleSelectionCard from "@/components/CalendarPrint/CalendarStyleSelectionCard"
 
-const year = (new Date().getFullYear()+1).toString()
+const year = new Date().getFullYear()+1
+const yearStr = year.toString()
 
 const exampleData: CalendarPrintComponentProps = {
-  year: year,
+  year: yearStr,
   monthly_prayer_times: [
     {
       month: "1",
@@ -14,7 +15,7 @@ const exampleData: CalendarPrintComponentProps = {
         {
           day_of_month: "1",
           sunrise_start: "08:03",
-          date: `${year}-01-01`,
+          date: new Date(year, 1, 1),
           fajr: { start: "06:26", congregation_start: "06:56" },
           zuhr: { start: "12:09", congregation_start: "12:45" },
           asr: { start: "13:46", congregation_start: "14:45" },
@@ -26,7 +27,7 @@ const exampleData: CalendarPrintComponentProps = {
         {
           day_of_month: "2",
           sunrise_start: "08:03",
-          date: `${year}-01-02`,
+          date: new Date(year, 1, 2),
           fajr: { start: "06:26", congregation_start: "06:56" },
           zuhr: { start: "12:09", congregation_start: "12:45" },
           asr: { start: "13:46", congregation_start: "14:45" },
@@ -38,7 +39,7 @@ const exampleData: CalendarPrintComponentProps = {
         {
           day_of_month: "3",
           sunrise_start: "08:03",
-          date: `${year}-01-03`,
+          date: new Date(year, 1, 3),
           fajr: { start: "06:26", congregation_start: "06:56" },
           zuhr: { start: "12:09", congregation_start: "12:45" },
           asr: { start: "13:46", congregation_start: "14:45" },
