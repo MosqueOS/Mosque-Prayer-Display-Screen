@@ -1,7 +1,7 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { MosqueMetadataType } from "@/types/MosqueDataType"
 import moment from "moment"
-import { Fragment } from "react"
+import React, { Fragment } from "react"
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ")
@@ -38,6 +38,14 @@ export default function Calendar({
           </h1>
           <p className="mt-2 text-sm text-gray-700">{metadata.address}</p>
         </div>
+        <nav className="mt-4 sm:mt-0 flex gap-2 sm:gap-4">
+          <a
+            href="/calendar-prints"
+            className="inline-block px-4 py-2 rounded-md bg-mosqueBrand-primary text-mosqueBrand-onPrimary hover:bg-mosqueBrand-primary/90 focus:outline-none focus:bg-mosqueBrand-primary/80 transition"
+          >
+            Print Calendar
+          </a>
+        </nav>
       </div>
       <div className="mt-8 flow-root">
         <div className="-mx-4 -my-2 sm:-mx-6 lg:-mx-8">

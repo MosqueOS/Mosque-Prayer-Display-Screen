@@ -59,9 +59,11 @@ const exampleData: CalendarPrintComponentProps = {
 export default async function CalendarGeneratorPage() {
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex flex-col gap-2 bg-mosqueBrand-primary text-mosqueBrand-onPrimary p-4 pb-6">
-        <h1 className="text-3xl font-bold">Calendar Prints</h1>
-        <p className="text-sm text-gray-200">
+      <div className="flex flex-col gap-2 bg-mosqueBrand-primary text-mosqueBrand-onPrimary py-10 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl font-semibold leading-6 ">
+          Calendar Prints
+        </h1>
+        <p className="text-sm mt-2 text-gray-200">
           We provide printable calendars in various styles. <br />
           Select a calendar print style to generate a printable calendar. Calendars will be generated in PDF format and can be downloaded.
         </p>
