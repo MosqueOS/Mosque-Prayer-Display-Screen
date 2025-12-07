@@ -10,15 +10,19 @@
     "test": "jest"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "googleapis": "^105.0.0",
     "lodash": "^4.17.21",
+    "lucide-react": "^0.555.0",
     "moment": "^2.29.4",
     "moment-hijri": "^2.1.2",
     "next": "^15.4.1",
@@ -26,7 +30,9 @@
     "postcss": "^8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss": "3.3.3",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "5.2.2"
   },
   "devDependencies": {
