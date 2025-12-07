@@ -35,6 +35,7 @@ export default function CalendarStyleSelectionCard({ calendarId, data }: { calen
         <div className="flex flex-row flex-wrap gap-2 justify-center">
         {futureYears.map((year) => (
           <Button
+            key={`${calendarId}-${year}`}
           variant="default"
           className="flex-1"
           onClick={() => {

@@ -30,7 +30,7 @@ export default async function CalendarPrintPage({ params, searchParams }: { para
           <CardContent className="flex flex-col gap-1 pt-2">
 
             <span className="text-black px-4 py-2 text-sm">
-              You can print this page using your browser's print function.
+              You can print this page using your browser&apos;s print function.
             </span>
             <CalendarPrintButton />
           </CardContent>
