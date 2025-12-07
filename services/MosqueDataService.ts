@@ -11,6 +11,7 @@ import {
   sheetsGetAnnouncement,
   sheetsUpdateAnnouncement,
 } from '@/services/GoogleSheetsService'
+import { CalendarPrintMonthlyPrayerTimes } from '@/types/CalendarPrintType'
 
 
 const MOSQUE_API_ENDPOINT = process.env.MOSQUE_API_ENDPOINT ?? ""
@@ -70,6 +71,38 @@ export async function getPrayerTimesForUpcomingDays(
 
   return data
 }
+
+
+export async function getCalendarPrintMonthlyPrayerTimesForYear(year: string): Promise<CalendarPrintMonthlyPrayerTimes[]> {
+  const prayer_times = await getAllPrayerTimes()
+  const map = new Map<string, CalendarPrintMonthlyPrayerTimes>();
+
+  for (const prayer_time of prayer_times) {
+    if (!map.has(prayer_time.month)) {
+      map.set(prayer_time.month, {
+        month: prayer_time.month,
+        month_label: prayer_time.month_label,
+        prayer_times: [],
+      });
+    }
+
+    // We want to validate the date as we are generating the calendar, this will avoid leap year issues and other date validation issues
+    const date = moment(`${year}-${prayer_time.month}-${prayer_time.day_of_month}`, "YYYY-M-D", true)
+
+    if (!date.isValid()) {
+      continue
+    }
+
+    map.get(prayer_time.month)!.prayer_times.push({
+      ...prayer_time,
+      date: date.format("YYYY-MM-DD"),
+    });
+  }
+
+  return Array.from(map.values());
+}
+
+
 
 export async function getAllPrayerTimes(): Promise<DailyPrayerTime[]> {
   const { prayer_times } = await getMosqueData()
