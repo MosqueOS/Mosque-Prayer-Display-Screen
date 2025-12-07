@@ -1,4 +1,3 @@
-import { getCalendarPrintMonthlyPrayerTimesForYear } from "@/services/MosqueDataService"
 import { CalendarPrintComponentProps, CalendarPrintMonthlyPrayerTimes } from "@/types/CalendarPrintType"
 import { calendarPrintStyles } from "@/components/CalendarPrint/PrintStyles/CalendarPrintStyles"
 import CalendarStyleSelectionCard from "@/components/CalendarPrint/CalendarStyleSelectionCard"

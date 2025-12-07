@@ -9,7 +9,12 @@ export default function ClassicTableA4({ year, monthly_prayer_times, metadata }:
   return (
     <div className="w-full min-w-[750px]">
       {monthly_prayer_times.map((monthly_prayer_time) => (
-        <CalendarPage key={monthly_prayer_time.month} monthly_prayer_times={monthly_prayer_time} year={year} metadata={metadata} />
+        <CalendarPage
+          key={monthly_prayer_time.month}
+          monthly_prayer_times={monthly_prayer_time}
+          year={year}
+          metadata={metadata}
+        />
       ))}
     </div>
   )
@@ -19,16 +24,30 @@ function CalendarPage({ year, monthly_prayer_times, metadata }: { year: string, 
 
   return (
     <div className="print-page page-break a4-portrait flex flex-col justify-start w-full items-center">
-      <CalendarHeader metadata={metadata} year={year} month={monthly_prayer_times.month_label} monthly_prayer_times={monthly_prayer_times} />
-      <CalendarTable monthly_prayer_times={monthly_prayer_times} year={year} />
+      <CalendarHeader
+        metadata={metadata}
+        year={year}
+        month={monthly_prayer_times.month_label}
+        monthly_prayer_times={monthly_prayer_times}
+      />
+      <CalendarTable
+        monthly_prayer_times={monthly_prayer_times}
+        year={year}
+      />
       <CalendarFooter metadata={metadata} />
     </div>
   )
 }
 
 function CalendarTable({ monthly_prayer_times, year }: { monthly_prayer_times: CalendarPrintMonthlyPrayerTimes, year: string }) {
-  const englishDate = moment(`${year}-${monthly_prayer_times.month_label}`, "YYYY-MMMM")
-  const hijriDate = moment(`${year}-${monthly_prayer_times.month_label}`, "YYYY-MMMM").locale("en")
+  if (monthly_prayer_times.prayer_times?.length === 0) {
+    return (
+      <p>No prayer times</p>
+    )
+  }
+
+  const englishDate = moment(monthly_prayer_times.prayer_times[0].date)
+  const hijriDate = moment(monthly_prayer_times.prayer_times[0].date).locale("en")
 
   const monthFormatted = englishDate.format("MMM")
   const hijriMonthFormatted = hijriDate.format("iMMM")
@@ -75,16 +94,17 @@ function CalendarTable({ monthly_prayer_times, year }: { monthly_prayer_times: C
 
 function CalendarRow({ prayer_time }: { prayer_time: CalendarDailyPrayerTime }) {
   // Build the base Gregorian date
-  let englishDate = moment(
-    `${prayer_time.date}`,
-    "YYYY-MMMM-DD"
-  );
+  let englishDate = moment(prayer_time.date);
 
   const hijriDate = englishDate.clone().locale("en");
 
   const dayFormatted = englishDate.format("ddd");
-  const dayHijriFormatted = hijriDate.format("iD");
-  const hijriMonthFormatted = hijriDate.format("iMMMM"); // if you need it
+  let dayHijriFormatted = hijriDate.format("iD");
+  const hijriMonthFormatted = hijriDate.format("iMMM"); // if you need it
+
+  if (dayHijriFormatted === "1") {
+    dayHijriFormatted = hijriMonthFormatted
+  }
 
   return (
     <tr
@@ -114,8 +134,14 @@ function CalendarRow({ prayer_time }: { prayer_time: CalendarDailyPrayerTime }) 
 }
 
 function CalendarHeader({ metadata, year, month, monthly_prayer_times }: { metadata: MosqueMetadataType, year: string, month: string, monthly_prayer_times: CalendarPrintMonthlyPrayerTimes }) {
+  if (monthly_prayer_times.prayer_times?.length === 0) {
+    return (
+      <p>No prayer times</p>
+    )
+  }
+
   // Start of Gregorian month
-  const start = moment(`${year}-${month}-01`, "YYYY-MM-DD").locale("en")
+  const start = moment(monthly_prayer_times.prayer_times[0].date).locale("en")
   // End of Gregorian month (28 or 29 Feb as appropriate)
   const end = start.clone().endOf("month").locale("en")
 

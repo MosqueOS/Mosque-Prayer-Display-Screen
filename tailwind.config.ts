@@ -58,7 +58,7 @@ const config: Config = {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: 'hsl(var(--mosqueBrand-highlight))',
+  				DEFAULT: highlightColor,
   				foreground: 'hsl(var(--accent-foreground))'
   			},
   			destructive: {

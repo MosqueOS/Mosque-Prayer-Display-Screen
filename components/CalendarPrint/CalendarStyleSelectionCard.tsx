@@ -26,7 +26,7 @@ export default function CalendarStyleSelectionCard({ calendarId, data }: { calen
         <CardTitle>{calendarDisplayName}</CardTitle>
         <CardDescription>{calendarDescription}</CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col gap-4 w-full p-0 md:p6">
+      <CardContent className="flex flex-col gap-4 w-full p-0 md:p-6">
         <div className="w-full max-h-40 sm:max-h-60 overflow-hidden flex justify-center">
           <div className="scale-[40%] sm:scale-[60%] origin-top mt-2">
             {calendarPrintStyle && <calendarPrintStyle.component {...data} />}

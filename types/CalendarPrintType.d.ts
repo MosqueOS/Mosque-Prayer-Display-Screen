@@ -1,6 +1,7 @@
 import { DailyPrayerTime } from "./DailyPrayerTimeType"
 import { MosqueMetadataType } from "./MosqueDataType"
 
+
 export interface CalendarPrintComponentProps {
   year: string
   monthly_prayer_times: CalendarPrintMonthlyPrayerTimes[]
@@ -17,7 +18,7 @@ export interface CalendarPrintMonthlyPrayerTimes {
  * We add the date so that we can avoid date checks and manipulation in the calendar component.
  */
 export interface CalendarDailyPrayerTime extends DailyPrayerTime {
-  date: string
+  date: Date
 }
 
 export interface CalendarPrintStyle {

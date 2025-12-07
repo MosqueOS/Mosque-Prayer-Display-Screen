@@ -15,13 +15,13 @@ export const calendarPrintStyles: CalendarPrintStyle[] = [
   {
     id: "simple-table-color-a4",
     display_name: "Simple Table Color A4",
-    description: "Prayer bringing times with jamāʿah times in the same column. Only Gregorian dates are displayed.",
+    description: "Prayer beginning times with jamāʿah times in the same column. Only Gregorian dates are displayed.",
     component: SimpleTableA4,
   },
   {
     id: "simple-table-white-a4",
     display_name: "Simple Table White A4",
-    description: "Prayer bringing times with jamāʿah times in the same column. Only Gregorian dates are displayed. White background.",
+    description: "Prayer beginning times with jamāʿah times in the same column. Only Gregorian dates are displayed. White background.",
     component: SimpleTableWhiteA4,
   },
 ]

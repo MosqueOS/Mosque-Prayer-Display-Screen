@@ -1,7 +1,9 @@
 import React from "react"
 import { cn } from "@/lib/utils";
-import { CalendarPrintComponentProps, CalendarPrintMonthlyPrayerTimes } from "@/types/CalendarPrintType";
-import { DailyPrayerTime } from "@/types/DailyPrayerTimeType";
+import {
+  CalendarDailyPrayerTime,
+  CalendarPrintComponentProps, CalendarPrintMonthlyPrayerTimes,
+} from '@/types/CalendarPrintType'
 import { MosqueMetadataType } from "@/types/MosqueDataType";
 import moment from "moment-hijri"
 
@@ -17,22 +19,16 @@ export default function SimpleTableWhiteA4({ year, monthly_prayer_times, metadat
 }
 
 function CalendarPage({ year, monthly_prayer_times, metadata }: { year: string, monthly_prayer_times: CalendarPrintMonthlyPrayerTimes, metadata: MosqueMetadataType }) {
-  const month = monthly_prayer_times.month
-  const monthInt = parseInt(month)
-
   return (
     <div className="print-page page-break a4-portrait flex flex-col justify-start w-full items-center bg-white">
-      <CalendarHeader metadata={metadata} year={year} month={monthly_prayer_times.month_label} monthly_prayer_times={monthly_prayer_times} />
-      <CalendarTable monthly_prayer_times={monthly_prayer_times} year={year} />
+      <CalendarHeader metadata={metadata} year={year} month={monthly_prayer_times.month_label} />
+      <CalendarTable monthly_prayer_times={monthly_prayer_times} />
       <CalendarFooter metadata={metadata} />
     </div>
   )
 }
 
-function CalendarTable({ monthly_prayer_times, year }: { monthly_prayer_times: CalendarPrintMonthlyPrayerTimes, year: string }) {
-  const englishDate = moment(`${year}-${monthly_prayer_times.month_label}`, "YYYY-MMMM")
-  const hijriDate = moment(`${year}-${monthly_prayer_times.month_label}`, "YYYY-MMMM").locale("en")
-  
+function CalendarTable({ monthly_prayer_times }: { monthly_prayer_times: CalendarPrintMonthlyPrayerTimes }) {
   const isAsrMithl2 = monthly_prayer_times.prayer_times.some((prayer_time) => prayer_time.asr.start_secondary)
 
   const classNamesFirstHeader = "font-bold text-center align-middle font-semibold"
@@ -82,10 +78,10 @@ function CalendarTable({ monthly_prayer_times, year }: { monthly_prayer_times: C
                 </th>
               ))}
           </tr>
-    </thead>
+        </thead>
         <tbody className="bg-mosqueBrand-primary/20">
           {monthly_prayer_times.prayer_times.map((prayer_time, index) => (
-            <CalendarRow key={index} prayer_time={prayer_time} year={year} />
+            <CalendarRow key={index} prayer_time={prayer_time} />
           ))}
         </tbody>
       </table>
@@ -93,21 +89,8 @@ function CalendarTable({ monthly_prayer_times, year }: { monthly_prayer_times: C
   )
 }
 
-function CalendarRow({ prayer_time, year }: { prayer_time: DailyPrayerTime, year: string }) {
-  // Build the base Gregorian date
-  let englishDate = moment(
-    `${year}-${prayer_time.month_label}-${prayer_time.day_of_month}`,
-    "YYYY-MMMM-DD"
-  );
-
-  // If your data always has 29 Feb, fix invalid dates by offsetting from the 1st
-  if (!englishDate.isValid()) {
-    englishDate = moment(
-      `${year}-${prayer_time.month_label}-01`,
-      "YYYY-MMMM-DD"
-    ).add(Number(prayer_time.day_of_month) - 1, "day");
-  }
-
+function CalendarRow({ prayer_time }: { prayer_time: CalendarDailyPrayerTime }) {
+  const englishDate = moment(prayer_time.date)
   const dayFormatted = englishDate.format("ddd");
   const isAsrMithl2 = prayer_time.asr.start_secondary !== undefined && prayer_time.asr.start_secondary !== ""
   const isFriday = dayFormatted === "Fri"
@@ -118,7 +101,7 @@ function CalendarRow({ prayer_time, year }: { prayer_time: DailyPrayerTime, year
   return (
     <tr
       key={prayer_time.day_of_month}
-      
+
     >
       <td className={defaultClassNames}>{dayFormatted}</td>
       <td className={cn(defaultClassNames, "border-r-2 border-mosqueBrand-primary")}>{prayer_time.day_of_month}</td>
@@ -138,13 +121,10 @@ function CalendarRow({ prayer_time, year }: { prayer_time: DailyPrayerTime, year
   );
 }
 
-function CalendarHeader({ metadata, year, month, monthly_prayer_times }: { metadata: MosqueMetadataType, year: string, month: string, monthly_prayer_times: CalendarPrintMonthlyPrayerTimes }) {
-  const start = moment(`${year}-${month}-01`, "YYYY-MM-DD").locale("en")
-
-
+function CalendarHeader({ metadata, year, month}: { metadata: MosqueMetadataType, year: string, month: string }) {
   return (
     <div className="flex flex-col justify-center items-center w-full gap-2">
-      <div className="textflex flex-row justify-between items-center w-full px-2 pb-2">
+      <div className="flex flex-row justify-between items-center w-full px-2 pb-2">
         <h2 className="text-3xl uppercase font-bold text-left flex-1 whitespace-nowrap">{month} {year}</h2>
         <h2 className="text-xl font-semibold text-right">{metadata.name}</h2>
       </div>
