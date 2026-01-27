@@ -1,32 +1,13 @@
-import Blackout from "@/components/Blackout/Blackout"
-import Clock from "@/components/Clock/Clock"
-import Date from "@/components/Date/Date"
-import MosqueMetadata from "@/components/MosqueMetadata/MosqueMetadata"
-import Notice from "@/components/Notice/Notice"
-import SunriseJummahTiles from "@/components/SunriseJummahTiles/SunriseJummahTiles"
-import PrayerTimes from "@/components/PrayerTimes/PrayerTimes"
-import ServiceWorker from "@/components/ServiceWorker/ServiceWorker"
-import SlidingBanner from "@/components/SlidingBanner/SlidingBanner"
 import {
-  getJummahTimes,
   getMetaData,
-  getPrayerTimesForUpcomingDays,
-  getPrayerTimesForToday,
-  getPrayerTimesForTomorrow,
   getConfiguration,
 } from "@/services/MosqueDataService"
-import type {
-  DailyPrayerTime,
-  UpcomingPrayerTimes,
-} from "@/types/DailyPrayerTimeType"
-import type { JummahTimes } from "@/types/JummahTimesType"
 import type { MosqueMetadataType } from "@/types/MosqueDataType"
 import type { Metadata } from "next"
-import UpcomingPrayerDayTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
 import "./prayer-times.css"
-import Announcement from "@/components/Announcement/Announcement"
 import { ConfigurationJson } from "@/types/ConfigurationType"
 import { ConfigurationProvider } from "@/providers/ConfigurationProvider"
+import ScreenFactory from "@/components/Screens/ScreenFactory"
 
 export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
@@ -38,59 +19,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Home() {
-  const today: DailyPrayerTime = await getPrayerTimesForToday()
-  const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
-  const jummahTimes: JummahTimes = await getJummahTimes()
-  const mosqueMetadata: MosqueMetadataType = await getMetaData()
   const config: ConfigurationJson = await getConfiguration()
-  const upcomingPrayerDays: UpcomingPrayerTimes[] =
-    await getPrayerTimesForUpcomingDays()
-
-  let slides = [
-    <SunriseJummahTiles
-      sunrise={today.sunrise_start}
-      jummahTimes={jummahTimes}
-      key={"sunrise_jummah_times"}
-    />,
-  ]
-
-  upcomingPrayerDays.forEach((times) => {
-    slides.push(
-      <UpcomingPrayerDayTiles times={times} key={times.display_date} />,
-    )
-  })
 
   return (
     <ConfigurationProvider config={config}>
-      <div className="bg-mosqueBrand h-full w-full">
-        <main className="flex h-full w-full flex-col p-4 md:p-5 2k:p-[1.5vw]">
-          <div className="min-h-0 flex-1 md:grid md:grid-cols-8">
-            <div className="md:col-span-3 flex flex-col gap-4 2k:gap-[2vh]">
-              <div className="p-4 md:p-6 2k:p-[1.5vh]">
-                <Clock />
-              </div>
-              <div className="p-4 md:p-6 2k:p-[1.5vh]">
-                <Date />
-              </div>
-              <div className="p-4 md:p-6 2k:p-[1.5vh]">
-                <MosqueMetadata metadata={mosqueMetadata} />
-              </div>
-              <div className="hidden md:p-6 md:block 2k:p-[1.5vh]">
-                <Notice />
-              </div>
-            </div>
-            <div className="p-4 md:p-6 md:col-span-5">
-              <PrayerTimes today={today} tomorrow={tomorrow} />
-            </div>
-          </div>
-          <div className="shrink-0 p-4 md:p-6">
-            <SlidingBanner slides={slides} />
-          </div>
-          <ServiceWorker />
-        </main>
-        {config.feature.announcement.enabled && <Announcement />}
-        <Blackout prayerTimeToday={today} />
-      </div>
+      <ScreenFactory config={config} />
     </ConfigurationProvider>
   )
 }
