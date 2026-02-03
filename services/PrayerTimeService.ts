@@ -1,7 +1,7 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import moment from "moment"
 
-const blackoutPeriod = process.env.BLACKOUT_PERIOD ?? 13 // defaults to 13 minutes
+const blackoutPeriod = process.env.NEXT_PUBLIC_BLACKOUT_PERIOD ?? 13 // defaults to 13 minutes
 
 export function isBlackout(prayerTimes: DailyPrayerTime) {
   const currentTime = moment()
