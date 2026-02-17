@@ -1,10 +1,10 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
-import moment from "moment"
+import { dtLocale, dtNowLocale } from "@/lib/datetimeUtils"
 
 const blackoutPeriod = process.env.BLACKOUT_PERIOD ?? 13 // defaults to 13 minutes
 
 export function isBlackout(prayerTimes: DailyPrayerTime) {
-  const currentTime = moment()
+  const currentTime = dtNowLocale()
   const congregationTimes = [
     prayerTimes.fajr.congregation_start,
     prayerTimes.zuhr.congregation_start,
@@ -17,8 +17,8 @@ export function isBlackout(prayerTimes: DailyPrayerTime) {
 
   congregationTimes.forEach((time) => {
     if (
-      currentTime >= moment(time, ["HH:mm"]) &&
-      currentTime <= moment(time, ["HH:mm"]).add(blackoutPeriod, "m")
+      currentTime >= dtLocale(time, ["HH:mm"]) &&
+      currentTime <= dtLocale(time, ["HH:mm"]).add(blackoutPeriod, "m")
     ) {
       setBlackoutMode = true
     }
@@ -28,7 +28,7 @@ export function isBlackout(prayerTimes: DailyPrayerTime) {
 }
 
 export function getNextPrayer(today: DailyPrayerTime) {
-  const currentTime = moment()
+  const currentTime = dtNowLocale()
 
   const todaysTimes = [
     today.fajr.congregation_start,
@@ -44,7 +44,7 @@ export function getNextPrayer(today: DailyPrayerTime) {
   }
 
   todaysTimes.forEach((time, index) => {
-    if (currentTime < moment(time, ["HH:mm"]) && !nextPrayertime.today) {
+    if (currentTime < dtLocale(time, ["HH:mm"]) && !nextPrayertime.today) {
       nextPrayertime = {
         today: true,
         prayerIndex: index,

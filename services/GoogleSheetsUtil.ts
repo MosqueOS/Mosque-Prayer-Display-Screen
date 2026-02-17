@@ -1,4 +1,12 @@
 import { DailyPrayerTime } from '@/types/DailyPrayerTimeType'
+import { dtMonthNumToFullMonth } from "@/lib/datetimeUtils"
+
+const ADMIN_GOOGLE_SA_PRIVATE_KEY = process.env.ADMIN_GOOGLE_SA_PRIVATE_KEY
+const ADMIN_GOOGLE_SA_EMAIL = process.env.ADMIN_GOOGLE_SA_EMAIL
+
+export function isSheetsClientEnabled(): boolean {
+  return !(!ADMIN_GOOGLE_SA_EMAIL || !ADMIN_GOOGLE_SA_PRIVATE_KEY)
+}
 
 /**
  * Generic function to convert spreadsheet row/column data into a json list.
@@ -98,4 +106,62 @@ export function sheetsUtilFlattenedJsonToRows(json: Record<string, any>): any[][
 
   walk(json);
   return rows;
+}
+
+
+/**
+ * Converts the PrayerTimes spreadsheet values into the DailyPrayerTime json schema
+ * @param values
+ */
+export function prayerTimeValuesToPrayerTimesJsonSchema (values: any[][] | null = []): DailyPrayerTime[] {
+  if (!values || values.length === 0) return []
+
+  const headers = values[0]
+  const rows = values.slice(1)
+
+  return rows.map((row) => {
+    //@ts-ignore
+    const obj: any = { }
+
+    headers.forEach((header, i) => {
+      const value = row[i] ?? ''
+
+      // Normal top-level keys (month, day_of_month, sunrise_start, etc.)
+      if (header === 'month' ||
+        header === 'day_of_month' ||
+        header === 'sunrise_start') {
+        obj[header] = value
+        if (header === 'month') {
+          obj["month_label"] = dtMonthNumToFullMonth(value)
+        }
+        return
+      }
+
+      // Split header by underscores
+      const parts = header.split('_')
+
+      // Special case for ASR (first & second)
+      if (header.startsWith('asr_first_')) {
+        obj.asr = obj.asr || {}
+        obj.asr.start = value
+        return
+      }
+
+      if (header.startsWith('asr_second_')) {
+        obj.asr = obj.asr || {}
+        obj.asr.start_secondary = value
+        return
+      }
+
+      // Everything else fits pattern: prayer_attribute
+      const [prayer, ...rest] = parts
+
+      obj[prayer] = obj[prayer] || {}
+
+      const key = rest.join('_') // e.g. "start", "congregation_start"
+      obj[prayer][key] = value
+    })
+
+    return obj as DailyPrayerTime
+  })
 }

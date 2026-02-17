@@ -1,6 +1,8 @@
 import { MosqueMetadataType } from '@/types/MosqueDataType'
 import AddAnnouncement
   from '@/components/Admin/Announcement/AddAnnouncement'
+import EmbedTodayPrayerTimes
+  from "@/components/Admin/Embed/EmbedTodayPrayerTimes/EmbedTodayPrayerTimes"
 
 export default function AdminPage ({
   metadata,
@@ -24,8 +26,9 @@ export default function AdminPage ({
         </div>
       </div>
 
-      <div className="py-10 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="py-10 px-4 sm:px-6 lg:px-8 bg-white flex flex-row flex-wrap justify-center items-start gap-6">
         <AddAnnouncement/>
+        <EmbedTodayPrayerTimes/>
       </div>
 
     </div>

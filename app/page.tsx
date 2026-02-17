@@ -13,6 +13,7 @@ import {
   getPrayerTimesForUpcomingDays,
   getPrayerTimesForToday,
   getPrayerTimesForTomorrow,
+  getConfiguration,
 } from "@/services/MosqueDataService"
 import type {
   DailyPrayerTime,
@@ -24,6 +25,8 @@ import type { Metadata } from "next"
 import UpcomingPrayerDayTiles from "@/components/UpcomingPrayerDayTiles/UpcomingPrayerDayTiles"
 import "./prayer-times.css"
 import Announcement from "@/components/Announcement/Announcement"
+import { ConfigurationJson } from "@/types/ConfigurationType"
+import { ConfigurationProvider } from "@/providers/ConfigurationProvider"
 
 export async function generateMetadata(): Promise<Metadata> {
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
@@ -39,6 +42,7 @@ export default async function Home() {
   const tomorrow: DailyPrayerTime = await getPrayerTimesForTomorrow()
   const jummahTimes: JummahTimes = await getJummahTimes()
   const mosqueMetadata: MosqueMetadataType = await getMetaData()
+  const config: ConfigurationJson = await getConfiguration()
   const upcomingPrayerDays: UpcomingPrayerTimes[] =
     await getPrayerTimesForUpcomingDays()
 
@@ -51,38 +55,42 @@ export default async function Home() {
   ]
 
   upcomingPrayerDays.forEach((times) => {
-    slides.push(<UpcomingPrayerDayTiles times={times} key={times.display_date} />)
+    slides.push(
+      <UpcomingPrayerDayTiles times={times} key={times.display_date} />,
+    )
   })
 
   return (
-    <div className="bg-mosqueBrand min-h-screen min-w-full">
-      <main className="md:p-5">
-        <div className="md:grid md:grid-cols-8">
-          <div className="md:col-span-3">
-            <div className="p-4 md:p-6">
-              <Clock />
+    <ConfigurationProvider config={config}>
+      <div className="bg-mosqueBrand min-h-screen min-w-full">
+        <main className="md:p-5">
+          <div className="md:grid md:grid-cols-8">
+            <div className="md:col-span-3">
+              <div className="p-4 md:p-6">
+                <Clock />
+              </div>
+              <div className="p-4 md:p-6">
+                <Date />
+              </div>
+              <div className="p-4 md:p-6">
+                <MosqueMetadata metadata={mosqueMetadata} />
+              </div>
+              <div className="hidden md:p-6 md:block">
+                <Notice />
+              </div>
             </div>
-            <div className="p-4 md:p-6">
-              <Date />
-            </div>
-            <div className="p-4 md:p-6">
-              <MosqueMetadata metadata={mosqueMetadata} />
-            </div>
-            <div className="hidden md:p-6 md:block">
-              <Notice />
+            <div className="p-4 md:p-6 md:col-span-5">
+              <PrayerTimes today={today} tomorrow={tomorrow} />
             </div>
           </div>
-          <div className="p-4 md:p-6 md:col-span-5">
-            <PrayerTimes today={today} tomorrow={tomorrow} />
+          <div className="p-4 md:p-6">
+            <SlidingBanner slides={slides} />
           </div>
-        </div>
-        <div className="p-4 md:p-6">
-          <SlidingBanner slides={slides} />
-        </div>
-        <ServiceWorker />
-      </main>
-      <Announcement />
-      <Blackout prayerTimeToday={today} />
-    </div>
+          <ServiceWorker />
+        </main>
+        {config.feature.announcement.enabled && <Announcement />}
+        <Blackout prayerTimeToday={today} />
+      </div>
+    </ConfigurationProvider>
   )
 }

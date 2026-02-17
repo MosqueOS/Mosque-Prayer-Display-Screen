@@ -1,5 +1,5 @@
 import { UpcomingPrayerTimes } from "@/types/DailyPrayerTimeType"
-import moment from "moment"
+import { dtFormatTimeTo12h } from "@/lib/datetimeUtils"
 
 export default function UpcomingPrayerDayTiles({
   times,
@@ -23,7 +23,7 @@ export default function UpcomingPrayerDayTiles({
           Fajr ({times.display_day_label})
         </dt>
         <dd className="mt-2 text-xl lg:text-3xl font-bold tracking-tight">
-          {moment(times.fajr.congregation_start, ["HH:mm"]).format("h:mm")}
+          {dtFormatTimeTo12h(times.fajr.congregation_start)}
         </dd>
       </div>
       <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
@@ -31,7 +31,7 @@ export default function UpcomingPrayerDayTiles({
           Zuhr ({times.display_day_label})
         </dt>
         <dd className="mt-2 text-xl lg:text-3xl font-bold tracking-tight">
-          {moment(times.zuhr.congregation_start, ["HH:mm"]).format("h:mm")}
+          {dtFormatTimeTo12h(times.zuhr.congregation_start)}
         </dd>
       </div>
       <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
@@ -39,7 +39,7 @@ export default function UpcomingPrayerDayTiles({
           Asr ({times.display_day_label})
         </dt>
         <dd className="mt-2 text-xl lg:text-3xl font-bold tracking-tight">
-          {moment(times.asr.congregation_start, ["HH:mm"]).format("h:mm")}
+          {dtFormatTimeTo12h(times.asr.congregation_start)}
         </dd>
       </div>
       <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
@@ -47,7 +47,7 @@ export default function UpcomingPrayerDayTiles({
           Maghrib ({times.display_day_label})
         </dt>
         <dd className="mt-2 text-xl lg:text-3xl font-bold tracking-tight">
-          {moment(times.maghrib.congregation_start, ["HH:mm"]).format("h:mm")}
+          {dtFormatTimeTo12h(times.maghrib.congregation_start)}
         </dd>
       </div>
       <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
@@ -55,7 +55,7 @@ export default function UpcomingPrayerDayTiles({
           Isha ({times.display_day_label})
         </dt>
         <dd className="mt-2 text-xl lg:text-3xl font-bold tracking-tight">
-          {moment(times.isha.congregation_start, ["HH:mm"]).format("h:mm")}
+          {dtFormatTimeTo12h(times.isha.congregation_start)}
         </dd>
       </div>
     </dl>

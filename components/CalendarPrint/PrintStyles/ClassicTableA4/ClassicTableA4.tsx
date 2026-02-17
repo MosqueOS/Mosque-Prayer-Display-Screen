@@ -2,7 +2,7 @@ import React from "react"
 import { cn } from "@/lib/utils";
 import { CalendarDailyPrayerTime, CalendarPrintComponentProps, CalendarPrintMonthlyPrayerTimes } from "@/types/CalendarPrintType";
 import { MosqueMetadataType } from "@/types/MosqueDataType";
-import moment from "moment-hijri"
+import { dtHijriLocale, dtLocale } from "@/lib/datetimeUtils"
 
 export default function ClassicTableA4({ year, monthly_prayer_times, metadata }: CalendarPrintComponentProps) {
 
@@ -44,8 +44,8 @@ function CalendarTable({ monthly_prayer_times}: { monthly_prayer_times: Calendar
     )
   }
 
-  const englishDate = moment(monthly_prayer_times.prayer_times[0].date)
-  const hijriDate = moment(monthly_prayer_times.prayer_times[0].date).locale("en")
+  const englishDate = dtLocale(monthly_prayer_times.prayer_times[0].date)
+  const hijriDate = dtHijriLocale(monthly_prayer_times.prayer_times[0].date)
 
   const monthFormatted = englishDate.format("MMM")
   const hijriMonthFormatted = hijriDate.format("iMMM")
@@ -92,9 +92,8 @@ function CalendarTable({ monthly_prayer_times}: { monthly_prayer_times: Calendar
 
 function CalendarRow({ prayer_time }: { prayer_time: CalendarDailyPrayerTime }) {
   // Build the base Gregorian date
-  let englishDate = moment(prayer_time.date);
-
-  const hijriDate = englishDate.clone().locale("en");
+  let englishDate = dtLocale(prayer_time.date)
+  const hijriDate = dtHijriLocale(prayer_time.date)
 
   const dayFormatted = englishDate.format("ddd");
   let dayHijriFormatted = hijriDate.format("iD");
@@ -137,15 +136,14 @@ function CalendarHeader({ metadata, year, monthly_prayer_times }: { metadata: Mo
     )
   }
 
-  // Start of Gregorian month
-  const start = moment(monthly_prayer_times.prayer_times[0].date).locale("en")
+  const startDateHijri = dtHijriLocale(monthly_prayer_times.prayer_times[0].date)
   // End of Gregorian month (28 or 29 Feb as appropriate)
-  const end = start.clone().endOf("month").locale("en")
+  const endDateHijri = startDateHijri.clone().endOf("month").locale("en")
 
-  const hijriStartYear = start.format("iYYYY")
-  const hijriEndYear = end.format("iYYYY")
-  const hijriStartMonth = start.format("iMMMM")
-  const hijriEndMonth = end.format("iMMMM")
+  const hijriStartYear = startDateHijri.format("iYYYY")
+  const hijriEndYear = endDateHijri.format("iYYYY")
+  const hijriStartMonth = startDateHijri.format("iMMMM")
+  const hijriEndMonth = endDateHijri.format("iMMMM")
 
   let hijriMonthDisplay = hijriStartMonth
   if (hijriStartMonth !== hijriEndMonth) {

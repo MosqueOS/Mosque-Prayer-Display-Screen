@@ -1,11 +1,11 @@
 "use client"
 
-import type { AnnouncementData } from "@/types/AnnouncementType"
+import { AnnouncementData } from "@/types/AnnouncementType"
 import { useEffect, useState } from "react"
 import { PrimaryButton } from '@/components/ui/Buttons'
 import { Modal } from '@/components/ui/Modal'
 import { AnnouncementForm } from '@/components/Admin/Announcement/AnnoucementForm'
-import { LoadingSpinner } from '@/components/ui/LoadingSpinner'
+import { Spinner } from "@/components/ui/spinner"
 
 export default function AddAnnouncement() {
   const [isAddAnnouncementModalOpen, setIsAddAnnouncementModalOpen] = useState<boolean>(false)
@@ -32,22 +32,22 @@ export default function AddAnnouncement() {
 
 
   return (
-
     <>
-      <div
-        className="max-w-full rounded-xl border border-gray-200 shadow p-4 bg-white">
+      <div className="w-full rounded-xl border border-gray-200 shadow p-4 bg-white max-w-xl">
         <div className="flex items-center gap-4 mb-2">
           <h3 className="text-lg font-semibold">Announcement</h3>
-          <span className={`text-xs  text-white px-2 py-1 rounded ${currentAnnouncement?.is_visible ? 'bg-green-600' : 'bg-slate-500'}`}>
-            {currentAnnouncement?.is_visible ? 'Showing' : 'Not Showing'}
+          <span
+            className={`text-xs  text-white px-2 py-1 rounded ${currentAnnouncement?.is_visible ? "bg-green-600" : "bg-slate-500"}`}
+          >
+            {currentAnnouncement?.is_visible ? "Showing" : "Not Showing"}
           </span>
         </div>
         {isLoading ? (
-          <LoadingSpinner />
+          <Spinner className={"text-mosqueBrand-highlight"} />
         ) : error ? (
           <p className="text-red-500">{error}</p>
         ) : (
-          <AnnouncementDetails announcement={currentAnnouncement}/>
+          <AnnouncementDetails announcement={currentAnnouncement} />
         )}
 
         <PrimaryButton
@@ -58,20 +58,17 @@ export default function AddAnnouncement() {
         </PrimaryButton>
       </div>
 
-
       <Modal
         isOpen={isAddAnnouncementModalOpen}
         onClose={() => setIsAddAnnouncementModalOpen(false)}
         title={"Add Announcement"}
       >
-
         <AnnouncementForm
           onComplete={(announcement) => {
             setCurrentAnnouncement(announcement)
             setIsAddAnnouncementModalOpen(false)
           }}
         />
-
       </Modal>
     </>
   )

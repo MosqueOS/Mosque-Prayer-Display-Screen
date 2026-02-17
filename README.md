@@ -44,13 +44,30 @@ All of the code sits here:
 
 ### Mosque views
 
-<img src="./public/demo-mosque-view-1.png" />
+<img src="./public/screenshots/demo-mosque-view-1.png" />
 
-<img src="./public/demo-mosque-view-2.png" />
+<img src="./public/screenshots/demo-mosque-view-2.png" />
+
+### Hide Tomorrow Prayer Time
+
+<img src="./public/screenshots/demo-mosque-view-3.png" />
+
+### Announcements
+
+<img src="./public/screenshots/demo-mosque-announcement-car.png" />
+
+### Print Calendars
+
+<img src="./public/screenshots/demo-mosque-calendar-prints-1.png" />
+<img src="./public/screenshots/demo-mosque-calendar-prints-2.png" />
 
 ### Mobile app
 
-<img src="./public/demo-mobile-view.png" width="500px" />
+<img src="./public/screenshots/demo-mobile-view.png" width="500px" />
+
+### Admin Page
+
+<img src="./public/screenshots/demo-admin-view.png/"/>
 
 ## How to get set up as a Mosque
 
@@ -121,7 +138,7 @@ The Admin interface will allow you to manage the screen from your phone these in
 ### Prerequisites
 
 - Google Account
-- Google Cloud Project (Optional for Admin interface)
+- Google Cloud Project
 
 ### Step 1: Setup Google Cloud project
 
@@ -185,6 +202,7 @@ If you want to update your domain, you can do so by following the Vercel documen
 | THEME_COLOR_ON_PRIMARY      | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary                  |
 | THEME_COLOR_ON_PRIMARY_ALT  | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary alternative      |
 | THEME_COLOR_HIGHLIGHT       | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
+| LOCALE                      | en                                                                               | en                              | The date/time format for locale                                                 |
 | ADMIN_GOOGLE_SA_PRIVATE_KEY | "-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"               |                                 | Required as part of Admin interface to interact with your google sheets         |
 | ADMIN_GOOGLE_SA_EMAIL       | XXXX@XXXX-XXXX.iam.gserviceaccount.com                                           |                                 | Required as part of Admin interface to interact with your google sheets         |
 | AUTH_USERNAME               | myuser                                                                           | myuser                          | Required as part of Admin interface to login to admin page                      |

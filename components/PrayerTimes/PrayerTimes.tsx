@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react"
 import { getNextPrayer } from "@/services/PrayerTimeService"
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
-import moment from "moment"
+import { useConfiguration } from "@/hooks/useConfiguration"
+import { dtFormatTimeTo12h } from "@/lib/datetimeUtils"
 
 export default function PrayerTimes({
   today,
@@ -40,7 +41,9 @@ export default function PrayerTimes({
     },
   ]
 
+  const config = useConfiguration()
   const [nextPrayerTime, setNextPrayerTime] = useState(getNextPrayer(today))
+  const isTomorrowEnabled = config.feature.prayer_time_tomorrow.enabled
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -61,14 +64,15 @@ export default function PrayerTimes({
           <th className="sr-only">Prayer time</th>
           <th className="md:text-5xl">Begins</th>
           <th className="md:text-5xl">Jama&apos;ah</th>
-          <th className="md:text-5xl">Tomorrow</th>
+          {isTomorrowEnabled && <th className={"md:text-5xl"}>Tomorrow</th>}
         </tr>
       </thead>
       <tbody>
-        {PrayerTimesArray.map((prayer, index) => (
-          <tr
-            key={prayer.label}
-            className="
+        {PrayerTimesArray.map((prayer, index) => {
+          return (
+            <tr
+              key={prayer.label}
+              className="
               text-center
               [&>*]:p-4
               md:[&>*]:p-8
@@ -78,50 +82,47 @@ export default function PrayerTimes({
               [&>td:last-of-type]:border-r-0
               border border-mosqueBrand-primaryAlt border-l-0 border-r-0
               last-of-type:border-b-0"
-          >
-            <th className="text-left text-xl md:text-5xl md:text-right">
-              {prayer.label}
-            </th>
-            <td className="text-xl md:text-6xl">
-              {moment(prayer.data.start, ["HH:mm"]).format("h:mm")}
-              {prayer.data?.start_secondary ? (
-                <div className="block mt-1 md:mt-2">
-                  {moment(prayer.data.start_secondary, ["HH:mm"]).format(
-                    "h:mm",
-                  )}
-                </div>
-              ) : null}
-            </td>
-            <td className={`font-bold text-xl md:text-6xl`}>
-              <span
-                className={
-                  nextPrayerTime.today === true &&
-                  nextPrayerTime.prayerIndex === index
-                    ? "underline decoration-mosqueBrand-highlight underline-offset-8"
-                    : ""
-                }
-              >
-                {moment(prayer.data.congregation_start, ["HH:mm"]).format(
-                  "h:mm",
-                )}
-              </span>
-            </td>
-            <td className={`text-xl md:text-6xl`}>
-              <span
-                className={
-                  nextPrayerTime.today === false &&
-                  nextPrayerTime.prayerIndex === index
-                    ? "underline decoration-mosqueBrand-highlight underline-offset-8"
-                    : ""
-                }
-              >
-                {moment(prayer.tomorrow.congregation_start, ["HH:mm"]).format(
-                  "h:mm",
-                )}
-              </span>
-            </td>
-          </tr>
-        ))}
+            >
+              <th className="text-left text-xl md:text-5xl md:text-right">
+                {prayer.label}
+              </th>
+              <td className="text-xl md:text-6xl">
+                {dtFormatTimeTo12h(prayer.data.start)}
+                {prayer.data?.start_secondary ? (
+                  <div className="block mt-1 md:mt-2">
+                    {dtFormatTimeTo12h(prayer.data.start_secondary)}
+                  </div>
+                ) : null}
+              </td>
+              <td className={`font-bold text-xl md:text-6xl`}>
+                <span
+                  className={
+                    nextPrayerTime.today === true &&
+                    nextPrayerTime.prayerIndex === index
+                      ? "underline decoration-mosqueBrand-highlight underline-offset-8"
+                      : ""
+                  }
+                >
+                  {dtFormatTimeTo12h(prayer.data.congregation_start)}
+                </span>
+              </td>
+              {isTomorrowEnabled && (
+                <td className={`text-xl md:text-6xl`}>
+                  <span
+                    className={
+                      nextPrayerTime.today === false &&
+                      nextPrayerTime.prayerIndex === index
+                        ? "underline decoration-mosqueBrand-highlight underline-offset-8"
+                        : ""
+                    }
+                  >
+                    {dtFormatTimeTo12h(prayer.tomorrow.congregation_start)}
+                  </span>
+                </td>
+              )}
+            </tr>
+          )
+        })}
       </tbody>
     </table>
   )

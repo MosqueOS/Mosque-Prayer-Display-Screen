@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AnnouncementData } from '@/types/AnnouncementType'
-import moment from 'moment'
-import { LoadingSpinner } from '@/components/ui/LoadingSpinner'
 import { createAnnouncement } from '@/services/MosqueDataService'
+import { Spinner } from "@/components/ui/spinner"
+import { dtLocale, dtNowLocale } from "@/lib/datetimeUtils"
 
 interface AnnouncementFormProps {
   onComplete: (announcement: AnnouncementData) => void;
@@ -25,7 +25,7 @@ export function AnnouncementForm ({
   // Set default date = today
   // Default start_time = 2 min from now
   useEffect(() => {
-    const now = moment()
+    const now = dtNowLocale()
 
     // Date YYYY-MM-DD
     setDate(now.format('YYYY-MM-DD'))
@@ -38,20 +38,18 @@ export function AnnouncementForm ({
     const announcement: AnnouncementData = {
       date,
       start_time: startTime,
-      end_time: moment(`${date} ${startTime}`).
+      end_time: dtLocale(`${date} ${startTime}`).
         add(duration, 'minutes').
         format('HH:mm'),
       message,
-      car_reg_number: type === 'Car' ? carReg : null,
+      car_reg_number: type === 'Car' ? carReg : "",
     }
 
-    console.log('Submitting:', announcement)
     // Perform your API POST or upload here...
 
     setIsLoading(true)
     try {
       await createAnnouncement(announcement)
-      console.log('Announcement added successfully')
       onComplete(announcement)
     } catch(error) {
       setError(`Error creating announcement: ${error}`)
@@ -68,8 +66,9 @@ export function AnnouncementForm ({
     >
       {/* Type Selector */}
       <div>
-        <label className="block text-sm font-medium mb-1">Announcement
-          Type</label>
+        <label className="block text-sm font-medium mb-1">
+          Announcement Type
+        </label>
         <select
           className="w-full rounded-xl border border-slate-300 px-4 py-2 text-sm bg-slate-50 focus:ring-2 focus:ring-mosqueBrand-onPrimary focus:border-mosqueBrand-onPrimary outline-none"
           value={type}
@@ -107,8 +106,9 @@ export function AnnouncementForm ({
 
       {/* Duration */}
       <div>
-        <label className="block text-sm font-medium mb-1">Duration
-          (minutes)</label>
+        <label className="block text-sm font-medium mb-1">
+          Duration (minutes)
+        </label>
         <input
           type="number"
           min={1}
@@ -121,10 +121,11 @@ export function AnnouncementForm ({
       </div>
 
       {/* Car Reg Number (only if Car announcement) */}
-      {type === 'Car' && (
+      {type === "Car" && (
         <div>
-          <label className="block text-sm font-medium mb-1">Car Registration
-            Number</label>
+          <label className="block text-sm font-medium mb-1">
+            Car Registration Number
+          </label>
           <input
             type="text"
             placeholder=""
@@ -149,12 +150,10 @@ export function AnnouncementForm ({
         />
       </div>
 
-      {error && (
-        <p className="text-red-500">{error}</p>
-      )}
+      {error && <p className="text-red-500">{error}</p>}
 
       {isLoading ? (
-        <LoadingSpinner/>
+        <Spinner className={"text-mosqueBrand-highlight"} />
       ) : (
         <button
           type="submit"
@@ -164,8 +163,6 @@ export function AnnouncementForm ({
           Submit Announcement
         </button>
       )}
-
-
     </form>
   )
 }

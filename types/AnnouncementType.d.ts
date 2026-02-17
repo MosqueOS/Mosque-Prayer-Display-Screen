@@ -1,5 +1,5 @@
 export interface AnnouncementData {
-  date: string
+  date: string // 2026-01-01
   start_time: string
   end_time: string
   duration_minutes?: string | null

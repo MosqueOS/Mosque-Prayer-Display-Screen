@@ -1,5 +1,5 @@
 import { JummahTimes } from "@/types/JummahTimesType"
-import moment from "moment"
+import { dtFormatTimeTo12h } from "@/lib/datetimeUtils"
 
 export default function SunriseJummahTiles({
   sunrise,
@@ -17,7 +17,7 @@ export default function SunriseJummahTiles({
       <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
         <dt className="text-sm lg:text-2xl font-medium">Sunrise</dt>
         <dd className="mt-1 text-xl lg:text-5xl font-bold tracking-tight">
-          {moment(sunrise, ["HH:mm"]).format("h:mm")}
+          {dtFormatTimeTo12h(sunrise)}
         </dd>
       </div>
 
@@ -30,7 +30,7 @@ export default function SunriseJummahTiles({
             {jummahTime.label}
           </dt>
           <dd className="mt-1 text-xl lg:text-5xl font-bold tracking-tight">
-            {moment(jummahTime.time, ["HH:mm"]).format("h:mm")}
+            {dtFormatTimeTo12h(jummahTime.time)}
           </dd>
         </div>
       ))}

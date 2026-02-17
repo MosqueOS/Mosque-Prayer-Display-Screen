@@ -6,7 +6,7 @@ import {
   CalendarPrintMonthlyPrayerTimes,
 } from '@/types/CalendarPrintType'
 import { MosqueMetadataType } from '@/types/MosqueDataType'
-import moment from 'moment-hijri'
+import { dtLocale } from "@/lib/datetimeUtils"
 
 export default function SimpleTableA4 ({
   year,
@@ -123,7 +123,7 @@ function CalendarTable ({ monthly_prayer_times }: {
 function CalendarRow ({ prayer_time }: {
   prayer_time: CalendarDailyPrayerTime,
 }) {
-  const englishDate = moment(prayer_time.date)
+  const englishDate = dtLocale(prayer_time.date)
   const dayFormatted = englishDate.format('ddd')
   const isAsrMithl2 = prayer_time.asr.start_secondary !== undefined &&
     prayer_time.asr.start_secondary !== ''
