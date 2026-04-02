@@ -19,6 +19,7 @@ export default function EmbedTodayPrayerTimes({}) {
   const [sunrise, setSunrise] = React.useState<boolean>(false)
   const [date, setDate] = React.useState<boolean>(false)
   const [hijri, setHijri] = React.useState<boolean>(false)
+  const [highlightColor, setHighlightColor] = React.useState<string>("")
   const [widgetUrl, setWidgetUrl] = React.useState<string>("")
   const [widgetIFrameScriptStr, setWidgetIFrameScriptStr] =
     React.useState<string>("")
@@ -27,7 +28,16 @@ export default function EmbedTodayPrayerTimes({}) {
 
   useEffect(() => {
     setIsIFrameLoading(true)
-    const url = `${window.location.origin}/widget/embed/today-prayer-times?format=${format}&sunrise=${sunrise}&date=${date}&hijri=${hijri}`
+    const params = new URLSearchParams({
+      format,
+      sunrise: String(sunrise),
+      date: String(date),
+      hijri: String(hijri),
+    })
+    if (highlightColor) {
+      params.set("highlightColor", highlightColor.replace(/^#/, ""))
+    }
+    const url = `${window.location.origin}/widget/embed/today-prayer-times?${params.toString()}`
     setWidgetUrl(url)
     setWidgetIFrameScriptStr(`
     <iframe
@@ -38,7 +48,7 @@ export default function EmbedTodayPrayerTimes({}) {
     style="border: none"
     ></iframe>
     `)
-  }, [format, sunrise, date, hijri])
+  }, [format, sunrise, date, hijri, highlightColor])
 
   function onIFrameLoaded() {
     setIsIFrameLoading(false)
@@ -126,6 +136,28 @@ export default function EmbedTodayPrayerTimes({}) {
               onChange={(e) => setHijri(e.target.checked)}
               checked={hijri}
             />
+          </div>
+          <div
+            className={
+              "flex flex-row justify-start items-center gap-4 border-gray-200 border-2 rounded-lg p-2"
+            }
+          >
+            <p className={"text-sm"}>Highlight Color</p>
+            <input
+              type={"color"}
+              onChange={(e) => setHighlightColor(e.target.value)}
+              value={highlightColor || "#000000"}
+              className={"w-8 h-8 cursor-pointer rounded border-0 p-0"}
+            />
+            {highlightColor && (
+              <button
+                type="button"
+                onClick={() => setHighlightColor("")}
+                className={"text-xs text-gray-500 underline"}
+              >
+                Reset
+              </button>
+            )}
           </div>
         </div>
 

@@ -3,7 +3,7 @@ import { TodayPrayerTime } from "@/app/widget/embed/today-prayer-times/TodayPray
 type Props = { searchParams: Promise<any> }
 
 export default async function EmbedPrayerTimesPage({ searchParams }: Props) {
-  const {format, sunrise, date, hijri } = await searchParams
+  const {format, sunrise, date, hijri, highlightColor } = await searchParams
   const timeFormat = format ?? "h:mm"
   const showSunrise = (sunrise ?? "false") === "true"
   const showDate = (date ?? "false") === "true"
@@ -22,6 +22,7 @@ export default async function EmbedPrayerTimesPage({ searchParams }: Props) {
           showSunrise={showSunrise}
           showDate={showDate}
           showHijri={showHijri}
+          highlightColor={highlightColor}
         />
 
         {/* optional: auto-resize support for iframes */}
