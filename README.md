@@ -69,6 +69,36 @@ All of the code sits here:
 
 <img src="./public/screenshots/demo-admin-view.png/"/>
 
+## Add to website
+
+<p align="center">
+  <img src="./public/screenshots/demo-widget.png" style="background-color: white" />
+</p>
+
+```html
+<iframe
+  src="https://mosque-prayer-display-screen.vercel.app/widget"
+  width="500"
+  height="100"
+  frameborder="0"
+  style="border:none;"
+></iframe>
+```
+
+You can make it bigger or smaller by updating the `width` or `height`.
+
+You can also add the `asrStart` parameter to the URL to show the Asr prayer time for the second mithl.
+
+```html
+<iframe
+  src="https://mosque-prayer-display-screen.vercel.app/widget?asrStart=2"
+  width="500"
+  height="100"
+  frameborder="0"
+  style="border:none;"
+></iframe>
+```
+
 ## How to get set up as a Mosque
 
 ### Prerequisites
@@ -170,7 +200,7 @@ ADMIN_GOOGLE_SA_EMAIL=XXXX@XXXX-XXXX.iam.gserviceaccount.com
 You'll also need to set a username and password for authentication, these will also be stored in env vars
 
 ```
-AUTH_USERNAME=myuser 
+AUTH_USERNAME=myuser
 AUTH_PASSWORD=secret
 ```
 
@@ -192,7 +222,7 @@ If you want to update your domain, you can do so by following the Vercel documen
 #### Environment variables
 
 | KEY                         | VALUE                                                                            | DEFAULT                         | DESCRIPTION                                                                     |
-|-----------------------------|----------------------------------------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------|
+| --------------------------- | -------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------- |
 | MOSQUE_API_ENDPOINT         | https://api.mosque.tech/mosque-data/1o9dngtGJbfkFGZK_M7xdlo2PtRuQknGEQU3FxpiPVbg | REQUIRED - NO DEFAULT           | Data from Mosque API                                                            |
 | BLACKOUT_PERIOD             | 13                                                                               | 13 minutes                      | How long your mosque screen dims / blacks out during congregation prayer        |
 | UPCOMING_PRAYER_DAY         | 3                                                                                | 3 upcoming days shown in slider | How many upcoming days it shows in the sliding section                          |
@@ -203,7 +233,7 @@ If you want to update your domain, you can do so by following the Vercel documen
 | THEME_COLOR_ON_PRIMARY_ALT  | #FFFFFF                                                                          | #FFFFFF                         | The text color to be used when the background color is primary alternative      |
 | THEME_COLOR_HIGHLIGHT       | #10b981                                                                          | #10b981                         | The color used to highlight upcoming prayer                                     |
 | LOCALE                      | en                                                                               | en                              | The date/time format for locale                                                 |
-| ADMIN_GOOGLE_SA_PRIVATE_KEY | "-----BEGIN PRIVATE KEY-----\n******\n-----END PRIVATE KEY-----\n"               |                                 | Required as part of Admin interface to interact with your google sheets         |
+| ADMIN_GOOGLE_SA_PRIVATE_KEY | "-----BEGIN PRIVATE KEY-----\n**\*\***\n-----END PRIVATE KEY-----\n"             |                                 | Required as part of Admin interface to interact with your google sheets         |
 | ADMIN_GOOGLE_SA_EMAIL       | XXXX@XXXX-XXXX.iam.gserviceaccount.com                                           |                                 | Required as part of Admin interface to interact with your google sheets         |
 | AUTH_USERNAME               | myuser                                                                           | myuser                          | Required as part of Admin interface to login to admin page                      |
 | AUTH_PASSWORD               | secret                                                                           | secret                          | Required as part of Admin interface to login to admin page                      |
