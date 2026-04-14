@@ -3,7 +3,13 @@ import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import "./widget.css"
 import { dtFormatTimeTo12h } from "@/lib/datetimeUtils"
 
-export default async function Widget() {
+export default async function Widget({
+  searchParams,
+}: {
+  searchParams: Promise<{ asrStart: "1" | "2" }>
+}) {
+  const { asrStart } = await searchParams
+
   const today: DailyPrayerTime = await getPrayerTimesForToday()
 
   const convertTime = (time: string) => {
@@ -28,7 +34,13 @@ export default async function Widget() {
             <th>Begins</th>
             <td>{convertTime(today.fajr.start)}</td>
             <td>{convertTime(today.zuhr.start)}</td>
-            <td>{convertTime(today.asr.start)}</td>
+            <td>
+              {convertTime(
+                asrStart === "2" && today.asr.start_secondary
+                  ? today.asr.start_secondary
+                  : today.asr.start,
+              )}
+            </td>
             <td>{convertTime(today.maghrib.start)}</td>
             <td>{convertTime(today.isha.start)}</td>
           </tr>
