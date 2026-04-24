@@ -1,7 +1,7 @@
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { dtLocale, dtNowLocale } from "@/lib/datetimeUtils"
 
-const blackoutPeriod = process.env.BLACKOUT_PERIOD ?? 13 // defaults to 13 minutes
+const blackoutPeriod = process.env.NEXT_PUBLIC_BLACKOUT_PERIOD ?? 13 // defaults to 13 minutes
 
 export function isBlackout(prayerTimes: DailyPrayerTime) {
   const currentTime = dtNowLocale()
