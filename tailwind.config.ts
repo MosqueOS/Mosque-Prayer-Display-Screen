@@ -87,8 +87,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontSize: {
-        "9xl": ["7rem", { lineHeight: "1.1" }], // 160px
-        "10xl": ["8rem", { lineHeight: "1.1" }], // 160px
+        "9xl": ["8rem", { lineHeight: "1.1" }], // 160px
+        "10xl": ["9rem", { lineHeight: "1.1" }], // 160px
         "11xl": ["10rem", { lineHeight: "1.2" }], // 192px
         "12xl": ["12rem", { lineHeight: "1.2" }], // 224px
         "13xl": ["14rem", { lineHeight: "1.2" }], // 256px
