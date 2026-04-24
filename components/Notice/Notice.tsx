@@ -1,13 +1,13 @@
 export default function Notice() {
   return (
-    <div className="flex text-mosqueBrand-onPrimary text-center md:text-left">
-      <div className="mr-4 flex-shrink-0 self-center">
+    <div className="flex text-mosqueBrand-onPrimary text-center md:text-left ">
+      <div className="mr-[1.2vw] flex-shrink-0 self-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={24}
           height={24}
           viewBox="0 0 24 24"
-          className="h-20 w-auto"
+          className="h-20 2k:h-[8vh] w-auto"
         >
           <path
             fill="none"
@@ -20,7 +20,7 @@ export default function Notice() {
         </svg>
       </div>
       <div>
-        <p className="italic text-xl md:text-2xl md:max-w-lg hidden md:block">
+        <p className="italic text-xl md:text-2xl 2k:text-4xl 4k:text-5xl 4k:leading-[1.3] md:max-w-[25vw] hidden md:block">
           Please ensure your mobile phone is silent in the prayer hall.
         </p>
       </div>

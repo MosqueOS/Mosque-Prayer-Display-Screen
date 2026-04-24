@@ -5,6 +5,7 @@ import { getNextPrayer } from "@/services/PrayerTimeService"
 import { DailyPrayerTime } from "@/types/DailyPrayerTimeType"
 import { useConfiguration } from "@/hooks/useConfiguration"
 import { dtFormatTimeTo12h } from "@/lib/datetimeUtils"
+import { cn } from "@/lib/utils"
 
 export default function PrayerTimes({
   today,
@@ -44,6 +45,8 @@ export default function PrayerTimes({
   const config = useConfiguration()
   const [nextPrayerTime, setNextPrayerTime] = useState(getNextPrayer(today))
   const isTomorrowEnabled = config.feature.prayer_time_tomorrow.enabled
+  const tableColumnTitleClassNames = "md:text-5xl 2k:text-6xl 4k:text-8xl"
+  const tableDataClassNames = "text-xl md:text-6xl 2k:text-[5rem] 4k:text-9xl"
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,7 +57,7 @@ export default function PrayerTimes({
   }, [today])
 
   return (
-    <table className="text-mosqueBrand-onPrimary mx-auto table-auto border-collapse border-none w-full">
+    <table className="text-mosqueBrand-onPrimary mx-auto table-auto border-collapse border-none w-full h-full">
       <thead>
         <tr
           className="text-center [&>*]:p-2 md:[&>*]:p-8
@@ -62,9 +65,11 @@ export default function PrayerTimes({
           [&>th]:border-t-0 [&>th:last-of-type]:border-r-0"
         >
           <th className="sr-only">Prayer time</th>
-          <th className="md:text-5xl">Begins</th>
-          <th className="md:text-5xl">Jama&apos;ah</th>
-          {isTomorrowEnabled && <th className={"md:text-5xl"}>Tomorrow</th>}
+          <th className={cn(tableColumnTitleClassNames)}>Begins</th>
+          <th className={cn(tableColumnTitleClassNames)}>Jama&apos;ah</th>
+          {isTomorrowEnabled && (
+            <th className={cn(tableColumnTitleClassNames)}>Tomorrow</th>
+          )}
         </tr>
       </thead>
       <tbody>
@@ -83,10 +88,12 @@ export default function PrayerTimes({
               border border-mosqueBrand-primaryAlt border-l-0 border-r-0
               last-of-type:border-b-0"
             >
-              <th className="text-left text-xl md:text-5xl md:text-right">
+              <th
+                className={cn("text-left md:text-right", tableDataClassNames)}
+              >
                 {prayer.label}
               </th>
-              <td className="text-xl md:text-6xl">
+              <td className={cn(tableDataClassNames)}>
                 {dtFormatTimeTo12h(prayer.data.start)}
                 {prayer.data?.start_secondary ? (
                   <div className="block mt-1 md:mt-2">
@@ -94,12 +101,12 @@ export default function PrayerTimes({
                   </div>
                 ) : null}
               </td>
-              <td className={`font-bold text-xl md:text-6xl`}>
+              <td className={cn(`font-bold`, tableDataClassNames)}>
                 <span
                   className={
                     nextPrayerTime.today === true &&
                     nextPrayerTime.prayerIndex === index
-                      ? "underline decoration-mosqueBrand-highlight underline-offset-8"
+                      ? "underline decoration-mosqueBrand-highlight underline-offset-[1.5vh]"
                       : ""
                   }
                 >
@@ -107,12 +114,12 @@ export default function PrayerTimes({
                 </span>
               </td>
               {isTomorrowEnabled && (
-                <td className={`text-xl md:text-6xl`}>
+                <td className={cn(tableDataClassNames)}>
                   <span
                     className={
                       nextPrayerTime.today === false &&
                       nextPrayerTime.prayerIndex === index
-                        ? "underline decoration-mosqueBrand-highlight underline-offset-8"
+                        ? "underline decoration-mosqueBrand-highlight underline-offset-[1.5vh]"
                         : ""
                     }
                   >
