@@ -62,20 +62,20 @@ export default async function Home() {
 
   return (
     <ConfigurationProvider config={config}>
-      <div className="bg-mosqueBrand min-h-screen min-w-full">
-        <main className="md:p-5">
-          <div className="md:grid md:grid-cols-8">
-            <div className="md:col-span-3">
-              <div className="p-4 md:p-6">
+      <div className="bg-mosqueBrand h-full w-full">
+        <main className="flex h-full w-full flex-col p-4 md:p-5 2k:p-[1.5vw]">
+          <div className="min-h-0 flex-1 md:grid md:grid-cols-8">
+            <div className="md:col-span-3 flex flex-col gap-4 2k:gap-[2vh]">
+              <div className="p-4 md:p-6 2k:p-[1.5vh]">
                 <Clock />
               </div>
-              <div className="p-4 md:p-6">
+              <div className="p-4 md:p-6 2k:p-[1.5vh]">
                 <Date />
               </div>
-              <div className="p-4 md:p-6">
+              <div className="p-4 md:p-6 2k:p-[1.5vh]">
                 <MosqueMetadata metadata={mosqueMetadata} />
               </div>
-              <div className="hidden md:p-6 md:block">
+              <div className="hidden md:p-6 md:block 2k:p-[1.5vh]">
                 <Notice />
               </div>
             </div>
@@ -83,7 +83,7 @@ export default async function Home() {
               <PrayerTimes today={today} tomorrow={tomorrow} />
             </div>
           </div>
-          <div className="p-4 md:p-6">
+          <div className="shrink-0 p-4 md:p-6">
             <SlidingBanner slides={slides} />
           </div>
           <ServiceWorker />

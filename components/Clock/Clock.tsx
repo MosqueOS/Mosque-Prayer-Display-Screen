@@ -24,10 +24,10 @@ export default function Clock({ darkMode = false }: { darkMode?: boolean }) {
     <div
       className={`${
         !darkMode ? "bg-mosqueBrand-onPrimary" : ""
-      } p-7 text-center md:text-left md:w-fit`}
+      } p-7 2k:p-[4%] text-center md:text-left md:w-fit`}
     >
       <time
-        className={`text-5xl md:text-8xl font-bold ${
+        className={`text-5xl md:text-8xl 2k:text-9xl 4k:text-12xl font-bold ${
           !darkMode ? "text-mosqueBrand" : "text-gray-500"
         }`}
       >
