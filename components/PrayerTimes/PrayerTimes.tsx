@@ -88,7 +88,7 @@ export default function PrayerTimes({
               </th>
               <td className="text-xl md:text-6xl">
                 {dtFormatTimeTo12h(prayer.data.start)}
-                {prayer.data?.start_secondary ? (
+                {prayer.data?.start_secondary && (prayer.data.start !== prayer.data.start_secondary) ? (
                   <div className="block mt-1 md:mt-2">
                     {dtFormatTimeTo12h(prayer.data.start_secondary)}
                   </div>
