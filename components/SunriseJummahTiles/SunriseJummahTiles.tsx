@@ -1,5 +1,6 @@
 import { JummahTimes } from "@/types/JummahTimesType"
 import { dtFormatTimeTo12h } from "@/lib/datetimeUtils"
+import { InfoTile } from "@/components/ui/mosque-screen/InfoTile"
 
 export default function SunriseJummahTiles({
   sunrise,
@@ -14,25 +15,18 @@ export default function SunriseJummahTiles({
         jummahTimes.length + 1
       } text-center gap-0 md:gap-3`}
     >
-      <div className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto">
-        <dt className="text-sm lg:text-2xl font-medium">Sunrise</dt>
-        <dd className="mt-1 text-xl lg:text-5xl font-bold tracking-tight">
-          {dtFormatTimeTo12h(sunrise)}
-        </dd>
-      </div>
+      <InfoTile label="Sunrise">
+        {dtFormatTimeTo12h(sunrise)}
+      </InfoTile>
 
       {jummahTimes.map((jummahTime, index) => (
-        <div
-          className="bg-mosqueBrand-primaryAlt text-white p-4 lg:p-6 lg:col-auto"
+        <InfoTile
+          label={jummahTime.label}
+          // valueClassName="text-xl lg:text-5xl"
           key={index}
         >
-          <dt className="text-sm lg:text-2xl font-medium">
-            {jummahTime.label}
-          </dt>
-          <dd className="mt-1 text-xl lg:text-5xl font-bold tracking-tight">
-            {dtFormatTimeTo12h(jummahTime.time)}
-          </dd>
-        </div>
+          {dtFormatTimeTo12h(jummahTime.time)}
+        </InfoTile>
       ))}
     </dl>
   )
