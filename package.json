@@ -27,6 +27,7 @@
     "lucide-react": "^0.555.0",
     "moment": "^2.29.4",
     "moment-hijri": "^2.1.2",
+    "moment-timezone": "^0.6.5",
     "next": "^16.1.0",
     "next-auth": "^4.24.13",
     "postcss": "^8.4.31",

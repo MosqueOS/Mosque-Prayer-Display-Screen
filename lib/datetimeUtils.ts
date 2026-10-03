@@ -1,14 +1,16 @@
-import moment from "moment"
+import moment from "moment-timezone"
 import momentHijri from "moment-hijri"
 
 const LOCALE = process.env.LOCALE || "en"
+// IANA time zone of the mosque, e.g. "Pacific/Auckland". Falls back to the server's time zone.
+const TIMEZONE = process.env.TIMEZONE
 
 export function dtNow(): moment.Moment {
-  return moment()
+  return TIMEZONE ? moment.tz(TIMEZONE) : moment()
 }
 
 export function dtNowLocale(): moment.Moment {
-  return moment().locale(LOCALE)
+  return dtNow().locale(LOCALE)
 }
 
 export function dtLocale(date: moment.MomentInput, format?: moment.MomentFormatSpecification, strict?: boolean): moment.Moment {
@@ -141,7 +143,7 @@ export function dtHijri(
 }
 
 export function dtHijriNow(): moment.Moment {
-  return momentHijri().locale(LOCALE)
+  return momentHijri(dtNow()).locale(LOCALE)
 }
 
 export function dtHijriNowLocaleCustomFormat(format: string): string {
