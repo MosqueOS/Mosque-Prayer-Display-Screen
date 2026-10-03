@@ -39,7 +39,7 @@ export async function getMosqueData (): Promise<MosqueData> {
     const data = await response.json()
 
     // we do this so that the MosqueData type doesn't is strongly typed
-    data.config = unflattenObject(data.config)
+    data.config = unflattenObject(data.config ?? {})
 
     return data
   }
