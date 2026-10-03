@@ -16,26 +16,31 @@ export default function PrayerTimes({
   const PrayerTimesArray = [
     {
       label: "Fajr",
+      labelArabic: "الفجر",
       data: today.fajr,
       tomorrow: tomorrow.fajr,
     },
     {
       label: "Zuhr",
+      labelArabic: "الظهر",
       data: today.zuhr,
       tomorrow: tomorrow.zuhr,
     },
     {
       label: "Asr",
+      labelArabic: "العصر",
       data: today.asr,
       tomorrow: tomorrow.asr,
     },
     {
       label: "Maghrib",
+      labelArabic: "المغرب",
       data: today.maghrib,
       tomorrow: tomorrow.maghrib,
     },
     {
       label: "Isha",
+      labelArabic: "العشاء",
       data: today.isha,
       tomorrow: tomorrow.isha,
     },
@@ -44,6 +49,7 @@ export default function PrayerTimes({
   const config = useConfiguration()
   const [nextPrayerTime, setNextPrayerTime] = useState(getNextPrayer(today))
   const isTomorrowEnabled = config.feature.prayer_time_tomorrow.enabled
+  const isArabicNamesEnabled = config.feature.arabic_prayer_names.enabled
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -85,6 +91,11 @@ export default function PrayerTimes({
             >
               <th className="text-left text-xl md:text-5xl md:text-right">
                 {prayer.label}
+                {isArabicNamesEnabled && (
+                  <span lang="ar" dir="rtl" className="block mt-1 md:mt-2">
+                    {prayer.labelArabic}
+                  </span>
+                )}
               </th>
               <td className="text-xl md:text-6xl">
                 {dtFormatTimeTo12h(prayer.data.start)}

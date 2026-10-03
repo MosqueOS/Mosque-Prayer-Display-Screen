@@ -52,6 +52,12 @@ All of the code sits here:
 
 <img src="./public/screenshots/demo-mosque-view-3.png" />
 
+### Arabic Prayer Names
+
+Shows the Arabic name under each prayer. Turn it on with `feature.arabic_prayer_names.enabled` set to `true` in your configuration.
+
+<img src="./public/screenshots/demo-mosque-view-arabic.png" />
+
 ### Announcements
 
 <img src="./public/screenshots/demo-mosque-announcement-car.png" />

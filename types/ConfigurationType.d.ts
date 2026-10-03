@@ -11,6 +11,9 @@ export interface ConfigurationJson {
     },
     prayer_time_tomorrow: {
       enabled: boolean,
+    },
+    arabic_prayer_names: {
+      enabled: boolean,
     }
   },
 }

@@ -8,6 +8,9 @@ export const configurationDefaults : ConfigurationJson = {
     },
     prayer_time_tomorrow: {
       enabled: true,
+    },
+    arabic_prayer_names: {
+      enabled: false,
     }
   }
 }
